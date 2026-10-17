@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "test": "Independent tetrahedron SAT (4+4 face normals and 36 edge-cross axes)",
+  "tolerance_m": 1e-09,
+  "frames": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "tire_pair_checks": 189,
+  "analytic_sanity_cases": {
+    "identical": true,
+    "contained": true,
+    "overlapping": true,
+    "touching": true,
+    "separated": true,
+    "aabb_overlap_but_tets_separate": true
+  },
+  "narrow_phase_tet_pairs": 2704,
+  "positive_volume_overlaps": 0,
+  "excluded_scope": [
+    "between saved frames",
+    "self contact",
+    "ABD meshes"
+  ],
+  "elapsed_s": 0.5949496000012005
+}

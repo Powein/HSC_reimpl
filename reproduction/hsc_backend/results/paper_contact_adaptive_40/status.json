@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETED",
+  "solver": "linear_hsc",
+  "parameters": {
+    "steps": 40,
+    "obstacles": 3,
+    "profile": "paper_stiffness",
+    "motor_speed": 2.0,
+    "start_x": -2.6,
+    "rank": 128,
+    "fixed_neumann": false,
+    "label": "paper_contact_adaptive_40"
+  },
+  "runtime": {
+    "root": "E:\\HC-HSC-build-jaq6yw9h",
+    "runtime": "E:\\HC-HSC-build-jaq6yw9h\\build\\python\\src",
+    "python": "E:\\HC-HSC-build-jaq6yw9h\\venv\\Scripts\\python.exe",
+    "source_commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+    "solver": "linear_hsc"
+  },
+  "completed_steps": 40,
+  "backend_sha256": "714923a0df7432a61823f6a26381dc2660bbb556a46fd0aad8073fcdbb078248",
+  "elapsed_s": 425.4115935000009,
+  "linear_solves": 601,
+  "max_schur_relative_residual": 9.998266539934411e-05,
+  "max_full_relative_residual": 9.811133348449555e-05,
+  "max_active_mesh_contacts": 35,
+  "max_active_ground_contacts": 177,
+  "rank_range": [
+    84,
+    84
+  ],
+  "abd_inverse_mode": "adaptive_neumann",
+  "neumann_doublings_range": [
+    17,
+    20
+  ],
+  "max_abd_inverse_residual": 9.96835066645664e-06,
+  "chassis_displacement_x_m": 0.11438060894941549,
+  "loose_rim_displacements_m": {
+    "loose_0": [
+      0.03964920737599403,
+      0.0008723084178923202,
+      -0.0031663871366398866
+    ],
+    "loose_1": [
+      -5.659503218259215e-07,
+      -4.145224236037764e-07,
+      -0.003110393317113408
+    ],
+    "loose_2": [
+      0.042918342355515664,
+      0.0019269141930027267,
+      -0.003179700465765878
+    ]
+  },
+  "scope": "Native HSC in real Newton/IPC loop. Hybrid CPU setup/GPU solve; not paper performance equivalence."
+}

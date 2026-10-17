@@ -1,0 +1,67 @@
+[
+  {
+    "path": "src/backends/cuda/linear_system/global_linear_system.h",
+    "original_sha256": "5a0d6453f916c801676644f9f0ab1f6c9354ef3fc39f19e55e3e1818cfb8b2fb",
+    "patched_sha256": "edb1be2dc05699a1f73cc2096777cb02e75889d7af9f185a5fd0e8c5b3c2609e"
+  },
+  {
+    "path": "src/backends/cuda/linear_system/global_linear_system.cu",
+    "original_sha256": "b3b0e5be0db6d3a9edbdc81606dba467462aebe3b45cc8711efbd174021c65e1",
+    "patched_sha256": "d6a55884c43033818f079b2ce5bace06433f27524166570bb341eda2565fade6"
+  },
+  {
+    "path": "src/core/core/scene_default_config.cpp",
+    "original_sha256": "414a7a5b5dad177b34d32c388c61e6ce18d83a97b1d140d0f015ef261df7c3ea",
+    "patched_sha256": "b36c3ab355cc52d0762f2d46756cedd02a15f457f811d4a4efe2b7c9179291fb"
+  },
+  {
+    "path": "src/pybind/pyuipc/constitution/module.cpp",
+    "original_sha256": "f377168c00c6aafc52644cc00b10292d5b6d11d293073627b55e2e5ff21f2fc2",
+    "patched_sha256": "daea370e1b0a7bb3c9d625b92be6c79628d2d79e7fb6a754bb5b313bf67a446d"
+  },
+  {
+    "path": "src/backends/cuda/line_search/line_searcher.cu",
+    "original_sha256": "1106e5e4ca179e76eedbf5022b6157a3c85ddaacc25200d10331fbe941378350",
+    "patched_sha256": "19378ac80e50618df240461b47e54f2108f0e184a645d765059ae4b4a0e213b5"
+  },
+  {
+    "path": "src/backends/cuda/engine/advance_ipc.cu",
+    "original_sha256": "206ea9870f909011929e87d48ff164a5c3105c95b3c4965bfe1c85c0b92ba5ea",
+    "patched_sha256": "a3dd99e747c991eac591a4caec8eaa48ac66f77b0aaa9e90a7d0df465828248c"
+  },
+  {
+    "path": "src/backends/cuda/linear_system/linear_hsc.cu",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "e5aebeb62b23cf98d94f0e532b99d9cea667dd0cc5b96bc63509ee36b0d0293b"
+  },
+  {
+    "path": "include/uipc/constitution/log_neo_hookean.h",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "15c367cc19605fc26137da84573d674e56f618afc513dac23c6b4df81466cfaf"
+  },
+  {
+    "path": "src/backends/cuda/finite_element/constitutions/log_neo_hookean_3d.cu",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "7c72e2c2bf3490aba2cf4a451f50dcd0d04d129183d9a085b7fcdf57b6d13c20"
+  },
+  {
+    "path": "src/backends/cuda/finite_element/constitutions/log_neo_hookean_function.h",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "26a84dff87944d8cdf9d06cb7e3bdde08c7b03fff3df9b85f0e9245a4ee67752"
+  },
+  {
+    "path": "src/constitution/log_neo_hookean.cpp",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "ac08a969ff886be7cb06f78fa4cba6b9e044896df1bfec8c1589870e78c3f328"
+  },
+  {
+    "path": "src/pybind/pyuipc/constitution/log_neo_hookean.cpp",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "aeb648cd10852d9af18a9f838f1e0982959354ac4f7d65a8eb3a07096d2d753d"
+  },
+  {
+    "path": "src/pybind/pyuipc/constitution/log_neo_hookean.h",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "patched_sha256": "03183f10aca5908322514851bfa729ceefd8555d7143d103c09075fca62f1216"
+  }
+]

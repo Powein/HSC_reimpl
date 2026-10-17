@@ -1,0 +1,2676 @@
+{
+  "_id": "69a160def9e0b7e04172ff11",
+  "id": "MuGdxy/uipc-assets",
+  "author": "MuGdxy",
+  "sha": "82fb08d46f66a63428c91675b7a0eb261536ab61",
+  "lastModified": "2026-05-04T07:14:09.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:apache-2.0",
+    "size_categories:n<1K",
+    "format:json",
+    "modality:3d",
+    "modality:tabular",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:polars",
+    "library:mlcroissant",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tUIPC Assets\n\t\n\nSimulation assets for libuipc -- a Modern C++20 Library of Unified Incremental Potential Contact.\nThis dataset collects demos, tests, and examples from IPC-related papers and provides scripts to load them as UIPC scenes via pyuipc.\n\n\t\n\t\t\n\t\n\t\n\t\tStructure\n\t\n\nAll assets live under assets/. Each asset is a named subfolder:\nassets/\n  cube_ground/        # asset name\n    scene.py          # script: build_scene(uipc.Scene) -> adds geometry/objects\n    cube.msh          #\u2026 See the full description on the dataset page: https://huggingface.co/datasets/MuGdxy/uipc-assets.",
+  "downloads": 127,
+  "likes": 2,
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": ".gitignore"
+    },
+    {
+      "rfilename": "MANIFEST.md"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "assets/_ipc_scene_helpers.py"
+    },
+    {
+      "rfilename": "assets/_rigid_ipc_loader.py"
+    },
+    {
+      "rfilename": "assets/abd_external_force/cube.msh"
+    },
+    {
+      "rfilename": "assets/abd_external_force/scene.py"
+    },
+    {
+      "rfilename": "assets/abd_fem_tower/README.md"
+    },
+    {
+      "rfilename": "assets/abd_fem_tower/cube.msh"
+    },
+    {
+      "rfilename": "assets/abd_fem_tower/scene.py"
+    },
+    {
+      "rfilename": "assets/cube_ground/README.md"
+    },
+    {
+      "rfilename": "assets/cube_ground/cube.msh"
+    },
+    {
+      "rfilename": "assets/cube_ground/scene.py"
+    },
+    {
+      "rfilename": "assets/fem_bouncing_cubes/README.md"
+    },
+    {
+      "rfilename": "assets/fem_bouncing_cubes/cube.msh"
+    },
+    {
+      "rfilename": "assets/fem_bouncing_cubes/scene.py"
+    },
+    {
+      "rfilename": "assets/fem_link_drop/README.md"
+    },
+    {
+      "rfilename": "assets/fem_link_drop/link.msh"
+    },
+    {
+      "rfilename": "assets/fem_link_drop/scene.py"
+    },
+    {
+      "rfilename": "assets/hello_affine_body/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall/README.md"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_full/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_full/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_heavy_top/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_heavy_top/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_larger_dt/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_larger_dt/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_smaller_dt/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_smaller_dt/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_stiffer/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_2cubes_fall_stiffer/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_cube_stack/input/tetMeshes/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_cube_stack/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_slots/input/tetMeshes/tet.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_slots/input/triMeshes/cube.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_slots/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_slots/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_tet/input/tetMeshes/tet.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_10_tet_tet/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_cliff_co/input/tetMeshes/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_cliff_co/input/triMeshes/erleben/cliff.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_cliff_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_internal_edges_co/input/tetMeshes/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_internal_edges_co/input/triMeshes/erleben/internal_edges.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_cube_internal_edges_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_crack_co/input/tetMeshes/erleben/spike.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_crack_co/input/triMeshes/erleben/crack.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_crack_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_hole_co/input/tetMeshes/erleben/spike.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_hole_co/input/triMeshes/erleben/hole.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_hole_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_plane_co/input/tetMeshes/erleben/spike.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_plane_co/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_plane_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_spike_co/input/tetMeshes/erleben/spike.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_spike_co/input/triMeshes/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_spike_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_wedge_co/input/tetMeshes/erleben/spike.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_wedge_co/input/triMeshes/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_spike_wedge_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_crack_co/input/tetMeshes/erleben/wedge.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_crack_co/input/triMeshes/erleben/crack.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_crack_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_plane_co/input/tetMeshes/erleben/wedge.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_plane_co/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_plane_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_wedgo_co/input/tetMeshes/erleben/wedge.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_wedgo_co/input/triMeshes/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_11_erleben_wedge_wedgo_co/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_large_mass_ratio/input/tetMeshes/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_large_mass_ratio/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_large_mass_ratio/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_mat_on_board/input/tetMeshes/mat40x40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_mat_on_board/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_sphere_on_mat/input/tetMeshes/mat40x40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_sphere_on_mat/input/tetMeshes/sphere1K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_12_sphere_on_mat/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_13_dolphin_funnel/input/tetMeshes/dolphin5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_13_dolphin_funnel/input/triMeshes/funnel.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_13_dolphin_funnel/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_14_mat_twist/input/tetMeshes/mat150x150t40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_14_mat_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_octocat/input/tetMeshes/32770_octocat.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_octocat/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_octocat/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_shapes/input/tetMeshes/bunny.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_shapes/input/tetMeshes/mat40x40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_shapes/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_shapes/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_15_trash_comp_shapes/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/tetMeshes/armadillo_verschoor.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller0.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller1.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller2.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller3.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller4.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/input/triMeshes/verschoor/roller5.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_16_arma_roller_e1e5/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_17_pin_cushion_ball/input/segMeshes/edge.seg"
+    },
+    {
+      "rfilename": "assets/ipc_paper_17_pin_cushion_ball/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_17_pin_cushion_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_point_roller_ball/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_point_roller_ball/input/triMeshes/cylinder.pt"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_point_roller_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_seg_roller_ball/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_seg_roller_ball/input/triMeshes/cylinder.seg"
+    },
+    {
+      "rfilename": "assets/ipc_paper_18_seg_roller_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_19_golf_ball/input/tetMeshes/sphere19K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_19_golf_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/tetMeshes/32770_octocat.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/tetMeshes/alien.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/tetMeshes/hollowCat7.5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/tetMeshes/monkey8K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/triMeshes/coneBox.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/input/triMeshes/plane.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_1_squeeze_out/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_20_pencil_stick_slip/input/tetMeshes/rod.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_20_pencil_stick_slip/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo122k_twist/input/tetMeshes/Armadillo122K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo122k_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo13k_twist/input/tetMeshes/Armadillo13K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo13k_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo219k_twist/input/tetMeshes/Armadillo219K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo219k_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo28k_twist/input/tetMeshes/Armadillo28K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo28k_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo54k_twist/input/tetMeshes/Armadillo54K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_armadillo54k_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat100x100_twist/input/tetMeshes/mat100x100t40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat100x100_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat150x150_twist/input/tetMeshes/mat150x150t40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat150x150_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat225x225_twist/input/tetMeshes/mat225x225t40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat225x225_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat40x40_twist/input/tetMeshes/mat40x40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_21_scalability_mat40x40_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_22_squishy_ball/input/tetMeshes/squishy_ball_61K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_22_squishy_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_mat_knives/input/tetMeshes/mat40x40.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_mat_knives/input/triMeshes/triangle.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_mat_knives/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_sphere_points/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_sphere_points/input/triMeshes/point.pt"
+    },
+    {
+      "rfilename": "assets/ipc_paper_2_sphere_points/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_4_rods_twist/input/tetMeshes/rod300x33.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_4_rods_twist/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_5_hit_card_house/input/tetMeshes/cube.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_5_hit_card_house/input/tetMeshes/mat20x20.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_5_hit_card_house/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.01.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.02.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.03.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.04.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.05.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.06.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.07.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.08.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.09.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.10.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.11.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.12.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.13.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.14.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.15.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.16.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.17.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.18.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.19.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.20.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.21.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.22.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.23.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.24.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/tetMeshes/arch/largeArch.25.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/input/triMeshes/cube.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_7_masonry_arch/scene.py"
+    },
+    {
+      "rfilename": "assets/ipc_paper_8_roller_ball/input/tetMeshes/sphere5K.msh"
+    },
+    {
+      "rfilename": "assets/ipc_paper_8_roller_ball/input/triMeshes/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/ipc_paper_8_roller_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/particle_rain/README.md"
+    },
+    {
+      "rfilename": "assets/particle_rain/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_10_links/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_10_links/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_10_links/torus.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_3_links/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_3_links/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_3_links/torus.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5_links/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5_links/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5_links/torus.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5cubes/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5cubes/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5cubes/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5cubes/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_5cubes/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_8k_triangles/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_8k_triangles/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_8k_triangles/plane-8K.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_8k_triangles/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_anchor/anchor/anchor.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_anchor/anchor/spool.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_anchor/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_anchor/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_anchor/wrecking-ball/link.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-01.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-02.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-03.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-04.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-05.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-06.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-07.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-08.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-09.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-10.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-100.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-101.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-11.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-12.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-13.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-14.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-15.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-16.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-17.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-18.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-19.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-20.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-21.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-22.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-23.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-24.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-25.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-26.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-27.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-28.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-29.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-30.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-31.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-32.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-33.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-34.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-35.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-36.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-37.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-38.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-39.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-40.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-41.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-42.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-43.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-44.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-45.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-46.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-47.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-48.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-49.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-50.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-51.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-52.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-53.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-54.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-55.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-56.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-57.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-58.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-59.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-60.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-61.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-62.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-63.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-64.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-65.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-66.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-67.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-68.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-69.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-70.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-71.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-72.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-73.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-74.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-75.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-76.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-77.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-78.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-79.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-80.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-81.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-82.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-83.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-84.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-85.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-86.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-87.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-88.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-89.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-90.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-91.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-92.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-93.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-94.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-95.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-96.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-97.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-98.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/arch/num_stones=101/stone-99.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_101/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-01.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-02.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-03.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-04.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-05.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-06.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-07.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-08.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-09.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-10.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-11.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-12.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-13.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-14.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-15.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-16.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-17.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-18.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-19.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-20.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-21.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-22.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-23.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-24.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/arch/num_stones=25/stone-25.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_arch_25/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bat/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bat/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bat/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bat/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/507-movements/227-chain-pully/barring.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/507-movements/227-chain-pully/link.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/507-movements/227-chain-pully/pin.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/507-movements/227-chain-pully/sprocket-20teeth.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/507-movements/227-chain-pully/sprocket-8teeth.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bike_chain/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bolt/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bolt/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bolt/screw-and-nut/nut-big.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_bolt/screw-and-nut/screw-big.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_2/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_2/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_2/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_3/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_3/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_house_3/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_tent/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_tent/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_card_tent/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_multi/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_multi/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_multi/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_multi/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_single/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_single/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_single/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_compactor_single/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_concave/L.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_concave/corner.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_concave/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_concave/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_concave/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_bunnies/bunny-lowpoly.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_bunnies/cone.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_bunnies/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_bunnies/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_pile/cone.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_pile/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_pile/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cone_pile/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_on_edge/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_on_edge/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_on_edge/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_on_edge/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_on_edge/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_pile/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_pile/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_pile/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_pile/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_cube_pile/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_double_pendulum/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_double_pendulum/pendulum/arm.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_double_pendulum/pendulum/pin-short.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_double_pendulum/pendulum/pin.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_double_pendulum/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_dzhanibekov/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_dzhanibekov/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_dzhanibekov/wing-nut.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge/tet-perp.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge_parallel/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge_parallel/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_edge_edge_parallel/tet-perp.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_cliff_edges/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_cliff_edges/erleben/cliff.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_cliff_edges/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_cliff_edges/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_internal_edges/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_internal_edges/erleben/internal_edges.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_internal_edges/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_internal_edges/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_spike/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_spike/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_spike/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_spike/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_wedge/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_wedge/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_wedge/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_sliding_wedge/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_and_wedge/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_and_wedge/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_and_wedge/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_and_wedge/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_crack/erleben/crack.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_crack/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_crack/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_crack/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_hole/erleben/hole.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_hole/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_hole/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spike_in_hole/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spikes/erleben/spike.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spikes/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_spikes/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedge_in_crack/erleben/crack.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedge_in_crack/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedge_in_crack/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedge_in_crack/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedges/erleben/wedge.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedges/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_erleben_wedges/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_expanding_lock_box/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_expanding_lock_box/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_face_vertex/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_face_vertex/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_face_vertex/tet-pyramid.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-0.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-1.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-2.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-3.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-4.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-5.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-6.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/fracture/cube/cell-7.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_cube/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00000.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00001.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00002.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00003.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00004.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00005.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00006.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00007.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00008.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00009.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00010.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00011.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00012.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00013.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00014.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00015.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00016.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00017.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00018.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00019.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00020.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00021.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00022.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00023.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00024.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00025.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00026.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00027.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00028.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00029.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00030.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00031.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00032.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00033.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00034.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00035.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00036.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00037.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00038.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00039.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00040.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00041.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00042.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00043.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00044.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00045.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00046.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00047.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00048.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00049.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00050.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00051.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00052.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00053.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00054.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00055.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00056.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00057.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00058.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00059.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00060.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00061.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00062.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00063.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00064.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00065.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00066.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00067.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00068.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00069.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00070.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00071.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00072.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00073.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00074.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00075.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00076.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00077.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00078.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00079.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00080.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00081.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00082.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00083.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00084.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00085.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00086.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00087.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00088.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00089.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00090.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00091.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00092.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00093.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00094.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00095.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00096.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00097.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00098.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/fracture/wall/wall-piece-00099.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_fracture_wall/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain/gears/gear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain/gears/rail.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain_kinematic/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain_kinematic/gears/gear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_chain_kinematic/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single/gears/gear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single/gears/rail.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single_kinematic/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single_kinematic/gears/gear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_gear_single_kinematic/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/axis.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/axis.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/curved_wheel.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/curved_wheel.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/end.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/end.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/piston.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/piston.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/walls.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/507-movements/398-intermitten-motion/walls.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_intermittent_motion/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematic/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematic/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematic/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematic/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematically_scripted/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematically_scripted/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematically_scripted/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_kinematically_scripted/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_large_mass_ratio/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_large_mass_ratio/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_large_mass_ratio/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_large_mass_ratio/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_large_mass_ratio/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lever_arm/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lever_arm/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lever_arm/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/back.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/block.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/center.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/front.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/left.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/507-movements/493-Lewis/right.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_lewis_mechanism/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_cube_edge/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_cube_edge/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_cube_edge/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_cube_edge/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/3DBenchy.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/CogDriveGear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/HilbertCube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/Hopper.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/Openscad.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/Polycup.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/Shovel.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/Stool.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/packing-3D-printer/WireHolder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_minsep_packing/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part000.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part001.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part002.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part003.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part004.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part005.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part006.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part007.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part008.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part009.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part010.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part011.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part012.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part013.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part014.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part015.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part016.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part017.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part018.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part019.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part020.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part021.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part022.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part023.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part024.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part025.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part026.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part027.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part028.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part029.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part030.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part031.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part032.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part033.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part034.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part035.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part036.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part037.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part038.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part039.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/octopus/octopus-parts/octopus-decimated-part040.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_draped/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/knives.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part000.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part001.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part002.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part003.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part004.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part005.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part006.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part007.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part008.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part009.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part010.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part011.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part012.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part013.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part014.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part015.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part016.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part017.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part018.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part019.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part020.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part021.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part022.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part023.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part024.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part025.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part026.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part027.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part028.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part029.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part030.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part031.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part032.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part033.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part034.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part035.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part036.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part037.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part038.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part039.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/octopus/octopus-parts/octopus-decimated-part040.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_octopus_knives/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_pendulum/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_pendulum/pendulum/arm.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_pendulum/pendulum/pin-short.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_pendulum/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/507-movements/092-piston/connecting-rod.stl"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/507-movements/092-piston/crank.stl"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/507-movements/092-piston/cylinder.stl"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/507-movements/092-piston/head.stl"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_piston/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/fixed.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/fixed.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p1.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p1.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p2.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p2.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p3.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p3.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p4.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p4.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p5.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/507-movements/140-punching-press/p5.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/fixed.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/fixed.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p1.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p1.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p2.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p2.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p3.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p3.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p4.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p4.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p5.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/507-movements/140-punching-press/loose/p5.off"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_punching_press_loose/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_cone/cone-solid.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_cone/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_cone/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_cone/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_oloid/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_oloid/oloid.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_oloid/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rolling_oloid/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_cube/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_cube/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_cube/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_intermediate/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_intermediate/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_intermediate/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_major/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_major/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_major/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_minor/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_minor/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_ellipsoid_minor/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_sphere/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_sphere/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_rotating_sphere/sphere.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_sliding/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_sliding/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_sliding/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_sliding/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_sliding/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spinning_cube/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spinning_cube/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spinning_cube/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spinning_cube/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spinning_cube/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_split_components/2cubes.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_split_components/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_split_components/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_split_components/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spolling_coin/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spolling_coin/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spolling_coin/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spolling_coin/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_spot_drop/spot.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tet_corner/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tet_corner/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tet_corner/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tet_corner/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tet_corner/tet-corner.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_torque_test/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_torque_test/gears/gear.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_torque_test/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls_8k/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls_8k/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls_8k/plane-8K.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls_8k/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_2_walls_8k/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_3_walls/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_3_walls/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_3_walls/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_3_walls/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_4_walls/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_4_walls/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_4_walls/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunnel_4_walls/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunneling/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunneling/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunneling/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_tunneling/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu0/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu0/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu0/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu0/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu01/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu01/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu01/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu01/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu05/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu05/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu05/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu05/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu10/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu10/cylinder.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu10/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_turntable_mu10/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles_tet/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles_tet/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles_tet/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_two_triangles_tet/tet-corner.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_face/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_face/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_face/tet-pyramid.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_vertex/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_vertex/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_vertex/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_vertex_vertex/tet-corner.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/README.md"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/cube.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/fixture.json"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/plane.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/scene.py"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/wrecking-ball/ball.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/wrecking-ball/link.obj"
+    },
+    {
+      "rfilename": "assets/rigid_ipc_wrecking_ball/wrecking_ball.json"
+    },
+    {
+      "rfilename": "examples/run_asset.py"
+    },
+    {
+      "rfilename": "examples/show_asset.py"
+    },
+    {
+      "rfilename": "pyproject.toml"
+    },
+    {
+      "rfilename": "scripts/export_open_mesh_scenes.py"
+    },
+    {
+      "rfilename": "scripts/export_surface.py"
+    },
+    {
+      "rfilename": "tests/conftest.py"
+    },
+    {
+      "rfilename": "tests/test_sanity.py"
+    },
+    {
+      "rfilename": "uv.lock"
+    }
+  ],
+  "createdAt": "2026-02-27T09:16:14.000Z",
+  "usedStorage": 167704604
+}

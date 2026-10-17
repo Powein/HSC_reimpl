@@ -1,0 +1,489 @@
+{
+  "status": "STATIC_ASSET_ASSEMBLY_NOT_SIMULATED",
+  "exact_paper_scene": false,
+  "units": "m",
+  "up_axis": "Z",
+  "vehicle_forward_axis": "+X",
+  "source": "Project Chrono HMMWV; modified Tet4 tire mesh",
+  "original_paper_reference": "HC.pdf page 14 Fig.19; technical supplement page 3 Fig.3",
+  "assumptions": [
+    "Chassis translation and obstacle arrangement chosen locally.",
+    "FE tire uniformly scaled to 0.47 m maximum radius.",
+    "Chrono suspension describes double wishbones; paper uses reduced prismatic+spring mechanism.",
+    "No Poisson ratio/density/friction values have been inferred as paper-exact.",
+    "Rims are visualization only; full spokes/hubs and bead coupling not yet prepared.",
+    "Initial intersections between separate tire obstacles excluded by AABB spacing; other pairs not certified."
+  ],
+  "instances": [
+    {
+      "name": "chassis",
+      "visual_source": "hmmwv_chassis_simple.obj",
+      "collision_candidate": "hmmwv_chassis_col.obj",
+      "translation_m": [
+        -3.0,
+        0.0,
+        0.5
+      ],
+      "dynamics_intent": "ABD; collision/mass proxy requires preparation"
+    },
+    {
+      "name": "mounted_1",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        -1.351035,
+        -0.91,
+        0.474
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "young_modulus_Pa": 10000000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; joint attachment pending"
+    },
+    {
+      "name": "mounted_2",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        -1.351035,
+        0.91,
+        0.474
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "young_modulus_Pa": 10000000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; joint attachment pending"
+    },
+    {
+      "name": "mounted_3",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        -4.652965,
+        -0.91,
+        0.474
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "young_modulus_Pa": 10000000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; joint attachment pending"
+    },
+    {
+      "name": "mounted_4",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        -4.652965,
+        0.91,
+        0.474
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "young_modulus_Pa": 10000000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; joint attachment pending"
+    },
+    {
+      "name": "loose_r0_c0",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        0.0,
+        -1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r0_c1",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        0.0,
+        0.0,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r0_c2",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        0.0,
+        1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r1_c0",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        1.01,
+        -1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r1_c1",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        1.01,
+        0.0,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r1_c2",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        1.01,
+        1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r2_c0",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        2.02,
+        -1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r2_c1",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        2.02,
+        0.0,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r2_c2",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        2.02,
+        1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r3_c0",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        3.0300000000000002,
+        -1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r3_c1",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        3.0300000000000002,
+        0.0,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    },
+    {
+      "name": "loose_r3_c2",
+      "geometry": "tire_tet4.npz",
+      "translation_m": [
+        3.0300000000000002,
+        1.01,
+        0.17857911662527892
+      ],
+      "rotation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "young_modulus_Pa": 100000000.0,
+      "dynamics_intent": "FEM tire + ABD rim; bead attachment pending"
+    }
+  ],
+  "ground": {
+    "type": "half_plane",
+    "z": 0
+  },
+  "intended_contact_engine": "libuipc CUDA IPC + ACCD + friction",
+  "required_before_simulation": [
+    "Mass/collision proxy preparation for ABD meshes",
+    "Tire bead to rim attachment and contact exclusions",
+    "4 prismatic/spring suspension assemblies + 4 revolute wheel joints",
+    "Material, drive, friction parameters and collision-free initial geometry check"
+  ]
+}

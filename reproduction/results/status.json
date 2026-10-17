@@ -1,0 +1,11 @@
+{
+  "scope": "PARTIAL_CORE_REPRODUCTION",
+  "paper_scene_verdict": "CANNOT_VERIFY",
+  "numerical_checks": "PASS",
+  "gpu_kernel_checks": "PASS",
+  "all_manufactured_corrections_converged": false,
+  "order_5_main_configuration_converged": true,
+  "outer_correction_budget": 50,
+  "elapsed_seconds": 11.016658099999404,
+  "no_paper_runtime_or_speedup_comparison": true
+}

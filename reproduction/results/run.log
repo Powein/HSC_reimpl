@@ -1,0 +1,25 @@
+NUMERICAL CHECKS: PASS
+stiffness=100, r=1: inner=68, one-step full residual=4.950e-02, corrected=3.493e-05 (50 steps)
+stiffness=100, r=3: inner=41, one-step full residual=9.259e-03, corrected=3.507e-10 (16 steps)
+stiffness=100, r=5: inner=34, one-step full residual=1.025e-03, corrected=8.708e-11 (6 steps)
+stiffness=100, r=8: inner=28, one-step full residual=2.842e-05, corrected=2.743e-11 (3 steps)
+stiffness=10000, r=1: inner=68, one-step full residual=2.923e-01, corrected=7.045e-07 (50 steps)
+stiffness=10000, r=3: inner=39, one-step full residual=2.647e-02, corrected=3.108e-10 (12 steps)
+stiffness=10000, r=5: inner=32, one-step full residual=2.388e-03, corrected=8.762e-11 (5 steps)
+stiffness=10000, r=8: inner=27, one-step full residual=6.450e-05, corrected=2.301e-12 (3 steps)
+stiffness=1e+06, r=1: inner=67, one-step full residual=3.000e-01, corrected=1.422e-09 (50 steps)
+stiffness=1e+06, r=3: inner=38, one-step full residual=2.700e-02, corrected=2.661e-10 (8 steps)
+stiffness=1e+06, r=5: inner=31, one-step full residual=2.430e-03, corrected=4.103e-11 (4 steps)
+stiffness=1e+06, r=8: inner=26, one-step full residual=6.560e-05, corrected=2.848e-13 (3 steps)
+ORIGINAL GPU KERNEL CHECKS: PASS
+{
+  "scope": "PARTIAL_CORE_REPRODUCTION",
+  "paper_scene_verdict": "CANNOT_VERIFY",
+  "numerical_checks": "PASS",
+  "gpu_kernel_checks": "PASS",
+  "all_manufactured_corrections_converged": false,
+  "order_5_main_configuration_converged": true,
+  "outer_correction_budget": 50,
+  "elapsed_seconds": 11.016658099999404,
+  "no_paper_runtime_or_speedup_comparison": true
+}

@@ -1,0 +1,8 @@
+# Provenance manifests contain byte-level SHA-256 hashes. Preserve line endings.
+* -text
+*.npz binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.mp4 binary
+

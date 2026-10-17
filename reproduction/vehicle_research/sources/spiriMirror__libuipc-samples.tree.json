@@ -1,0 +1,2339 @@
+{
+  "sha": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+  "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35b881fd8faa8653a8c6f5cabb228e025390ba1d",
+      "size": 3284,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/35b881fd8faa8653a8c6f5cabb228e025390ba1d"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88c05440a426a2558dad7009d94177b93904f0dd",
+      "size": 955,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/88c05440a426a2558dad7009d94177b93904f0dd"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "340bc493628e21313916fe70025bfeefc23070df",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/340bc493628e21313916fe70025bfeefc23070df"
+    },
+    {
+      "path": "assets/sim_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1652907c359fdb70e5ecd947fb54d8e43754d3e6",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/1652907c359fdb70e5ecd947fb54d8e43754d3e6"
+    },
+    {
+      "path": "assets/sim_data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "assets/sim_data/tetmesh",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "158e07ae69bf63b34d7e13498ffae92c68a53d17",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/158e07ae69bf63b34d7e13498ffae92c68a53d17"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/ball.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b56f199f98c3431e7cd6a791620bdd989b287ebb",
+      "size": 331626,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/b56f199f98c3431e7cd6a791620bdd989b287ebb"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/bunny0.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92e52757c3a8a8355c47f23688991104a2c3f3a4",
+      "size": 358205,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/92e52757c3a8a8355c47f23688991104a2c3f3a4"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/bunny2.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65679e6470fde451791c54dc20b886e122991cdc",
+      "size": 3748616,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/65679e6470fde451791c54dc20b886e122991cdc"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/cube.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f00223ef9a1d50882aace8812e23f0dedd33876e",
+      "size": 272,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f00223ef9a1d50882aace8812e23f0dedd33876e"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/cylinder_hole.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c85696490241c938d407979fcf6035bf1de044a1",
+      "size": 41822,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c85696490241c938d407979fcf6035bf1de044a1"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/high_mat.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f491a64de27d955114fcc1e054888e2f7faf89eb",
+      "size": 6061547,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f491a64de27d955114fcc1e054888e2f7faf89eb"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/link.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95451b3f6818cc7a1db48a6b85193216816d7b43",
+      "size": 70541,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/95451b3f6818cc7a1db48a6b85193216816d7b43"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/simple_axle.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c24345a4613d021cdca2002cf0f819a63642119",
+      "size": 91064,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/2c24345a4613d021cdca2002cf0f819a63642119"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/stiff_cube.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c178d023500ccb0c386a067cde51422363f45522",
+      "size": 269,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c178d023500ccb0c386a067cde51422363f45522"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/tet.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3d25bd9e5b35a1e97bd4289a730b4ef98d790e3",
+      "size": 124,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d3d25bd9e5b35a1e97bd4289a730b4ef98d790e3"
+    },
+    {
+      "path": "assets/sim_data/tetmesh/wheel_axle.msh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b649685ee238a2df9711f70324089e4aa4057d3c",
+      "size": 174468,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/b649685ee238a2df9711f70324089e4aa4057d3c"
+    },
+    {
+      "path": "assets/sim_data/trimesh",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7264c60e7653e5960fc83763ebe2a8ba89ecfb9",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/d7264c60e7653e5960fc83763ebe2a8ba89ecfb9"
+    },
+    {
+      "path": "assets/sim_data/trimesh/bad_abd_mesh.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecef375677ba03f6eab83f17d6ac8ad8d759ba4e",
+      "size": 321,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ecef375677ba03f6eab83f17d6ac8ad8d759ba4e"
+    },
+    {
+      "path": "assets/sim_data/trimesh/cloth_high.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d57bd48ea557a40b355ed3ba05af6dcf619eb53",
+      "size": 212335,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/4d57bd48ea557a40b355ed3ba05af6dcf619eb53"
+    },
+    {
+      "path": "assets/sim_data/trimesh/cube.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5d3107840e00a6b8785ae8687aeda030f7405c4",
+      "size": 331,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e5d3107840e00a6b8785ae8687aeda030f7405c4"
+    },
+    {
+      "path": "assets/sim_data/trimesh/gear0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "481548558310dda4522f6bdab385b1ec017b05e3",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/481548558310dda4522f6bdab385b1ec017b05e3"
+    },
+    {
+      "path": "assets/sim_data/trimesh/gear0/gear.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d470b924c1172c328e5c9984f46edcef0cb24106",
+      "size": 17137,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d470b924c1172c328e5c9984f46edcef0cb24106"
+    },
+    {
+      "path": "assets/sim_data/trimesh/gear0/pin.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fa37792054bc099c873c57fb74a07dedeb42a36",
+      "size": 10669,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7fa37792054bc099c873c57fb74a07dedeb42a36"
+    },
+    {
+      "path": "assets/sim_data/trimesh/gear0/rail-guard.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ce807e1af578bd9c273f766febc7fda82c8b91e",
+      "size": 116942,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1ce807e1af578bd9c273f766febc7fda82c8b91e"
+    },
+    {
+      "path": "assets/sim_data/trimesh/gear0/rail.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01cdced2de06df725dbfe74b45973fface2e2eb2",
+      "size": 31915,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/01cdced2de06df725dbfe74b45973fface2e2eb2"
+    },
+    {
+      "path": "assets/sim_data/trimesh/grid10x10.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f060399614ef0dc4596a579717c7421a98c15686",
+      "size": 3864,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f060399614ef0dc4596a579717c7421a98c15686"
+    },
+    {
+      "path": "assets/sim_data/trimesh/grid20x20.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18692246511c23bf57a138cbc7d27fb47a899da2",
+      "size": 17409,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/18692246511c23bf57a138cbc7d27fb47a899da2"
+    },
+    {
+      "path": "assets/sim_data/trimesh/grid2x2.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80fde622b296cdf1409e239195317d47a225ca2",
+      "size": 203,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f80fde622b296cdf1409e239195317d47a225ca2"
+    },
+    {
+      "path": "assets/sim_data/trimesh/grid40x40.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6f3912e692a4adf8e1a8be1eaf2c501771b0732",
+      "size": 75147,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a6f3912e692a4adf8e1a8be1eaf2c501771b0732"
+    },
+    {
+      "path": "assets/sim_data/trimesh/grid80x80.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30a90f5d8d818283936575970194c66b7a662c10",
+      "size": 318216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/30a90f5d8d818283936575970194c66b7a662c10"
+    },
+    {
+      "path": "assets/sim_data/trimesh/pendulum",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6da0a57e9f4319f10e932038def36378257c489",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/a6da0a57e9f4319f10e932038def36378257c489"
+    },
+    {
+      "path": "assets/sim_data/trimesh/pendulum/arm.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b6d72adf5ee6dcd9b02ded7c7c8f7ec94500ea4",
+      "size": 7347,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1b6d72adf5ee6dcd9b02ded7c7c8f7ec94500ea4"
+    },
+    {
+      "path": "assets/sim_data/trimesh/pendulum/pin-short.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70a821ec7b3bdb349b33d928c03a858a68db3ad4",
+      "size": 10690,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/70a821ec7b3bdb349b33d928c03a858a68db3ad4"
+    },
+    {
+      "path": "assets/sim_data/trimesh/pendulum/pin.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22d997e673209c708f21097020f2f04673585eb3",
+      "size": 10690,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/22d997e673209c708f21097020f2f04673585eb3"
+    },
+    {
+      "path": "assets/sim_data/trimesh/saga.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de62a128aaf56d48b5c77f407644a648a6fe042e",
+      "size": 115510,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/de62a128aaf56d48b5c77f407644a648a6fe042e"
+    },
+    {
+      "path": "assets/sim_data/trimesh/screw-and-nut",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e78bfe3c104cfc102e46ce407fcd457681cc7401",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/e78bfe3c104cfc102e46ce407fcd457681cc7401"
+    },
+    {
+      "path": "assets/sim_data/trimesh/screw-and-nut/nut-big-2.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5693f03df586ebc03889e2df7fb201f373d248a4",
+      "size": 78720,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5693f03df586ebc03889e2df7fb201f373d248a4"
+    },
+    {
+      "path": "assets/sim_data/trimesh/screw-and-nut/nut-big.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3d88308b5247af8bc32a667d0d4874f4547d2a0",
+      "size": 70799,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a3d88308b5247af8bc32a667d0d4874f4547d2a0"
+    },
+    {
+      "path": "assets/sim_data/trimesh/screw-and-nut/screw-big-2.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74b092abb1aaf34fdec81b849b0156eb51bd5b37",
+      "size": 92934,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/74b092abb1aaf34fdec81b849b0156eb51bd5b37"
+    },
+    {
+      "path": "assets/sim_data/trimesh/screw-and-nut/screw-big.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "740d6b3e5492ab4d687d8ae0d58099a3a562cce9",
+      "size": 84586,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/740d6b3e5492ab4d687d8ae0d58099a3a562cce9"
+    },
+    {
+      "path": "assets/sim_data/urdf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22508303f069338511d67593aa1b404fadc4d47d",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/22508303f069338511d67593aa1b404fadc4d47d"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "473db25c55d9bf7a64492f62bd666b6afb96ca31",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/473db25c55d9bf7a64492f62bd666b6afb96ca31"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/distal_phalanx.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "876eaa70b9511b958a22b8307923365cb996d597",
+      "size": 14577,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/876eaa70b9511b958a22b8307923365cb996d597"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/distal_phalanx.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d4eedc6918a6093f238a479cd445662a309c44e",
+      "size": 420,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/2d4eedc6918a6093f238a479cd445662a309c44e"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/distal_phalanx.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2944a9d8b3a343ed0b660866c85c7a7bb0e06dd",
+      "size": 1538284,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e2944a9d8b3a343ed0b660866c85c7a7bb0e06dd"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/finger_tip.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "250e11a8782975db37f3adf9d0d09e384bad3e00",
+      "size": 62894,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/250e11a8782975db37f3adf9d0d09e384bad3e00"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/finger_tip.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd17c6177fbc53adb3d42b49b48b4acc17eea343",
+      "size": 426,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/bd17c6177fbc53adb3d42b49b48b4acc17eea343"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/finger_tip.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7393370758780539f72b58a2d4b30afd3d380d5",
+      "size": 562684,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c7393370758780539f72b58a2d4b30afd3d380d5"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/knuckle_link.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eec2dd06563be97844a97b07e5039401a8825dc",
+      "size": 14367,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5eec2dd06563be97844a97b07e5039401a8825dc"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/knuckle_link.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb32e5fa9bb34e619dd17c3c885a04d8fc6e3de5",
+      "size": 426,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/cb32e5fa9bb34e619dd17c3c885a04d8fc6e3de5"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/knuckle_link.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5ff5f553230e9c667775a61f6018cdb68d7871b",
+      "size": 1608784,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c5ff5f553230e9c667775a61f6018cdb68d7871b"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/middle_phalanx.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e3b8b14ea71a210dd5a8310250b420a2ccc941",
+      "size": 29019,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/46e3b8b14ea71a210dd5a8310250b420a2ccc941"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/middle_phalanx.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd9a851f25e17ec3cd98c84524fdfbc33b735787",
+      "size": 420,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/bd9a851f25e17ec3cd98c84524fdfbc33b735787"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/middle_phalanx.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcfecd6b9b33c15e2e5f3c98ac6791523440dcd1",
+      "size": 1051084,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/dcfecd6b9b33c15e2e5f3c98ac6791523440dcd1"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/palm_base.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b41884115f63ecb17eb3f79cd8a30f2d46efc0d3",
+      "size": 119458,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/b41884115f63ecb17eb3f79cd8a30f2d46efc0d3"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/palm_base.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b26a1ae55c057397d62c9b4fef287aad8c34ed3",
+      "size": 427,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5b26a1ae55c057397d62c9b4fef287aad8c34ed3"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/palm_base.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f92c6d87d9bbfd0c88411d85c518793b7459bed",
+      "size": 4347184,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1f92c6d87d9bbfd0c88411d85c518793b7459bed"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/palm_cover.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f363fe7e3c1022f5d7a78e245930db1bbabf0ca",
+      "size": 209435,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/2f363fe7e3c1022f5d7a78e245930db1bbabf0ca"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/robot_hand.urdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a052448feb36d38c2ad5239fd4ef37297d333361",
+      "size": 20624,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a052448feb36d38c2ad5239fd4ef37297d333361"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_distal.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65a92a4b56d9e9e36f7b1e36470de23175d8e827",
+      "size": 41370,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/65a92a4b56d9e9e36f7b1e36470de23175d8e827"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_distal.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ee80452e9120dfbdab27843d72325681454508",
+      "size": 426,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e3ee80452e9120dfbdab27843d72325681454508"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_distal.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9abae54668d48576e589b635387a54758c1eb49b",
+      "size": 1451484,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/9abae54668d48576e589b635387a54758c1eb49b"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_middle.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17f5b99a7bde4c35390b7714056ff807e2737777",
+      "size": 7312,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/17f5b99a7bde4c35390b7714056ff807e2737777"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_middle.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69f6148706c168780c576ae18073e68c8cc6770",
+      "size": 426,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e69f6148706c168780c576ae18073e68c8cc6770"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_middle.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee67668f9e2c139973a95336b209854e04b0ead",
+      "size": 468884,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/fee67668f9e2c139973a95336b209854e04b0ead"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_tip.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02810c0777f7ec61259d9c411a2c72a381173414",
+      "size": 99916,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/02810c0777f7ec61259d9c411a2c72a381173414"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_tip.part",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feedbd18b580d4025ae76f01e7d424914e81bb3c",
+      "size": 432,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/feedbd18b580d4025ae76f01e7d424914e81bb3c"
+    },
+    {
+      "path": "assets/sim_data/urdf/robot_hand/thumb_tip.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eac757a4d9adf76069b198fc8c8a744f269a7315",
+      "size": 1111984,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/eac757a4d9adf76069b198fc8c8a744f269a7315"
+    },
+    {
+      "path": "assets/sim_data/wrecking_ball.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16e176f35fdee2777d9b5ff04887de0016e609a1",
+      "size": 86035,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/16e176f35fdee2777d9b5ff04887de0016e609a1"
+    },
+    {
+      "path": "benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85530ca7268b595d7509734296bd7f202336ccf0",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/85530ca7268b595d7509734296bd7f202336ccf0"
+    },
+    {
+      "path": "benchmarks/abd_bunny_grid_drop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7585cd9e50f45975b76d254785df1a44bb46d63",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/f7585cd9e50f45975b76d254785df1a44bb46d63"
+    },
+    {
+      "path": "benchmarks/abd_bunny_grid_drop/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee92ed221fe4655b433a69fb055e2fd8adb67fb1",
+      "size": 1107,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ee92ed221fe4655b433a69fb055e2fd8adb67fb1"
+    },
+    {
+      "path": "benchmarks/abd_bunny_grid_drop/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa2a3e901243dba3ca42df5db7bb2fdff4a21b34",
+      "size": 2679,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/aa2a3e901243dba3ca42df5db7bb2fdff4a21b34"
+    },
+    {
+      "path": "benchmarks/abd_bunny_grid_drop/run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5bc0a99e9c43c56bbf24a911b409d84626afd2e",
+      "size": 4225,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c5bc0a99e9c43c56bbf24a911b409d84626afd2e"
+    },
+    {
+      "path": "benchmarks/wrecking_balls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c7f005b5b19cd1cc0fe9ca6d9c3a7fb620c7acd",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/7c7f005b5b19cd1cc0fe9ca6d9c3a7fb620c7acd"
+    },
+    {
+      "path": "benchmarks/wrecking_balls/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee92ed221fe4655b433a69fb055e2fd8adb67fb1",
+      "size": 1107,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ee92ed221fe4655b433a69fb055e2fd8adb67fb1"
+    },
+    {
+      "path": "benchmarks/wrecking_balls/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db80fd61f23d5407cc60bcc7f20f0b5b001df510",
+      "size": 3845,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/db80fd61f23d5407cc60bcc7f20f0b5b001df510"
+    },
+    {
+      "path": "benchmarks/wrecking_balls/run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16daa7258dd8299fd71d13d28927de403f01c0d0",
+      "size": 5813,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/16daa7258dd8299fd71d13d28927de403f01c0d0"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc3bfad94e5cce99d21a78caafd40efaedca722f",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/dc3bfad94e5cce99d21a78caafd40efaedca722f"
+    },
+    {
+      "path": "examples/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4561deb2b9d528d1c7aa93c4151de964e77a285c",
+      "size": 54,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/4561deb2b9d528d1c7aa93c4151de964e77a285c"
+    },
+    {
+      "path": "examples/0_check_libuipc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc562d861ae3ba7829294c0339c8a4d582b114a9",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/dc562d861ae3ba7829294c0339c8a4d582b114a9"
+    },
+    {
+      "path": "examples/0_check_libuipc/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748fcc0391f187ff9c0f1bdcbb6e2f68549bd6d0",
+      "size": 274,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/748fcc0391f187ff9c0f1bdcbb6e2f68549bd6d0"
+    },
+    {
+      "path": "examples/0_check_libuipc/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/0_check_libuipc/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae4360e1f810110e4b29842e554481e832239df2",
+      "size": 1035,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ae4360e1f810110e4b29842e554481e832239df2"
+    },
+    {
+      "path": "examples/10_ramp_sliding",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89625726d90a79fc6b1b10a7d2127548acd2b002",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/89625726d90a79fc6b1b10a7d2127548acd2b002"
+    },
+    {
+      "path": "examples/10_ramp_sliding/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "647efef7e3a82277619121fec7225145d9673b51",
+      "size": 15,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/647efef7e3a82277619121fec7225145d9673b51"
+    },
+    {
+      "path": "examples/10_ramp_sliding/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/10_ramp_sliding/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f68bd5df3f915d9b3000aa6d49e77c808401f1b",
+      "size": 3163,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7f68bd5df3f915d9b3000aa6d49e77c808401f1b"
+    },
+    {
+      "path": "examples/11_bunny_cloth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c2eeb8d12f3fd26bfc7219a22695953f2f86c9c",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/9c2eeb8d12f3fd26bfc7219a22695953f2f86c9c"
+    },
+    {
+      "path": "examples/11_bunny_cloth/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce48a38d8219582d47dc10e2d37d5f30587235f4",
+      "size": 839,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ce48a38d8219582d47dc10e2d37d5f30587235f4"
+    },
+    {
+      "path": "examples/11_bunny_cloth/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/11_bunny_cloth/image.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bac80a2583368d115689de9fd21c533add6cba4",
+      "size": 1349537,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/6bac80a2583368d115689de9fd21c533add6cba4"
+    },
+    {
+      "path": "examples/11_bunny_cloth/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "115437b18544ae438a67a58d2905aa61d2b315d6",
+      "size": 2601,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/115437b18544ae438a67a58d2905aa61d2b315d6"
+    },
+    {
+      "path": "examples/12_soft_transform_constraint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82c518083cf1d20a3f0adf7cad89c4e5854f356e",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/82c518083cf1d20a3f0adf7cad89c4e5854f356e"
+    },
+    {
+      "path": "examples/12_soft_transform_constraint/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/12_soft_transform_constraint/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebf8a47a7580e7c20a04a55547f7a99ee51d7c6e",
+      "size": 3200,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ebf8a47a7580e7c20a04a55547f7a99ee51d7c6e"
+    },
+    {
+      "path": "examples/13_init_velocity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c1c1c4749994b642a7591ec4f13ec2ac1e6a160",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/5c1c1c4749994b642a7591ec4f13ec2ac1e6a160"
+    },
+    {
+      "path": "examples/13_init_velocity/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/13_init_velocity/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e8159b4e1b6d00ab1e88ad208431aa89e40edf7",
+      "size": 2674,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/0e8159b4e1b6d00ab1e88ad208431aa89e40edf7"
+    },
+    {
+      "path": "examples/14_load_scene",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c86191ff2fd850761e92b26e4da1f737d15a2de",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/0c86191ff2fd850761e92b26e4da1f737d15a2de"
+    },
+    {
+      "path": "examples/14_load_scene/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/14_load_scene/build_scene.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f1277338d1e1eff052c49973c57d0c2a5e508b",
+      "size": 2800,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/50f1277338d1e1eff052c49973c57d0c2a5e508b"
+    },
+    {
+      "path": "examples/14_load_scene/edit_scene.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5c5d937b4717f2c81c8c94d36aeb2752716d687",
+      "size": 3628,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/b5c5d937b4717f2c81c8c94d36aeb2752716d687"
+    },
+    {
+      "path": "examples/14_load_scene/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94522dac98090de5bec158ed0ff581001d1f9f83",
+      "size": 924,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/94522dac98090de5bec158ed0ff581001d1f9f83"
+    },
+    {
+      "path": "examples/14_load_scene/scene.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "588a2bb8369dcbac52f1fbcb8f334a4691d36587",
+      "size": 323622,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/588a2bb8369dcbac52f1fbcb8f334a4691d36587"
+    },
+    {
+      "path": "examples/15_scene_commit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf1b720f3a6fb7c5923d46439401c24e4faf28f2",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/cf1b720f3a6fb7c5923d46439401c24e4faf28f2"
+    },
+    {
+      "path": "examples/15_scene_commit/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a3558a16d8d1f25a24c0fc788985d249245b83",
+      "size": 470,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/76a3558a16d8d1f25a24c0fc788985d249245b83"
+    },
+    {
+      "path": "examples/15_scene_commit/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/15_scene_commit/client_get.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0ee11c7ae05968f7d0518a6243bf81fefad8083",
+      "size": 1798,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c0ee11c7ae05968f7d0518a6243bf81fefad8083"
+    },
+    {
+      "path": "examples/15_scene_commit/server_run.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1ea115a9483dd31cdb5224cca2b719a76d1e257",
+      "size": 3466,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a1ea115a9483dd31cdb5224cca2b719a76d1e257"
+    },
+    {
+      "path": "examples/16_geometry_operation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1af08987e0d8e553c9fa47f748b5a1be132b1f6a",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/1af08987e0d8e553c9fa47f748b5a1be132b1f6a"
+    },
+    {
+      "path": "examples/16_geometry_operation/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cced29c84670bd63e205feb4e9f64746f4d5dca3",
+      "size": 219,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/cced29c84670bd63e205feb4e9f64746f4d5dca3"
+    },
+    {
+      "path": "examples/16_geometry_operation/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/16_geometry_operation/extract_surface.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d4b43466aa43157dc90ce94cadf37eee7f91a1",
+      "size": 2201,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f9d4b43466aa43157dc90ce94cadf37eee7f91a1"
+    },
+    {
+      "path": "examples/16_geometry_operation/split.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cb0a2a23d3872fb29f2f6c8515f5c9d219c7a00",
+      "size": 2187,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/9cb0a2a23d3872fb29f2f6c8515f5c9d219c7a00"
+    },
+    {
+      "path": "examples/17_affine_body_revolute_joint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5e06244d5f9a0f8fcd999d3e4c3dd34917ba1221",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/5e06244d5f9a0f8fcd999d3e4c3dd34917ba1221"
+    },
+    {
+      "path": "examples/17_affine_body_revolute_joint/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/17_affine_body_revolute_joint/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40461f8a99735733336baab899911e31970a3976",
+      "size": 2864,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/40461f8a99735733336baab899911e31970a3976"
+    },
+    {
+      "path": "examples/18_pendulum_joint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe7cdde48ca877c28707f7a66c9b6152ffd89149",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/fe7cdde48ca877c28707f7a66c9b6152ffd89149"
+    },
+    {
+      "path": "examples/18_pendulum_joint/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e8647193498f1cfcd3895acd785d8dbbe898cb",
+      "size": 11,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/95e8647193498f1cfcd3895acd785d8dbbe898cb"
+    },
+    {
+      "path": "examples/18_pendulum_joint/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/18_pendulum_joint/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3c36a553fc8b2d5a0811d3a70a2a89c32e7c5bb",
+      "size": 3225,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f3c36a553fc8b2d5a0811d3a70a2a89c32e7c5bb"
+    },
+    {
+      "path": "examples/19_global_vertex_offset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c49dac0bac2268dea5d0765e3c04883b34004bf6",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/c49dac0bac2268dea5d0765e3c04883b34004bf6"
+    },
+    {
+      "path": "examples/19_global_vertex_offset/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/19_global_vertex_offset/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d01970fea0acd8addbfcd6b2999c6f464701fd2",
+      "size": 3333,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5d01970fea0acd8addbfcd6b2999c6f464701fd2"
+    },
+    {
+      "path": "examples/1_hello_libuipc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1aee48e4c4d5f182d7167ff110e4fb513ddd29f",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/d1aee48e4c4d5f182d7167ff110e4fb513ddd29f"
+    },
+    {
+      "path": "examples/1_hello_libuipc/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/1_hello_libuipc/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41e4262f6e8c58ba75237b7fdeea2d5c64c8671c",
+      "size": 2429,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/41e4262f6e8c58ba75237b7fdeea2d5c64c8671c"
+    },
+    {
+      "path": "examples/20_contact_system_feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa337378743fad5c7f0128c8fec29465b392a0fe",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/fa337378743fad5c7f0128c8fec29465b392a0fe"
+    },
+    {
+      "path": "examples/20_contact_system_feature/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/20_contact_system_feature/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "760c7a0b5a7ea7f4d26ddddb0c5398672d2ce1de",
+      "size": 6749,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/760c7a0b5a7ea7f4d26ddddb0c5398672d2ce1de"
+    },
+    {
+      "path": "examples/21_interop",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db11850b68e382a41041d94c91ae4c939cc3b203",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/db11850b68e382a41041d94c91ae4c939cc3b203"
+    },
+    {
+      "path": "examples/21_interop/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/21_interop/backend_to_warp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4d78796658f144e46bd47fae09f7de29c40790",
+      "size": 4249,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/eb4d78796658f144e46bd47fae09f7de29c40790"
+    },
+    {
+      "path": "examples/21_interop/torch_buffer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c45d2c631dac8c32b906c6bf0a32b5b48d8ae6c",
+      "size": 283,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1c45d2c631dac8c32b906c6bf0a32b5b48d8ae6c"
+    },
+    {
+      "path": "examples/21_interop/warp_buffer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e639466e32923a6983244c837ad9e3dcbb00a2cd",
+      "size": 293,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e639466e32923a6983244c837ad9e3dcbb00a2cd"
+    },
+    {
+      "path": "examples/22_soft_vertex_stitch",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1c278e41a4e6f8b010d46de9b5058afd0ea2f48",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/a1c278e41a4e6f8b010d46de9b5058afd0ea2f48"
+    },
+    {
+      "path": "examples/22_soft_vertex_stitch/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/22_soft_vertex_stitch/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af76f5d710a621e241b8f72ec9911779a88cd95f",
+      "size": 3267,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/af76f5d710a621e241b8f72ec9911779a88cd95f"
+    },
+    {
+      "path": "examples/23_kirchoff_rod_bending",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee2dd4567c5a4eacd44649935c5942f54ce7bc86",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/ee2dd4567c5a4eacd44649935c5942f54ce7bc86"
+    },
+    {
+      "path": "examples/23_kirchoff_rod_bending/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/23_kirchoff_rod_bending/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deebcccbeff3c2a95ec83753e6b35eebea7d2373",
+      "size": 1878,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/deebcccbeff3c2a95ec83753e6b35eebea7d2373"
+    },
+    {
+      "path": "examples/24_sewing_pattern",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b0a5842b8b5272937a945329bd23c7d2c5514e74",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/b0a5842b8b5272937a945329bd23c7d2c5514e74"
+    },
+    {
+      "path": "examples/24_sewing_pattern/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9bb1d6840730f9f5c5df57b097067671d3597d5",
+      "size": 1208,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c9bb1d6840730f9f5c5df57b097067671d3597d5"
+    },
+    {
+      "path": "examples/24_sewing_pattern/body.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f97c313aecf766069580a9e46771cb99381ad02",
+      "size": 732468,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1f97c313aecf766069580a9e46771cb99381ad02"
+    },
+    {
+      "path": "examples/24_sewing_pattern/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d861479ef0b751c60d9c6b5c56380f6542917ceb",
+      "size": 8663,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d861479ef0b751c60d9c6b5c56380f6542917ceb"
+    },
+    {
+      "path": "examples/24_sewing_pattern/output_panel_top_back.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5addcda82b2996a00844ff981e75757c08e9bc04",
+      "size": 123928,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5addcda82b2996a00844ff981e75757c08e9bc04"
+    },
+    {
+      "path": "examples/24_sewing_pattern/output_panel_top_front.obj",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d334665d7454a3881a0329e6d207707b34669313",
+      "size": 119050,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d334665d7454a3881a0329e6d207707b34669313"
+    },
+    {
+      "path": "examples/24_sewing_pattern/output_stitch_data_local_indices.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "894f3c7dc8af2eb1a8346708a5e99b53cc6f1534",
+      "size": 65129,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/894f3c7dc8af2eb1a8346708a5e99b53cc6f1534"
+    },
+    {
+      "path": "examples/25_hello_py_engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "111290219946aa9010bda6f391e08f6ad66cf7d2",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/111290219946aa9010bda6f391e08f6ad66cf7d2"
+    },
+    {
+      "path": "examples/25_hello_py_engine/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/25_hello_py_engine/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "532a9626a6a300a89c64cda9e0e64e4320522d59",
+      "size": 2437,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/532a9626a6a300a89c64cda9e0e64e4320522d59"
+    },
+    {
+      "path": "examples/25_hello_py_engine/my_engine.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f43c453b9d64996d650392061b3a63e7d5bb0b9e",
+      "size": 1914,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f43c453b9d64996d650392061b3a63e7d5bb0b9e"
+    },
+    {
+      "path": "examples/26_bunny_cloth_async",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc715e105606d3e5a94d5d61925b9ac943642cec",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/dc715e105606d3e5a94d5d61925b9ac943642cec"
+    },
+    {
+      "path": "examples/26_bunny_cloth_async/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd42a99159d4c843645038fb17d369de5d0a44be",
+      "size": 457,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/cd42a99159d4c843645038fb17d369de5d0a44be"
+    },
+    {
+      "path": "examples/26_bunny_cloth_async/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/26_bunny_cloth_async/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d608d889ae35e5b654971380018305466c09e0c",
+      "size": 2938,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/6d608d889ae35e5b654971380018305466c09e0c"
+    },
+    {
+      "path": "examples/27_compute_mesh_d_hat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d0407ba7df2777873aafff60e859df33665d8bd",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/8d0407ba7df2777873aafff60e859df33665d8bd"
+    },
+    {
+      "path": "examples/27_compute_mesh_d_hat/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da8930c31d5dda9cb1112e6da0f373ae0d861224",
+      "size": 402,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/da8930c31d5dda9cb1112e6da0f373ae0d861224"
+    },
+    {
+      "path": "examples/27_compute_mesh_d_hat/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/27_compute_mesh_d_hat/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "229a9e40cef8cfe4a1da92c09337a394a81b3a7c",
+      "size": 2332,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/229a9e40cef8cfe4a1da92c09337a394a81b3a7c"
+    },
+    {
+      "path": "examples/28_advanced_scene_config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5933a9612080db48d76becf67a035e469685c5ed",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/5933a9612080db48d76becf67a035e469685c5ed"
+    },
+    {
+      "path": "examples/28_advanced_scene_config/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ff7ce2be61bfe059606b8931f52e0aea89f0c4c",
+      "size": 897,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7ff7ce2be61bfe059606b8931f52e0aea89f0c4c"
+    },
+    {
+      "path": "examples/28_advanced_scene_config/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/28_advanced_scene_config/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c80639b80eaeb49613924022189f1cc7c01aeaf",
+      "size": 1839,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/0c80639b80eaeb49613924022189f1cc7c01aeaf"
+    },
+    {
+      "path": "examples/29_subscene",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4b9f45ace6b78326ae278cd2c122b3fef866e6f",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/e4b9f45ace6b78326ae278cd2c122b3fef866e6f"
+    },
+    {
+      "path": "examples/29_subscene/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "389a5bf4793053880dfde1ce358d97a5181ff2e8",
+      "size": 1032,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/389a5bf4793053880dfde1ce358d97a5181ff2e8"
+    },
+    {
+      "path": "examples/29_subscene/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/29_subscene/image.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b8ab74dc5a1b88bd12aa2d6510c34f7edfe769e",
+      "size": 578058,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/8b8ab74dc5a1b88bd12aa2d6510c34f7edfe769e"
+    },
+    {
+      "path": "examples/29_subscene/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ad59bada110e2d81b5d229fee93192dd580480",
+      "size": 2442,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/06ad59bada110e2d81b5d229fee93192dd580480"
+    },
+    {
+      "path": "examples/2_walking_cube",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ee416267729c881a6f7986aa2fdf54235276361",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/1ee416267729c881a6f7986aa2fdf54235276361"
+    },
+    {
+      "path": "examples/2_walking_cube/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/2_walking_cube/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5532a9f5674193ed64175f11cd6058a2e64052ae",
+      "size": 2935,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5532a9f5674193ed64175f11cd6058a2e64052ae"
+    },
+    {
+      "path": "examples/30_check_uid",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "160c81d6261d2d1fdf4ff535d4ca8d6c34c99e49",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/160c81d6261d2d1fdf4ff535d4ca8d6c34c99e49"
+    },
+    {
+      "path": "examples/30_check_uid/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fc8bae00357090adc4149ca61ea312f9c7f76ec",
+      "size": 434,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/6fc8bae00357090adc4149ca61ea312f9c7f76ec"
+    },
+    {
+      "path": "examples/30_check_uid/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad2591eaa50875a3b07bde01545155786ad99529",
+      "size": 650,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ad2591eaa50875a3b07bde01545155786ad99529"
+    },
+    {
+      "path": "examples/31_state_accessor_feature",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd97eea2d62551dc9d4ba1092e1849d28c2ecc7e",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/dd97eea2d62551dc9d4ba1092e1849d28c2ecc7e"
+    },
+    {
+      "path": "examples/31_state_accessor_feature/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "729f0ac4f7eae29952c5a3271266608fef0b4e85",
+      "size": 1700,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/729f0ac4f7eae29952c5a3271266608fef0b4e85"
+    },
+    {
+      "path": "examples/31_state_accessor_feature/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/31_state_accessor_feature/image.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25bc6367cb2ed525905b29f4b432414f0531448e",
+      "size": 1079098,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/25bc6367cb2ed525905b29f4b432414f0531448e"
+    },
+    {
+      "path": "examples/31_state_accessor_feature/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f6421bdf916f969106f289bedb2d1f5e07c9cac",
+      "size": 7288,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/9f6421bdf916f969106f289bedb2d1f5e07c9cac"
+    },
+    {
+      "path": "examples/32_affine_body_external_body_force",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fa3e5d8a5b3c723d17229071d5ed28ec6bc70ae",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/2fa3e5d8a5b3c723d17229071d5ed28ec6bc70ae"
+    },
+    {
+      "path": "examples/32_affine_body_external_body_force/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161270dcba052100d25d71256aaaa239420e316f",
+      "size": 1217,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/161270dcba052100d25d71256aaaa239420e316f"
+    },
+    {
+      "path": "examples/32_affine_body_external_body_force/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5869c0f17fc5355cc949912be21e178695b0824",
+      "size": 3246,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a5869c0f17fc5355cc949912be21e178695b0824"
+    },
+    {
+      "path": "examples/33_external_articulation_constraint",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21d004f01cfeea6cee80e8cd5c9f621a27e7f756",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/21d004f01cfeea6cee80e8cd5c9f621a27e7f756"
+    },
+    {
+      "path": "examples/33_external_articulation_constraint/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44774a3a1b99ae7a2f65cfa10a3bf0af9bc38bdd",
+      "size": 1835,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/44774a3a1b99ae7a2f65cfa10a3bf0af9bc38bdd"
+    },
+    {
+      "path": "examples/33_external_articulation_constraint/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161270dcba052100d25d71256aaaa239420e316f",
+      "size": 1217,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/161270dcba052100d25d71256aaaa239420e316f"
+    },
+    {
+      "path": "examples/33_external_articulation_constraint/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9a2138bb2d5743bdc393854fc87e23b8d2e43f2",
+      "size": 7921,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d9a2138bb2d5743bdc393854fc87e23b8d2e43f2"
+    },
+    {
+      "path": "examples/34_cloth_stack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9626e3caa9fafd655e0b39abad6200f7a8fee5b",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/e9626e3caa9fafd655e0b39abad6200f7a8fee5b"
+    },
+    {
+      "path": "examples/34_cloth_stack/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/34_cloth_stack/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deeae6fddf3aeb0678cf4303b4ede29c9b45d129",
+      "size": 4455,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/deeae6fddf3aeb0678cf4303b4ede29c9b45d129"
+    },
+    {
+      "path": "examples/35_mesh_check",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8253a17f2a3de953f67c28e085c1fefbfc2e292f",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/8253a17f2a3de953f67c28e085c1fefbfc2e292f"
+    },
+    {
+      "path": "examples/35_mesh_check/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/35_mesh_check/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e98e3a942488de230b8bcb6ce8884db9cb84b18",
+      "size": 830,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/4e98e3a942488de230b8bcb6ce8884db9cb84b18"
+    },
+    {
+      "path": "examples/36_vertex_stitch_family",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8eac6e2d1a461712140793521d7958257cec5bfa",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/8eac6e2d1a461712140793521d7958257cec5bfa"
+    },
+    {
+      "path": "examples/36_vertex_stitch_family/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/36_vertex_stitch_family/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e890558db1253b7ecac83033561e69d6ef47d317",
+      "size": 5758,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e890558db1253b7ecac83033561e69d6ef47d317"
+    },
+    {
+      "path": "examples/37_uipc_assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e1634c4292ec3d89a299fb0e5bc7309c130f8201",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/e1634c4292ec3d89a299fb0e5bc7309c130f8201"
+    },
+    {
+      "path": "examples/37_uipc_assets/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81476174456c5db83bdfdb2d703439f8c630f23",
+      "size": 98,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f81476174456c5db83bdfdb2d703439f8c630f23"
+    },
+    {
+      "path": "examples/38_abd_prismatic_joint_driving_and_external_force",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44b3a956eb58cd4b13ce16cc913a47bc62ef8f95",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/44b3a956eb58cd4b13ce16cc913a47bc62ef8f95"
+    },
+    {
+      "path": "examples/38_abd_prismatic_joint_driving_and_external_force/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/38_abd_prismatic_joint_driving_and_external_force/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e359707aad2c661476a4b647bf1e54cfe36994",
+      "size": 4971,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f3e359707aad2c661476a4b647bf1e54cfe36994"
+    },
+    {
+      "path": "examples/39_abd_revolute_joint_driving_and_external_torque",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2091c745256c7127e407b7f4161119d772de9eb2",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/2091c745256c7127e407b7f4161119d772de9eb2"
+    },
+    {
+      "path": "examples/39_abd_revolute_joint_driving_and_external_torque/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/39_abd_revolute_joint_driving_and_external_torque/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9b0d91e8bc06e58def950c4b86c893c0047baea",
+      "size": 4644,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a9b0d91e8bc06e58def950c4b86c893c0047baea"
+    },
+    {
+      "path": "examples/3_periodically_pressed_tetrahedron",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "576fddc64bcb392fa310a368bf6d8331e79e1aeb",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/576fddc64bcb392fa310a368bf6d8331e79e1aeb"
+    },
+    {
+      "path": "examples/3_periodically_pressed_tetrahedron/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/3_periodically_pressed_tetrahedron/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d982306d4a99ab2204d7c7b8d3fbd23db4262f1",
+      "size": 2838,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/6d982306d4a99ab2204d7c7b8d3fbd23db4262f1"
+    },
+    {
+      "path": "examples/40_abd_four_box_revolute_chain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3168fa79a7657d343462e763a767da9db0b2b80c",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/3168fa79a7657d343462e763a767da9db0b2b80c"
+    },
+    {
+      "path": "examples/40_abd_four_box_revolute_chain/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2728a1a70047fcebb242dbcc82944ae1ca14f517",
+      "size": 1207,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/2728a1a70047fcebb242dbcc82944ae1ca14f517"
+    },
+    {
+      "path": "examples/40_abd_four_box_revolute_chain/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eaf9b72844823165d88501c9307ee35b7c3c211",
+      "size": 7774,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/3eaf9b72844823165d88501c9307ee35b7c3c211"
+    },
+    {
+      "path": "examples/40_distance_diagnoser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "916f58e8579ac9600535ba8452fb58fa7490c9c0",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/916f58e8579ac9600535ba8452fb58fa7490c9c0"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c87ef11a1d0b95bcb35a8e0503a63a6cb7097598",
+      "size": 1115,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c87ef11a1d0b95bcb35a8e0503a63a6cb7097598"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/diag_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0921c742d6a1ecc0395d5dee03f451891fe3dbce",
+      "size": 6485,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/0921c742d6a1ecc0395d5dee03f451891fe3dbce"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/edge_edge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "446183ae8b99ef18dda80c16a9c879ae59b557fc",
+      "size": 8082,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/446183ae8b99ef18dda80c16a9c879ae59b557fc"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/point_edge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65142382742d859d55ec66d4af70c48f0e60b386",
+      "size": 5192,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/65142382742d859d55ec66d4af70c48f0e60b386"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/point_point.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c1a332affe499a743da0a6d95d3a3bac97df5dd",
+      "size": 3791,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/3c1a332affe499a743da0a6d95d3a3bac97df5dd"
+    },
+    {
+      "path": "examples/40_distance_diagnoser/point_triangle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95f8c7886d3bd715b996df6be06ba6ee6f5d55db",
+      "size": 5521,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/95f8c7886d3bd715b996df6be06ba6ee6f5d55db"
+    },
+    {
+      "path": "examples/4_tiny_video_game",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b38611b11f2cdbfd23f2e084b853b31f524c70b",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/6b38611b11f2cdbfd23f2e084b853b31f524c70b"
+    },
+    {
+      "path": "examples/4_tiny_video_game/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bde0a901b56d27e25bf5f8f59d31f961e8bbfed",
+      "size": 233,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5bde0a901b56d27e25bf5f8f59d31f961e8bbfed"
+    },
+    {
+      "path": "examples/4_tiny_video_game/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/4_tiny_video_game/image.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "546c526c52e87e8156cea7c433f1cbec0d8f35af",
+      "size": 509063,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/546c526c52e87e8156cea7c433f1cbec0d8f35af"
+    },
+    {
+      "path": "examples/4_tiny_video_game/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9ff72893b5f906b65d68ce6feb5965231ba33a3",
+      "size": 4821,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c9ff72893b5f906b65d68ce6feb5965231ba33a3"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c51b39ecbda6e413f6d0e2483e0fae0835569891",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/c51b39ecbda6e413f6d0e2483e0fae0835569891"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/0.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08081c22b0c29c7c45e0a9fd19eef681cdb77a22",
+      "size": 644831,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/08081c22b0c29c7c45e0a9fd19eef681cdb77a22"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7bb7dd776458dd01cda5c6a6486ccb2ef907e6d",
+      "size": 639496,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e7bb7dd776458dd01cda5c6a6486ccb2ef907e6d"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80f969ad955cc7776163c97e8dd4eb381255d74a",
+      "size": 636860,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/80f969ad955cc7776163c97e8dd4eb381255d74a"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e646254af3a665295f8a69de1327aea8ef09b8c",
+      "size": 698123,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/9e646254af3a665295f8a69de1327aea8ef09b8c"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0848f354e57fbeb806ff52a67b19f3bb006cfc4c",
+      "size": 553,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/0848f354e57fbeb806ff52a67b19f3bb006cfc4c"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/5_walking_cube_moving_board/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba9649d2c1ab9a8d79156f12304eaba12cf17bdf",
+      "size": 4241,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ba9649d2c1ab9a8d79156f12304eaba12cf17bdf"
+    },
+    {
+      "path": "examples/6_wrecking_balls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f1eb26854d0d02393dc6c7932122a3588b386d5",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/4f1eb26854d0d02393dc6c7932122a3588b386d5"
+    },
+    {
+      "path": "examples/6_wrecking_balls/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2be42d42308bbb5f639cf5f866c5dc4fec30dd76",
+      "size": 752,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/2be42d42308bbb5f639cf5f866c5dc4fec30dd76"
+    },
+    {
+      "path": "examples/6_wrecking_balls/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/6_wrecking_balls/image.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d7ea0ce95b656d1eabd2d459b63a1e843c4863c",
+      "size": 1089210,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7d7ea0ce95b656d1eabd2d459b63a1e843c4863c"
+    },
+    {
+      "path": "examples/6_wrecking_balls/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fef817b5db6687c3925d75dba0603cc07febb93",
+      "size": 4617,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1fef817b5db6687c3925d75dba0603cc07febb93"
+    },
+    {
+      "path": "examples/6_wrecking_balls/wrecking_ball.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9d556908b541ed69b4cf1c36bd3eb5755326039",
+      "size": 87100,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c9d556908b541ed69b4cf1c36bd3eb5755326039"
+    },
+    {
+      "path": "examples/7_simple_gear",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16f367781b6597f504276d171fee6496a4ec8e23",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/16f367781b6597f504276d171fee6496a4ec8e23"
+    },
+    {
+      "path": "examples/7_simple_gear/0.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a389b4d7bcb9da4f52655395dcb76b5928098c5f",
+      "size": 821607,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a389b4d7bcb9da4f52655395dcb76b5928098c5f"
+    },
+    {
+      "path": "examples/7_simple_gear/1.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ce7d217ae74a71529c8e0d8fc05fc42bcac56de",
+      "size": 908497,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/9ce7d217ae74a71529c8e0d8fc05fc42bcac56de"
+    },
+    {
+      "path": "examples/7_simple_gear/2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3921915c329501b661b1ae34574e4280c75f3b9",
+      "size": 984951,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/d3921915c329501b661b1ae34574e4280c75f3b9"
+    },
+    {
+      "path": "examples/7_simple_gear/3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7de4e13229caae30da4c1aa24bda591bcdadf121",
+      "size": 963823,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7de4e13229caae30da4c1aa24bda591bcdadf121"
+    },
+    {
+      "path": "examples/7_simple_gear/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "def0695928e60d4590e440f2ab7e4b8f0f1443a0",
+      "size": 320,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/def0695928e60d4590e440f2ab7e4b8f0f1443a0"
+    },
+    {
+      "path": "examples/7_simple_gear/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/7_simple_gear/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "650e5699d27edb9430b60975cc21634030a9785b",
+      "size": 3637,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/650e5699d27edb9430b60975cc21634030a9785b"
+    },
+    {
+      "path": "examples/84_abd_revolute_joint_local",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13f91532127a493eef03ecc6f740fe0fc18b7b61",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/13f91532127a493eef03ecc6f740fe0fc18b7b61"
+    },
+    {
+      "path": "examples/84_abd_revolute_joint_local/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45e892785a430d5c04c576f240a1edfc0e8e006",
+      "size": 1207,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f45e892785a430d5c04c576f240a1edfc0e8e006"
+    },
+    {
+      "path": "examples/84_abd_revolute_joint_local/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0a79e49c1601be3bef724fe34199531323d6a6b",
+      "size": 8931,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f0a79e49c1601be3bef724fe34199531323d6a6b"
+    },
+    {
+      "path": "examples/85_abd_prismatic_joint_local",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87d1052b7b5d9a1a19a230e077cfbabeeb140dd4",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/87d1052b7b5d9a1a19a230e077cfbabeeb140dd4"
+    },
+    {
+      "path": "examples/85_abd_prismatic_joint_local/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45e892785a430d5c04c576f240a1edfc0e8e006",
+      "size": 1207,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f45e892785a430d5c04c576f240a1edfc0e8e006"
+    },
+    {
+      "path": "examples/85_abd_prismatic_joint_local/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2b888315795ca22c8960aaaebaa0fd8e466a53a",
+      "size": 9086,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c2b888315795ca22c8960aaaebaa0fd8e466a53a"
+    },
+    {
+      "path": "examples/86_panda_hydro_traj_cubes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c836e9d114fca3f5b5fca0f680da2971830daeb5",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/c836e9d114fca3f5b5fca0f680da2971830daeb5"
+    },
+    {
+      "path": "examples/86_panda_hydro_traj_cubes/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45e892785a430d5c04c576f240a1edfc0e8e006",
+      "size": 1207,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/f45e892785a430d5c04c576f240a1edfc0e8e006"
+    },
+    {
+      "path": "examples/86_panda_hydro_traj_cubes/joint_targets_first2.npy",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bd29da043d897de1be834981f3df3d861b57c80",
+      "size": 272,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/8bd29da043d897de1be834981f3df3d861b57c80"
+    },
+    {
+      "path": "examples/86_panda_hydro_traj_cubes/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e56d40a37ebe861ab71d1e95929f215118a5293",
+      "size": 17115,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7e56d40a37ebe861ab71d1e95929f215118a5293"
+    },
+    {
+      "path": "examples/87_robot_hand",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0dd9e4117e6eebcde2a6b187c8f6e6ceaba06d52",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/0dd9e4117e6eebcde2a6b187c8f6e6ceaba06d52"
+    },
+    {
+      "path": "examples/87_robot_hand/articulation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d87d837dd045f18f1b5f877841b6bfb16a3f180",
+      "size": 13992,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/4d87d837dd045f18f1b5f877841b6bfb16a3f180"
+    },
+    {
+      "path": "examples/87_robot_hand/joint_poses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f92e46d24bfa432eb209ff51210d92345b9eb7f7",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/f92e46d24bfa432eb209ff51210d92345b9eb7f7"
+    },
+    {
+      "path": "examples/87_robot_hand/joint_poses/pose_0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7abe45a0f315369ffd0f740d3a99b9b5b0308b84",
+      "size": 1137,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/7abe45a0f315369ffd0f740d3a99b9b5b0308b84"
+    },
+    {
+      "path": "examples/87_robot_hand/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1754777522146671c90743f874e3b6bb7d55d64",
+      "size": 6300,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a1754777522146671c90743f874e3b6bb7d55d64"
+    },
+    {
+      "path": "examples/87_robot_hand/paths.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "736c374654904ccbb17fd572ca57f03c28059075",
+      "size": 742,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/736c374654904ccbb17fd572ca57f03c28059075"
+    },
+    {
+      "path": "examples/88_stiff_gipc_benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "376dd48f21f42736cc34759d837cabf51ea11add",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/376dd48f21f42736cc34759d837cabf51ea11add"
+    },
+    {
+      "path": "examples/88_stiff_gipc_benchmark/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/88_stiff_gipc_benchmark/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5ed8a6c4fa9f03db7a4a9a3845b817cea8ca02",
+      "size": 9339,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/df5ed8a6c4fa9f03db7a4a9a3845b817cea8ca02"
+    },
+    {
+      "path": "examples/89_mas_bunny",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba46d4f257dec42b2615b182024d93d6723a8637",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/ba46d4f257dec42b2615b182024d93d6723a8637"
+    },
+    {
+      "path": "examples/89_mas_bunny/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/89_mas_bunny/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dccae53f454aca4f63d1d1d2856dcb015d7ca0e",
+      "size": 4698,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1dccae53f454aca4f63d1d1d2856dcb015d7ca0e"
+    },
+    {
+      "path": "examples/8_screw_and_nut",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb8c56b7ab52281b482394054c293ff6c6d68b02",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/cb8c56b7ab52281b482394054c293ff6c6d68b02"
+    },
+    {
+      "path": "examples/8_screw_and_nut/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a734b4d234448c2ac7feb39a3c73ea79e56e7d8",
+      "size": 7,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5a734b4d234448c2ac7feb39a3c73ea79e56e7d8"
+    },
+    {
+      "path": "examples/8_screw_and_nut/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/8_screw_and_nut/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "542cc350698cabf608e6169d465dc41b7ab0b9bd",
+      "size": 2654,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/542cc350698cabf608e6169d465dc41b7ab0b9bd"
+    },
+    {
+      "path": "examples/90_abd_fem_cube_stack",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e14087602cbb5124b3e5eb0a8810195af6dfc365",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/e14087602cbb5124b3e5eb0a8810195af6dfc365"
+    },
+    {
+      "path": "examples/90_abd_fem_cube_stack/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/90_abd_fem_cube_stack/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77bc98ebe83c107f08b5fee2547e635cdf587ad8",
+      "size": 5226,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/77bc98ebe83c107f08b5fee2547e635cdf587ad8"
+    },
+    {
+      "path": "examples/91_pinned_cloth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "893def194beb2db9141f2192dd2d1c50fd521bb7",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/893def194beb2db9141f2192dd2d1c50fd521bb7"
+    },
+    {
+      "path": "examples/91_pinned_cloth/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/91_pinned_cloth/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73845f07953284de0562efd317de6ec378652460",
+      "size": 5014,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/73845f07953284de0562efd317de6ec378652460"
+    },
+    {
+      "path": "examples/92_twisting_bar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c002e7ea4906550ab36ee939166f43fd07b976d3",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/c002e7ea4906550ab36ee939166f43fd07b976d3"
+    },
+    {
+      "path": "examples/92_twisting_bar/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/92_twisting_bar/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab22f78a107fb873a29656550333548ecfeb2fe0",
+      "size": 5590,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/ab22f78a107fb873a29656550333548ecfeb2fe0"
+    },
+    {
+      "path": "examples/93_cube_wall_cloth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82a843b410c9ab9f0097a6e6d6cb74b5256a217a",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/82a843b410c9ab9f0097a6e6d6cb74b5256a217a"
+    },
+    {
+      "path": "examples/93_cube_wall_cloth/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/93_cube_wall_cloth/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "283eefeb8f742b8965e9de17eef1c52fe8141ea9",
+      "size": 6404,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/283eefeb8f742b8965e9de17eef1c52fe8141ea9"
+    },
+    {
+      "path": "examples/94_robot_hand_grasp_apple",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "db3755db186df37826721950fe43856a062dec81",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/db3755db186df37826721950fe43856a062dec81"
+    },
+    {
+      "path": "examples/94_robot_hand_grasp_apple/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5359939528661b02433f57a8355fa184418bd4d3",
+      "size": 3681,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/5359939528661b02433f57a8355fa184418bd4d3"
+    },
+    {
+      "path": "examples/94_robot_hand_grasp_apple/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4faf59595767370901acf83bf04d1c94d8654471",
+      "size": 471,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/4faf59595767370901acf83bf04d1c94d8654471"
+    },
+    {
+      "path": "examples/94_robot_hand_grasp_apple/grasp_plan.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c089dd13d25057932b1dffd5851096c3ed070e63",
+      "size": 1226,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/c089dd13d25057932b1dffd5851096c3ed070e63"
+    },
+    {
+      "path": "examples/94_robot_hand_grasp_apple/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27990075bc95620c3346a6d53c90e12d16024aa1",
+      "size": 17930,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/27990075bc95620c3346a6d53c90e12d16024aa1"
+    },
+    {
+      "path": "examples/9_pendulum",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "69d2815d957064565eed2a2428cf4b08799d9a8f",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/69d2815d957064565eed2a2428cf4b08799d9a8f"
+    },
+    {
+      "path": "examples/9_pendulum/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e8647193498f1cfcd3895acd785d8dbbe898cb",
+      "size": 11,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/95e8647193498f1cfcd3895acd785d8dbbe898cb"
+    },
+    {
+      "path": "examples/9_pendulum/asset_dir.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57728411e1b874706784631891def0b60605c18d",
+      "size": 1216,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/57728411e1b874706784631891def0b60605c18d"
+    },
+    {
+      "path": "examples/9_pendulum/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ab4e19a84b35243e01db75edc197875cd9f8e26",
+      "size": 2691,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/1ab4e19a84b35243e01db75edc197875cd9f8e26"
+    },
+    {
+      "path": "examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6ed02b10550ad7d0d325f399b9280934dafca94",
+      "size": 16,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a6ed02b10550ad7d0d325f399b9280934dafca94"
+    },
+    {
+      "path": "examples/mk_video.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42c233d911fe08681534a66be04c65cad480056b",
+      "size": 1593,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/42c233d911fe08681534a66be04c65cad480056b"
+    },
+    {
+      "path": "output",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3617744e5946bdb8e55441971bb17eed51b4abeb",
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/trees/3617744e5946bdb8e55441971bb17eed51b4abeb"
+    },
+    {
+      "path": "output/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e49aaebc3235906e9de88199f422adab60f3a304",
+      "size": 53,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/e49aaebc3235906e9de88199f422adab60f3a304"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9bd2681c95c038216a7b62799e8ed1a4399fa75",
+      "size": 251,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/a9bd2681c95c038216a7b62799e8ed1a4399fa75"
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88402ce93edebcf9cb2d12fd6f5abc3edd451f8d",
+      "size": 22,
+      "url": "https://api.github.com/repos/spiriMirror/libuipc-samples/git/blobs/88402ce93edebcf9cb2d12fd6f5abc3edd451f8d"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 31476,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\render_results.py"
+  ],
+  "timeout_s": 120,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\render_results.log",
+  "exit_code": 0,
+  "elapsed_s": 9.01600000000144
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 20664,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\build_proxies.py"
+  ],
+  "timeout_s": 240,
+  "state": "timeout",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\build_proxies.log",
+  "exit_code": 1,
+  "elapsed_s": 240.15600000000086
+}

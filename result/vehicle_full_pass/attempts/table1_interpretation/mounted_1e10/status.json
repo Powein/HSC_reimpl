@@ -1,0 +1,36 @@
+{
+  "status": "STOPPED_SUPERSEDED_BY_USER_SELECTION",
+  "case": "mounted_1e10",
+  "solver": "linear_hsc",
+  "config_sha256": "3f74612aaf160001a9586d092c5691cc2c36688d88385d9a87f71599695c4746",
+  "backend_sha256": "714923a0df7432a61823f6a26381dc2660bbb556a46fd0aad8073fcdbb078248",
+  "native_workspace": "E:\\HC-HSC-build-jaq6yw9h\\runs\\vehicle_full_pass\\mounted_1e10",
+  "completed_frames": 8,
+  "simulation_time_s": 0.26666666666666666,
+  "elapsed_s": 150.7518373999992,
+  "passage": {
+    "vehicle_min_x_m": -5.01200913194059,
+    "obstacle_max_x_m": 0.47377065660790246,
+    "clearance_m": -5.485779788548492,
+    "crossed_wheels": [],
+    "consecutive_clear_frames": 0,
+    "contact_seen": true,
+    "passed": false
+  },
+  "wheel_crossings": {},
+  "hsc": {
+    "linear_solves": 75,
+    "fallbacks": 0,
+    "max_schur_relative_residual": 9.975977533561584E-05,
+    "max_full_relative_residual": 2.086463437716316E-05,
+    "max_pcg_iterations": 1613,
+    "max_mesh_contacts": 21,
+    "max_ground_contacts": 194,
+    "max_aca_error": 1.1977146934482969E-17,
+    "min_rank": 84,
+    "max_rank": 84,
+    "min_neumann_doublings": 14,
+    "max_neumann_doublings": 16
+  },
+  "stop_reason": "User selected fixed mounted E=1e10 Pa and loose E=1e8/1e6 Pa. This exploratory mounted-stiffness run is not a formal result."
+}

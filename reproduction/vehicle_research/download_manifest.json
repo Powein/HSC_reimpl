@@ -1,0 +1,499 @@
+{
+  "retrieved_at_utc": "2026-10-17T03:08:34.552796+00:00",
+  "commits": {
+    "projectchrono/chrono": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+    "spiriMirror/libuipc": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+    "spiriMirror/libuipc-samples": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+    "KemengHuang/Stiff-GIPC": "bb2849a7b292099581907937860d96ecfdf42588",
+    "ipc-sim/ipc-toolkit": "4b3059c8539eed52fc9319c44756fa2136b88fa6"
+  },
+  "files": [
+    {
+      "repository": "KemengHuang/Stiff-GIPC",
+      "commit": "bb2849a7b292099581907937860d96ecfdf42588",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/KemengHuang/Stiff-GIPC/bb2849a7b292099581907937860d96ecfdf42588/LICENSE",
+      "local_path": "upstream/KemengHuang__Stiff-GIPC/LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "repository": "KemengHuang/Stiff-GIPC",
+      "commit": "bb2849a7b292099581907937860d96ecfdf42588",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/KemengHuang/Stiff-GIPC/bb2849a7b292099581907937860d96ecfdf42588/README.md",
+      "local_path": "upstream/KemengHuang__Stiff-GIPC/README.md",
+      "bytes": 3778,
+      "sha256": "2948861370ca72831923da316263dab51738dff966cba658119ba307eec106c5"
+    },
+    {
+      "repository": "KemengHuang/Stiff-GIPC",
+      "commit": "bb2849a7b292099581907937860d96ecfdf42588",
+      "upstream_path": "StiffGIPC/collision/ACCD.cu",
+      "url": "https://raw.githubusercontent.com/KemengHuang/Stiff-GIPC/bb2849a7b292099581907937860d96ecfdf42588/StiffGIPC/collision/ACCD.cu",
+      "local_path": "upstream/KemengHuang__Stiff-GIPC/StiffGIPC/collision/ACCD.cu",
+      "bytes": 27475,
+      "sha256": "1cac0b77c036b7fb399c16481a39de0128bd0aeff0c67dacbff690b98cc0ed91"
+    },
+    {
+      "repository": "KemengHuang/Stiff-GIPC",
+      "commit": "bb2849a7b292099581907937860d96ecfdf42588",
+      "upstream_path": "StiffGIPC/collision/FrictionUtils.cuh",
+      "url": "https://raw.githubusercontent.com/KemengHuang/Stiff-GIPC/bb2849a7b292099581907937860d96ecfdf42588/StiffGIPC/collision/FrictionUtils.cuh",
+      "local_path": "upstream/KemengHuang__Stiff-GIPC/StiffGIPC/collision/FrictionUtils.cuh",
+      "bytes": 17471,
+      "sha256": "c5a144caef0a87140813714af31f129b90ada9f4f7f4e8a8d0628a80076a5c53"
+    },
+    {
+      "repository": "ipc-sim/ipc-toolkit",
+      "commit": "4b3059c8539eed52fc9319c44756fa2136b88fa6",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/ipc-sim/ipc-toolkit/4b3059c8539eed52fc9319c44756fa2136b88fa6/LICENSE",
+      "local_path": "upstream/ipc-sim__ipc-toolkit/LICENSE",
+      "bytes": 1080,
+      "sha256": "b50d8e6d16f9bc060b4e424bdb1f8eaf994156ea4844184ab6b864f08f852228"
+    },
+    {
+      "repository": "ipc-sim/ipc-toolkit",
+      "commit": "4b3059c8539eed52fc9319c44756fa2136b88fa6",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/ipc-sim/ipc-toolkit/4b3059c8539eed52fc9319c44756fa2136b88fa6/README.md",
+      "local_path": "upstream/ipc-sim__ipc-toolkit/README.md",
+      "bytes": 7629,
+      "sha256": "30a9b428fd8c1fa44b2a0035dac393a40f1e3afaca571bff11ffa4aa1d4bdced"
+    },
+    {
+      "repository": "ipc-sim/ipc-toolkit",
+      "commit": "4b3059c8539eed52fc9319c44756fa2136b88fa6",
+      "upstream_path": "src/ipc/ccd/additive_ccd.cpp",
+      "url": "https://raw.githubusercontent.com/ipc-sim/ipc-toolkit/4b3059c8539eed52fc9319c44756fa2136b88fa6/src/ipc/ccd/additive_ccd.cpp",
+      "local_path": "upstream/ipc-sim__ipc-toolkit/src/ipc/ccd/additive_ccd.cpp",
+      "bytes": 10983,
+      "sha256": "20d4b29db62fc166106b5f80e407d23754c6afd9f557c458faf3e428042753b7"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/LICENSE",
+      "local_path": "upstream/projectchrono__chrono/LICENSE",
+      "bytes": 1485,
+      "sha256": "5f625eb4c9e0ddf86db9d1ed9b6adb5b30296ea81919282b2f38c977136bf079"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/README.md",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/README.md",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/README.md",
+      "bytes": 370,
+      "sha256": "49ec0af98f7aa6b44ccd09e7a5f185fa2b946c5ca424a655af1a2ed0c8b45252"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/chassis/HMMWV_Chassis.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/chassis/HMMWV_Chassis.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/chassis/HMMWV_Chassis.json",
+      "bytes": 707,
+      "sha256": "f10feb169a10464b46d8c942727729fc669657573c6c1b582187b8ea89532a82"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_chassis.mtl",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_chassis.mtl",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_chassis.mtl",
+      "bytes": 1912,
+      "sha256": "51b971eb21cd82f5d4a56206cf584d127e841aae961936c5cd57908b8f21199c"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_chassis_col.obj",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_chassis_col.obj",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_chassis_col.obj",
+      "bytes": 77928,
+      "sha256": "f55c4efbc1924712701200f226661251d0ca02bde6f42dabe333a749d82f8980"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_chassis_simple.obj",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_chassis_simple.obj",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_chassis_simple.obj",
+      "bytes": 1218134,
+      "sha256": "9006c7a2dd6f185a45ed06a55b3c1937fc62b9ae3ece0249cba49be8ffe01d94"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_rim.mtl",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_rim.mtl",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_rim.mtl",
+      "bytes": 432,
+      "sha256": "b925441d1ca9add6711b38647ac0d8a921c7c907c8dda23e93ae4f5048251435"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_rim.obj",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_rim.obj",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_rim.obj",
+      "bytes": 1114662,
+      "sha256": "35616d4433b8dde4f901f4bd49e24580a6a48a80e6fa48091dca6673f8c0006c"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_tire_coarse_closed.obj",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_tire_coarse_closed.obj",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_tire_coarse_closed.obj",
+      "bytes": 36872,
+      "sha256": "7b20aeb008f111108a45318308f59379143a0e5f5c91693e760c5a7436ca76ac"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_tire_left.mtl",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_tire_left.mtl",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_tire_left.mtl",
+      "bytes": 231,
+      "sha256": "12a242f3a6ccd16aa50bb606d5e3219c108d631ac9104df773d8217fccd80178"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/hmmwv_tire_left.obj",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/hmmwv_tire_left.obj",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/hmmwv_tire_left.obj",
+      "bytes": 1239515,
+      "sha256": "c56d0793d318938ccf4c919b7cb91212850801f7b3520746a2405ca4ced87ca4"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneFront.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneFront.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneFront.json",
+      "bytes": 2695,
+      "sha256": "cd70b6dd212a440e67172b547d3ab0a9b015e2fa11c59545be806ade7ee4bbc6"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneRear.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneRear.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/suspension/HMMWV_DoubleWishboneRear.json",
+      "bytes": 2696,
+      "sha256": "a13eadbcddaf4b0dfd0298585fe7fc620f84d33bf6f17d3efe68a0d3fc490480"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/tire/HMMWV_FEATire.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/tire/HMMWV_FEATire.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/tire/HMMWV_FEATire.json",
+      "bytes": 950,
+      "sha256": "f608bf4242a041e48ff0079dfd2bc2ce7119e29a017b9e80272559d9ba27d51a"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/tire/HMMWV_RigidMeshTire_CoarseClosed.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/tire/HMMWV_RigidMeshTire_CoarseClosed.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/tire/HMMWV_RigidMeshTire_CoarseClosed.json",
+      "bytes": 1044,
+      "sha256": "d6ba2622d79dba77412bc9c8585ce3aa089403311caa4f188f140f525a7d9a92"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/tire/HMMWV_lugged_coarse.inp",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/tire/HMMWV_lugged_coarse.inp",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/tire/HMMWV_lugged_coarse.inp",
+      "bytes": 1657202,
+      "sha256": "b5e585e8095eb7f2f2df5873933f3c027a4b6759614600458568aefbd7d5e7e2"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/vehicle/HMMWV_Vehicle.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/vehicle/HMMWV_Vehicle.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/vehicle/HMMWV_Vehicle.json",
+      "bytes": 1461,
+      "sha256": "8f87369fbfe355c850ea7532dc7fdd3abd717bd140f914d44c349eda364ddc40"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "data/vehicle/hmmwv/wheel/HMMWV_Wheel.json",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/data/vehicle/hmmwv/wheel/HMMWV_Wheel.json",
+      "local_path": "upstream/projectchrono__chrono/data/vehicle/hmmwv/wheel/HMMWV_Wheel.json",
+      "bytes": 355,
+      "sha256": "0b327d66be074adfce3dbd9bdedb0bee1beca63b5867dbb01659c9894428e991"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "src/chrono_vehicle/wheeled_vehicle/tire/ChFEATire.cpp",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/src/chrono_vehicle/wheeled_vehicle/tire/ChFEATire.cpp",
+      "local_path": "upstream/projectchrono__chrono/src/chrono_vehicle/wheeled_vehicle/tire/ChFEATire.cpp",
+      "bytes": 2907,
+      "sha256": "a85d4edc8a3ccce1ccd8ae534a9c033ca3b548285915cf26e5330d32e5138c88"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "src/chrono_vehicle/wheeled_vehicle/tire/FEATire.cpp",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/src/chrono_vehicle/wheeled_vehicle/tire/FEATire.cpp",
+      "local_path": "upstream/projectchrono__chrono/src/chrono_vehicle/wheeled_vehicle/tire/FEATire.cpp",
+      "bytes": 4990,
+      "sha256": "87a6ad67c4936df0cb226ed5b162464d9912a9c4b2a36cc0944ef99dc76fb468"
+    },
+    {
+      "repository": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "upstream_path": "src/demos/python/vehicle/demo_VEH_HMMWV.py",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/src/demos/python/vehicle/demo_VEH_HMMWV.py",
+      "local_path": "upstream/projectchrono__chrono/src/demos/python/vehicle/demo_VEH_HMMWV.py",
+      "bytes": 8829,
+      "sha256": "90d610cc22ca3b08408e5fa88952cca37d1272a5de9e4a8e4cdd4de53486efeb"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/LICENSE",
+      "local_path": "upstream/spiriMirror__libuipc/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/README.md",
+      "local_path": "upstream/spiriMirror__libuipc/README.md",
+      "bytes": 14420,
+      "sha256": "80bbd3f7ab59e7405e4c2675f519ef5856a50451f8d998ebb4ffdb603091cc46"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "docs/specification/constitutions/affine_body_prismatic_joint.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/affine_body_prismatic_joint.md",
+      "local_path": "upstream/spiriMirror__libuipc/docs/specification/constitutions/affine_body_prismatic_joint.md",
+      "bytes": 7050,
+      "sha256": "cc9524567da9dfb21c11084cdd391c5dc79501f3ed661ebb04567e7b0c5b11ee"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "docs/specification/constitutions/affine_body_revolute_joint.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/affine_body_revolute_joint.md",
+      "local_path": "upstream/spiriMirror__libuipc/docs/specification/constitutions/affine_body_revolute_joint.md",
+      "bytes": 7394,
+      "sha256": "b2c43a68e9d4af5b09baf2858213372f215e05a466741b6afb9b0faa4c34f33c"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "docs/specification/constitutions/hookean_spring.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/hookean_spring.md",
+      "local_path": "upstream/spiriMirror__libuipc/docs/specification/constitutions/hookean_spring.md",
+      "bytes": 1736,
+      "sha256": "ec4f7c4fb012df8d8abc31ff6f300dd78de6a55685f70a7a66f5f30c38c54eae"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "docs/specification/constitutions/soft_vertex_stitch.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/soft_vertex_stitch.md",
+      "local_path": "upstream/spiriMirror__libuipc/docs/specification/constitutions/soft_vertex_stitch.md",
+      "bytes": 1990,
+      "sha256": "37d8b68fc4bfd1f3ba51fe4386622b34166aa281ece053f4eba09e64946c0d6b"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "docs/specification/constitutions/soft_vertex_triangle_stitch.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/soft_vertex_triangle_stitch.md",
+      "local_path": "upstream/spiriMirror__libuipc/docs/specification/constitutions/soft_vertex_triangle_stitch.md",
+      "bytes": 3220,
+      "sha256": "c0946554f6d7f1a1996ca824602a741e6631988f9b479fa05dcfd044ef7dd0e9"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "python/LICENSE",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/python/LICENSE",
+      "local_path": "upstream/spiriMirror__libuipc/python/LICENSE",
+      "bytes": 34599,
+      "sha256": "c8e44e7656c4fa9cab6b95a7996a241deeb0bc6d3371aab354007c1fb133782f"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "python/pyproject.toml",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/python/pyproject.toml",
+      "local_path": "upstream/spiriMirror__libuipc/python/pyproject.toml",
+      "bytes": 2598,
+      "sha256": "74cd0a25657806a8a60f7b64a91bbf4286c6ff834b60b22f7eefcade167f8f58"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/collision_detection/filters/stackless_bvh_simplex_trajectory_filter.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/collision_detection/filters/stackless_bvh_simplex_trajectory_filter.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/collision_detection/filters/stackless_bvh_simplex_trajectory_filter.cu",
+      "bytes": 58156,
+      "sha256": "7ae6d2004534670328bde5fe212d8fedd354fc3d53d230ce5e41121036a005a3"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/contact_system/contact_models/ipc_simplex_frictional_contact.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/contact_system/contact_models/ipc_simplex_frictional_contact.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/contact_system/contact_models/ipc_simplex_frictional_contact.cu",
+      "bytes": 27559,
+      "sha256": "dc3a955426e88b3ec74c793221eef0d48b663f3da1247df94452a81debbad1b0"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/contact_system/contact_models/ipc_simplex_normal_contact.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/contact_system/contact_models/ipc_simplex_normal_contact.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/contact_system/contact_models/ipc_simplex_normal_contact.cu",
+      "bytes": 23937,
+      "sha256": "bc9127863e60e77fd3f0643fb97f15de5a6d4e1f82bd43947fd06744a3a1f349"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/coupling_system/abd_fem_linear_subsystem.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/abd_fem_linear_subsystem.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/coupling_system/abd_fem_linear_subsystem.cu",
+      "bytes": 5519,
+      "sha256": "c3e40d1fcfd32a40684bad1423d0e15c29ad56ae89b997536cddd25cc67fedbe"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/line_search/line_searcher.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/line_search/line_searcher.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/line_search/line_searcher.cu",
+      "bytes": 4599,
+      "sha256": "1106e5e4ca179e76eedbf5022b6157a3c85ddaacc25200d10331fbe941378350"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/linear_system/global_linear_system.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/global_linear_system.h",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/linear_system/global_linear_system.h",
+      "bytes": 11725,
+      "sha256": "5a0d6453f916c801676644f9f0ab1f6c9354ef3fc39f19e55e3e1818cfb8b2fb"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/linear_system/iterative_solver.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/iterative_solver.h",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/linear_system/iterative_solver.h",
+      "bytes": 1948,
+      "sha256": "0100ec9d026739f5a73b325093d085368beeac1041965ec387bba9276261ede3"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/linear_system/linear_pcg.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_pcg.cu",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/linear_system/linear_pcg.cu",
+      "bytes": 10190,
+      "sha256": "c15101b97bd7e1c3026c29a11abba4058128da22b5583168563231660a576f72"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/linear_system/linear_pcg.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_pcg.h",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/linear_system/linear_pcg.h",
+      "bytes": 1442,
+      "sha256": "46573111a1c8c0a39cd45eead7054a73ba33d9f701ac50b016db2459aaa2e3d9"
+    },
+    {
+      "repository": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "upstream_path": "src/backends/cuda/utils/distance/details/ccd.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/utils/distance/details/ccd.inl",
+      "local_path": "upstream/spiriMirror__libuipc/src/backends/cuda/utils/distance/details/ccd.inl",
+      "bytes": 17725,
+      "sha256": "a53fda68bce51e497bc3a1f2a82927c3190e54ae50eee05aea841613a812e06f"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/LICENSE",
+      "local_path": "upstream/spiriMirror__libuipc-samples/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/README.md",
+      "local_path": "upstream/spiriMirror__libuipc-samples/README.md",
+      "bytes": 955,
+      "sha256": "1f455bb3926cb37fbe3681f11d33c27ae22b55da062fb57c942248d6d07e2390"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "examples/20_contact_system_feature/main.py",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/20_contact_system_feature/main.py",
+      "local_path": "upstream/spiriMirror__libuipc-samples/examples/20_contact_system_feature/main.py",
+      "bytes": 6749,
+      "sha256": "47e9bd8adec1eeae6499354288932228d9e5920334b5cd8d971f6cf37bef2c22"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "examples/37_uipc_assets/main.py",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/37_uipc_assets/main.py",
+      "local_path": "upstream/spiriMirror__libuipc-samples/examples/37_uipc_assets/main.py",
+      "bytes": 98,
+      "sha256": "376abff09718aa09988294a368c2cff598d6164b32530dcd61405d5a7563875e"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "examples/38_abd_prismatic_joint_driving_and_external_force/main.py",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/38_abd_prismatic_joint_driving_and_external_force/main.py",
+      "local_path": "upstream/spiriMirror__libuipc-samples/examples/38_abd_prismatic_joint_driving_and_external_force/main.py",
+      "bytes": 4971,
+      "sha256": "05513df53166cd4c8bb0ada3f99abc55f292449504c9203489ff00f95d727ff5"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "examples/39_abd_revolute_joint_driving_and_external_torque/main.py",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/39_abd_revolute_joint_driving_and_external_torque/main.py",
+      "local_path": "upstream/spiriMirror__libuipc-samples/examples/39_abd_revolute_joint_driving_and_external_torque/main.py",
+      "bytes": 4644,
+      "sha256": "b3a99088fa6c7caa51612d535a1b53a9ecc54389719ed2b39177e2e8e827eae6"
+    },
+    {
+      "repository": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "upstream_path": "examples/3_periodically_pressed_tetrahedron/main.py",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/3_periodically_pressed_tetrahedron/main.py",
+      "local_path": "upstream/spiriMirror__libuipc-samples/examples/3_periodically_pressed_tetrahedron/main.py",
+      "bytes": 2838,
+      "sha256": "f119ead591b738507d70b48cc5798862ccc46c8c8bfee558d10cfcfa46c70f4e"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,211 @@
+runtime_path_ascii: False
+using_ascii_temp_runtime: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 11:43:54.986] [warning] [cuda] Contact default kappa 10000000000 is clamped to [467786150514.1542] (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (0,1) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,1) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,2) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,3) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,4) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,5) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (2,5) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (3,5) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,6) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,7) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,8) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (2,8) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (6,8) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,9) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,10) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,11) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (2,11) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (9,11) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,12) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,13) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,14) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (2,14) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (12,14) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,15) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,16) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,17) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,18) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,19) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+[2026-10-17 11:43:54.987] [warning] [cuda] Contact kappa 10000000000 for model (1,20) is clamped to 467786150514.1542 (valid range: [467786150514.1542, 46778615051415.414])
+Initialized 12 ABD bodies, 7 FEM tires, 4 suspensions
+Frame 10 bead error 1.0288881921621973e-05 elapsed 29.02
+Frame 20 bead error 1.56658339744969e-05 elapsed 59.76
+Frame 30 bead error 1.4727744327648021e-05 elapsed 116.15
+Frame 40 bead error 1.4565858317754538e-05 elapsed 208.34
+{
+  "status": "PASS",
+  "case": "vehicle",
+  "profile": "assembly",
+  "steps": 40,
+  "dt": 0.005,
+  "checks": {
+    "world_valid": true,
+    "bead_error_under_0_5mm": true,
+    "positive_fem_tet_volumes": true,
+    "tire_ground_clearance": true,
+    "prismatic_lateral_error_under_1mm": true,
+    "revolute_anchor_error_under_1mm": true,
+    "suspension_travel_within_limits": true,
+    "wheel_rotation_transmitted": true
+  },
+  "max_bead_error_m": 1.6847023655458085e-05,
+  "min_tet_volume_ratio": 0.44745868214358964,
+  "minimum_tire_z_m": 0.00047115764305188907,
+  "max_prismatic_lateral_error_m": 9.060204268648346e-08,
+  "max_revolute_anchor_error_m": 1.0928599184805793e-07,
+  "measured_wheel_angle_rad": 0.4000005572135042,
+  "motor_angle_error_rad": 5.572135041709281e-07,
+  "suspension_force_balance": null,
+  "chassis_displacement_x_m": 0.10680583474159855,
+  "elapsed_s": 208.63858989999972,
+  "not_validated": [
+    "HSC solver",
+    "paper scene equivalence",
+    "full obstacle traversal",
+    "all continuous collision pairs independently"
+  ],
+  "last_frame": {
+    "frame": 40,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 3.862563326213163e-06,
+        "min_z_m": 0.007181897414988492,
+        "min_tet_volume_ratio": 0.9858982238629933,
+        "rim_center": [
+          -0.8404051414469275,
+          -0.9110161357317393,
+          0.4771709205323601
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.3778023741688025e-06,
+        "min_z_m": 0.0066265680991184645,
+        "min_tet_volume_ratio": 0.9958336035853945,
+        "rim_center": [
+          -0.8398920722825193,
+          0.9089837157439238,
+          0.47661373075178237
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 1.4388941730552103e-05,
+        "min_z_m": 0.00047221498848013085,
+        "min_tet_volume_ratio": 0.9644684967819224,
+        "rim_center": [
+          -4.147337924970258,
+          -0.9100761305941102,
+          0.46528022423721893
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 1.4565858317754538e-05,
+        "min_z_m": 0.00047115764305188907,
+        "min_tet_volume_ratio": 0.9642186716643009,
+        "rim_center": [
+          -4.1468542618145845,
+          0.9099239134715071,
+          0.46522313617230365
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.9137950379275065e-06,
+        "min_z_m": 0.0008452660481388378,
+        "min_tet_volume_ratio": 0.5258929592410034,
+        "rim_center": [
+          0.005386951032361751,
+          -1.0113275341448063,
+          0.17318113879752778
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 1.5757151733612607e-07,
+        "min_z_m": 0.0009055628526637762,
+        "min_tet_volume_ratio": 0.9821908337366935,
+        "rim_center": [
+          0.00010549777021274719,
+          1.7325981550679356e-05,
+          0.1735877237669579
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 2.1953566361619226e-06,
+        "min_z_m": 0.000857329911685151,
+        "min_tet_volume_ratio": 0.44745868214358964,
+        "rim_center": [
+          0.005704507909636566,
+          1.00851638142197,
+          0.17303908253755107
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -0.09201969216700315,
+        "reported_joint_distance_m": -0.09201968791099073,
+        "prismatic_lateral_error_m": 2.2676110636780072e-11,
+        "revolute_anchor_error_m": 3.850234849789989e-09,
+        "spring_length_m": 0.4420196597410865,
+        "spring_force_N": -936.6705081707017,
+        "spindle_center": [
+          -0.8404051379544644,
+          -0.9110161362284529,
+          0.4771709197408306
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -0.09190592350635259,
+        "reported_joint_distance_m": -0.09190591925583534,
+        "prismatic_lateral_error_m": 6.396260006935339e-11,
+        "revolute_anchor_error_m": 7.245651473946993e-09,
+        "spring_length_m": 0.441905891080436,
+        "spring_force_N": -941.8326516453819,
+        "spindle_center": [
+          -0.8398920696086775,
+          0.908983715126683,
+          0.4766137305172485
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 0.0902159687714706,
+        "reported_joint_distance_m": 0.09021596460501713,
+        "prismatic_lateral_error_m": 1.0451782769419948e-09,
+        "revolute_anchor_error_m": 3.26704240163728e-08,
+        "spring_length_m": 0.25978399880261277,
+        "spring_force_N": -9205.438221430293,
+        "spindle_center": [
+          -4.147337939161058,
+          -0.9100761309981609,
+          0.46528019677441257
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 0.09083070200850799,
+        "reported_joint_distance_m": 0.09083069781262038,
+        "prismatic_lateral_error_m": 9.965964798175669e-10,
+        "revolute_anchor_error_m": 3.265042589734862e-08,
+        "spring_length_m": 0.2591692655655754,
+        "spring_force_N": -9233.331150380123,
+        "spindle_center": [
+          -4.146854275703216,
+          0.9099239130551019,
+          0.46522310836289427
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "FAILED",
+  "case": "ground_1e8",
+  "solver": "linear_hsc",
+  "config_sha256": "ecb2ea540dff110d2253f866705c61de77427c84a9a89e9ac481dbe7794b6d16",
+  "backend_sha256": "d961bd64135b9273d2104004d3224e1836b14e5ed5143c462609abffb3145317",
+  "native_workspace": "E:\\HC-HSC-build-jaq6yw9h\\runs\\vehicle_full_pass_log_nh\\ground_1e8",
+  "completed_frames": 0,
+  "simulation_time_s": 0.0,
+  "elapsed_s": 0.0,
+  "process_returncode": 3221226505
+}

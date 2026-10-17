@@ -1,0 +1,118 @@
+{
+  "source": "Project Chrono HMMWV collision mesh",
+  "method": "Chrono collision mesh convex hull with four Boolean wheel-well cuts (Manifold)",
+  "coacd_attempt": "240 s timeout; retained logs; optional --coacd retry path",
+  "coacd_version": "1.0.14",
+  "trimesh_version": "5.1.1",
+  "manifold3d_version": "3.5.4",
+  "parameters": {
+    "threshold": 0.04,
+    "real_metric": true,
+    "max_convex_hull": 24,
+    "preprocess_mode": "auto",
+    "preprocess_resolution": 40,
+    "resolution": 1000,
+    "mcts_nodes": 12,
+    "mcts_iterations": 40,
+    "mcts_max_depth": 3,
+    "merge": true,
+    "decimate": true,
+    "max_ch_vertex": 64,
+    "seed": 42
+  },
+  "hull_count": 1,
+  "chassis": {
+    "vertices": 283,
+    "triangles": 562,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_m3": 12.487441800090211,
+    "bounds_m": [
+      [
+        -2.4589080810546875,
+        -1.2805160284042358,
+        -0.08188170194625854
+      ],
+      [
+        2.2115800380706787,
+        1.2811839580535889,
+        1.5653849840164185
+      ]
+    ],
+    "degenerate_faces": 0
+  },
+  "chrono_primitive": {
+    "vertices": 8,
+    "triangles": 12,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_m3": 0.4000000000000001,
+    "bounds_m": [
+      [
+        -1.0,
+        -0.5,
+        0.0
+      ],
+      [
+        1.0,
+        0.5,
+        0.2
+      ]
+    ],
+    "degenerate_faces": 0
+  },
+  "rim": {
+    "vertices": 98,
+    "triangles": 192,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_m3": 0.04549792560435917,
+    "bounds_m": [
+      [
+        -0.2354282970076653,
+        -0.13101932808755873,
+        -0.2354282970076653
+      ],
+      [
+        0.2354282970076653,
+        0.13101932808755873,
+        0.2354282970076653
+      ]
+    ],
+    "degenerate_faces": 0,
+    "radius_m": 0.2354282970076653,
+    "halfwidth_m": 0.1310193280875587
+  },
+  "bead": {
+    "source": "Chrono BC_CONN",
+    "count": 39,
+    "radius_m": 0.24952283738340114,
+    "rows_y_m": [
+      -0.139019,
+      0.139019
+    ],
+    "minimum_projected_edge_radius_m": 0.2414282970076653,
+    "minimum_polygonal_radial_clearance_m": 0.006000000000000005
+  },
+  "spindle": {
+    "vertices": 8,
+    "triangles": 12,
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_m3": 0.0014400000000000003,
+    "bounds_m": [
+      [
+        -0.05,
+        -0.06,
+        -0.06
+      ],
+      [
+        0.05,
+        0.06,
+        0.06
+      ]
+    ],
+    "degenerate_faces": 0
+  },
+  "elapsed_s": 0.0707998999987467
+}

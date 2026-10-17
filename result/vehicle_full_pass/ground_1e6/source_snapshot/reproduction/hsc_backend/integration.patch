@@ -1,0 +1,1112 @@
+--- a/src/backends/cuda/linear_system/global_linear_system.h
++++ b/src/backends/cuda/linear_system/global_linear_system.h
+@@ -234,6 +234,7 @@
+ 
+         DenseVectorView  x() { return m_x; }
+         CDenseVectorView b() { return m_b; }
++        CBCOOMatrixView A() const; // HSC: assembled IPC/FEM/ABD Hessian
+         void iter_count(SizeT iter_count) { m_iter_count = iter_count; }
+ 
+       private:
+--- a/src/backends/cuda/linear_system/global_linear_system.cu
++++ b/src/backends/cuda/linear_system/global_linear_system.cu
+@@ -15,6 +15,12 @@
+ {
+ REGISTER_SIM_SYSTEM(GlobalLinearSystem);
+ 
++GlobalLinearSystem::CBCOOMatrixView GlobalLinearSystem::SolvingInfo::A() const
++{
++    return m_impl->bcoo_A.cview();
++}
++
++
+ SizeT GlobalLinearSystem::dof_count() const
+ {
+     UIPC_ASSERT(m_impl.initialized,
+--- a/src/core/core/scene_default_config.cpp
++++ b/src/core/core/scene_default_config.cpp
+@@ -154,7 +154,29 @@
+         "string",
+         "Select the global iterative linear solver.",
+         {"src/backends/cuda/linear_system"},
+-        Json{{"enum", Json::array({"fused_pcg", "linear_pcg"})}});
++        Json{{"enum", Json::array({"fused_pcg", "linear_pcg", "linear_hsc"})}});
++    add("linear_system/hsc/max_rank", IndexT{128}, "integer",
++        "HSC fixed ACA rank cap (local setting; original scene rank is unpublished).",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"minimum", 1}});
++    add("linear_system/hsc/neumann_order", IndexT{5}, "integer",
++        "HSC Neumann series terms, for ABD inverse and FEM preconditioner.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"minimum", 1}});
++    add("linear_system/hsc/max_iter", IndexT{2000}, "integer",
++        "HSC Schur PCG iteration cap; failure is explicit.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"minimum", 1}});
++    add("linear_system/hsc/adaptive_abd_inverse", IndexT{1}, "integer",
++        "Extend ABD Neumann polynomial by doubling to resolve stiff joint collective modes; 0 reproduces fixed-r approximation.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"minimum", 0}, {"maximum", 1}});
++    add("linear_system/hsc/abd_inverse_tol", Float{1e-5}, "number",
++        "Normalized residual limit of the extended ABD inverse.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"exclusiveMinimum", 0.0}});
++    add("linear_system/hsc/full_residual_limit", Float{0.1}, "number",
++        "Inexact Newton safety limit on original full-system relative residual.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"exclusiveMinimum", 0.0}});
++    add("linear_system/hsc/omega", Float{0.7}, "number",
++        "HSC weighted block Jacobi relaxation.",
++        {"src/backends/cuda/linear_system/linear_hsc.cu"}, Json{{"exclusiveMinimum", 0.0}, {"maximum", 1.0}});
++
+     add("linear_system/fem_preconditioner",
+         std::string{"diag"},
+         "string",
+--- a/src/pybind/pyuipc/constitution/module.cpp
++++ b/src/pybind/pyuipc/constitution/module.cpp
+@@ -8,6 +8,7 @@
+ #include <pyuipc/constitution/neo_hookean_shell.h>
+ #include <pyuipc/constitution/strain_limiting_baraff_witkin.h>
+ #include <pyuipc/constitution/stable_neo_hookean.h>
++#include <pyuipc/constitution/log_neo_hookean.h>
+ #include <pyuipc/constitution/affine_body_constitution.h>
+ #include <pyuipc/constitution/affine_body_shell.h>
+ #include <pyuipc/constitution/affine_body_rod.h>
+@@ -74,6 +75,7 @@
+     PyNeoHookeanShell{m};
+     PyStrainLimitingBaraffWitkinShell{m};
+     PyStableNeoHookean{m};
++    PyLogNeoHookean{m};
+     PyARAP{m};
+ 
+     // Finite Extra Constitutions
+--- a/src/backends/cuda/line_search/line_searcher.cu
++++ b/src/backends/cuda/line_search/line_searcher.cu
+@@ -89,14 +89,14 @@
+     auto reporter_energies = span{m_energy_values}.first(reporter_count);
+     for(auto&& [energy, reporter] : zip(reporter_energies, reporter_view))
+     {
+-        UIPC_ASSERT(!std::isnan(energy) && std::isfinite(energy),
++        UIPC_ASSERT(!std::isnan(energy) && (std::isfinite(energy) || (!is_initial && energy > 0)),
+                     "Energy [{}] is {}",
+                     reporter->name(),
+                     energy);
+     }
+ 
+     Float total_energy = m_energy_values.back();
+-    UIPC_ASSERT(!std::isnan(total_energy) && std::isfinite(total_energy),
++    UIPC_ASSERT(!std::isnan(total_energy) && (std::isfinite(total_energy) || (!is_initial && total_energy > 0)),
+                 "Total line-search energy is {}",
+                 total_energy);
+ 
+--- a/src/backends/cuda/engine/advance_ipc.cu
++++ b/src/backends/cuda/engine/advance_ipc.cu
+@@ -431,7 +431,7 @@
+                         last_E  = E;
+ 
+                         // To prevent numerical energy (fake-) increasing caused by tiny dx
+-                        if(converged)
++                        if(converged && std::isfinite(E))
+                             break;
+ 
+                         // Check Energy Decrease
+--- /dev/null
++++ b/src/backends/cuda/linear_system/linear_hsc.cu
+@@ -0,0 +1,439 @@
++// HSC integration for libuipc 9c748a759bb9952a7aeedd59076a70591dc61d6c.
++// Implements HC.pdf Eqs. (2)-(6), supplement Algorithm 1. New implementation.
++// Sparse FEM iteration stays on CUDA; small ABD/ACA setup uses Eigen on the CPU.
++// This hybrid implementation is not the authors' GPU performance implementation.
++#include <linear_system/iterative_solver.h>
++#include <affine_body/abd_linear_subsystem.h>
++#include <finite_element/fem_linear_subsystem.h>
++#include <collision_detection/simplex_trajectory_filter.h>
++#include <collision_detection/vertex_half_plane_trajectory_filter.h>
++#include <sim_engine.h>
++#include <cuda_tool/linear_reduction.h>
++#include <Eigen/Dense>
++#include <algorithm>
++#include <chrono>
++#include <cmath>
++#include <fstream>
++#include <filesystem>
++#include <limits>
++#include <stdexcept>
++#include <vector>
++
++namespace uipc::backend::cuda
++{
++namespace hsc
++{
++using CV = cuda_tool::CDenseVectorView<Float>;
++using V = cuda_tool::DenseVectorView<Float>;
++using CM = cuda_tool::CBCOOMatrixView<Float, 3>;
++using Mat = Eigen::Matrix<Float, Eigen::Dynamic, Eigen::Dynamic>;
++using Vec = Eigen::Matrix<Float, Eigen::Dynamic, 1>;
++using M3 = Eigen::Matrix<Float, 3, 3>;
++using DV = cuda_tool::DeviceDenseVector<Float>;
++
++void check(cudaError_t e)
++{
++    if(e != cudaSuccess) throw std::runtime_error(cudaGetErrorString(e));
++}
++template<class T> struct GPU
++{
++    T* data = nullptr;
++    size_t capacity = 0;
++    ~GPU() { if(data) cudaFree(data); }
++    void resize(size_t n)
++    {
++        if(n <= capacity) return;
++        if(data) check(cudaFree(data));
++        data = nullptr; capacity = 0;
++        check(cudaMalloc(reinterpret_cast<void**>(&data), n*sizeof(T)));
++        capacity = n;
++    }
++    void upload(const T* p, size_t n)
++    {
++        resize(n);
++        if(n) check(cudaMemcpy(data, p, n*sizeof(T), cudaMemcpyHostToDevice));
++    }
++};
++struct Entry { int row, col; Float v[9]; };
++
++// libuipc stores ONE triangle of 3x3 blocks after ge2sym(). Do not double
++// diagonal blocks, and transpose off-diagonal blocks when reconstructing A/E.
++__global__ void select(CM H, int qo, int qm, int fo, int fn,
++                       int* ids, int* counters, M3* inv)
++{
++    int t = blockIdx.x*blockDim.x+threadIdx.x;
++    if(t >= H.triplet_count()) return;
++    auto e = H(t);
++    int i=e.row_index*3, j=e.col_index*3;
++    bool iq=i>=qo && i<qo+qm, jq=j>=qo && j<qo+qm;
++    if(iq || jq) ids[atomicAdd(counters,1)] = t;
++    if(i==j && i>=fo && i<fo+fn)
++    {
++        M3 B=e.value;
++        Float det=B.determinant();
++        if(!(det>0) || !isfinite(det))
++        {
++            atomicAdd(counters+1,1);
++            inv[i/3].setZero();
++        }
++        else inv[i/3]=B.inverse();
++    }
++}
++__global__ void pack(CM H, const int* ids, Entry* entries, int n)
++{
++    int t=blockIdx.x*blockDim.x+threadIdx.x;
++    if(t>=n) return;
++    auto e=H(ids[t]);
++    entries[t].row=e.row_index*3;
++    entries[t].col=e.col_index*3;
++    for(int c=0;c<3;++c) for(int r=0;r<3;++r)
++        entries[t].v[r+3*c]=e.value(r,c);
++}
++__global__ void mask_q(V v,int off,int n)
++{
++    int i=blockIdx.x*blockDim.x+threadIdx.x;
++    if(i<n) v(off+i)=0;
++}
++__global__ void jacobi(const M3* inv,CV r,V z,int fo,int fn,Float omega)
++{
++    int j=blockIdx.x*blockDim.x+threadIdx.x;
++    if(j>=fn/3) return;
++    int i=fo+3*j;
++    Eigen::Matrix<Float,3,1> b;
++    for(int k=0;k<3;++k) b(k)=r(i+k);
++    Eigen::Matrix<Float,3,1> a=omega*inv[i/3]*b;
++    for(int k=0;k<3;++k) z(i+k)=a(k);
++}
++__global__ void axpby(V y,CV x,Float a,Float b,int n)
++{
++    int i=blockIdx.x*blockDim.x+threadIdx.x;
++    if(i<n) y(i)=a*x(i)+b*y(i);
++}
++__global__ void update(V x,V r,CV p,CV Ap,Float alpha,int n)
++{
++    int i=blockIdx.x*blockDim.x+threadIdx.x;
++    if(i<n) { x(i)+=alpha*p(i); r(i)-=alpha*Ap(i); }
++}
++__global__ void transpose_V(const Float* factor,const int* nodes,int n,
++                            CV x,Float* out)
++{
++    int k=blockIdx.x;
++    __shared__ Float sums[256];
++    Float sum=0;
++    for(int j=threadIdx.x;j<n;j+=256) sum+=factor[j+k*n]*x(nodes[j]);
++    sums[threadIdx.x]=sum;
++    __syncthreads();
++    for(int stride=128;stride>0;stride>>=1)
++    {
++        if(threadIdx.x<stride) sums[threadIdx.x]+=sums[threadIdx.x+stride];
++        __syncthreads();
++    }
++    if(threadIdx.x==0) out[k]=sums[0];
++}
++__global__ void small_product(const Float* C,const Float* x,Float* y,int k)
++{
++    int i=blockIdx.x*blockDim.x+threadIdx.x;
++    if(i>=k) return;
++    Float sum=0;
++    for(int j=0;j<k;++j) sum+=C[i+j*k]*x[j];
++    y[i]=sum;
++}
++__global__ void subtract_V(const Float* factor,const int* nodes,int n,int k,
++                           const Float* c,V y)
++{
++    int i=blockIdx.x*blockDim.x+threadIdx.x;
++    if(i>=n) return;
++    Float sum=0;
++    for(int j=0;j<k;++j) sum+=factor[i+j*n]*c[j];
++    y(nodes[i])-=sum;
++}
++int blocks(int n) { return (n+255)/256; }
++}
++
++class LinearHSC final : public IterativeSolver
++{
++  public:
++    using IterativeSolver::IterativeSolver;
++  private:
++    ABDLinearSubsystem* abd=nullptr;
++    FEMLinearSubsystem* fem=nullptr;
++    GlobalTrajectoryFilter* contacts=nullptr;
++    int qo=0,qm=0,fo=0,fn=0,N=0,rank=0,active=0;
++    int max_rank=128,order=5,max_iter=2000,adaptive_abd=1,doublings=0;
++    Float omega=.7,tol=1e-4,aca_error=0,abd_inverse_error=0;
++    Float abd_inverse_tol=1e-5,full_residual_limit=.1;
++    hsc::GPU<int> ids,counters,nodes;
++    hsc::GPU<hsc::Entry> packed;
++    hsc::GPU<hsc::M3> invD;
++    hsc::GPU<Float> dV,dC,t1,t2;
++    hsc::Mat A,P,U,V;
++    hsc::DV r,z,p,Ap,term,tmp,aux,rhs;
++
++    void do_build(BuildInfo&) override
++    {
++        auto& cfg=world().scene().config();
++        auto attr=cfg.find<std::string>("linear_system/solver");
++        if(!attr || attr->view()[0]!="linear_hsc") throw SimSystemException("LinearHSC unused");
++        abd=&require<ABDLinearSubsystem>();
++        fem=&require<FEMLinearSubsystem>();
++        contacts=&require<GlobalTrajectoryFilter>();
++        max_rank=cfg.find<IndexT>("linear_system/hsc/max_rank")->view()[0];
++        order=cfg.find<IndexT>("linear_system/hsc/neumann_order")->view()[0];
++        max_iter=cfg.find<IndexT>("linear_system/hsc/max_iter")->view()[0];
++        omega=cfg.find<Float>("linear_system/hsc/omega")->view()[0];
++        adaptive_abd=cfg.find<IndexT>("linear_system/hsc/adaptive_abd_inverse")->view()[0];
++        abd_inverse_tol=cfg.find<Float>("linear_system/hsc/abd_inverse_tol")->view()[0];
++        full_residual_limit=cfg.find<Float>("linear_system/hsc/full_residual_limit")->view()[0];
++        tol=cfg.find<Float>("linear_system/tol_rate")->view()[0];
++        UIPC_ASSERT(max_rank>0 && order>0 && max_iter>0 && omega>0 && omega<=1,
++                    "Invalid HSC parameters");
++        logger::info("LinearHSC enabled: rank_cap={}, Neumann order={}, omega={}, tol={}. "
++                     "CUDA FEM/Schur PCG; CPU small ABD/ACA setup; no solver fallback.",
++                     max_rank,order,omega,tol);
++    }
++
++    void setup(GlobalLinearSystem::SolvingInfo& info)
++    {
++        N=info.x().size(); qo=abd->dof_offset(); qm=abd->dof_count();
++        fo=fem->dof_offset(); fn=fem->dof_count();
++        UIPC_ASSERT(qm>0 && fn>0 && qm%12==0 && fn%3==0 && qm+fn==N,
++                    "HSC requires only ABD (12/body) and FEM (3/node) DOFs");
++        auto H=info.A();
++        ids.resize(H.triplet_count()); counters.resize(2); invD.resize(N/3);
++        hsc::check(cudaMemset(counters.data,0,2*sizeof(int)));
++        hsc::check(cudaMemset(invD.data,0,N/3*sizeof(hsc::M3)));
++        hsc::select<<<hsc::blocks(H.triplet_count()),256>>>(H,qo,qm,fo,fn,ids.data,counters.data,invD.data);
++        int count[2];
++        hsc::check(cudaMemcpy(count,counters.data,sizeof(count),cudaMemcpyDeviceToHost));
++        UIPC_ASSERT(count[1]==0,"HSC: {} non-positive FEM diagonal blocks",count[1]);
++        packed.resize(count[0]);
++        if(count[0]) hsc::pack<<<hsc::blocks(count[0]),256>>>(H,ids.data,packed.data,count[0]);
++        std::vector<hsc::Entry> entries(count[0]);
++        if(count[0]) hsc::check(cudaMemcpy(entries.data(),packed.data,count[0]*sizeof(hsc::Entry),cudaMemcpyDeviceToHost));
++        // Stable ordering makes full-pivot ACA independent of atomic compaction order.
++        std::sort(entries.begin(),entries.end(),[](const auto& a,const auto& b)
++                  { return a.row==b.row?a.col<b.col:a.row<b.row; });
++        std::vector<int> cols;
++        A=hsc::Mat::Zero(qm,qm);
++        for(auto& e:entries)
++        {
++            bool iq=e.row>=qo && e.row<qo+qm, jq=e.col>=qo && e.col<qo+qm;
++            Eigen::Map<const hsc::M3> B(e.v);
++            if(iq && jq)
++            {
++                A.block<3,3>(e.row-qo,e.col-qo)+=B;
++                if(e.row!=e.col) A.block<3,3>(e.col-qo,e.row-qo)+=B.transpose();
++            }
++            else if(B.squaredNorm()!=0)
++            {
++                int f=iq?e.col:e.row;
++                UIPC_ASSERT(f>=fo && f<fo+fn,"Unexpected HSC subsystem coupling");
++                for(int j=0;j<3;++j) cols.push_back(f+j);
++            }
++        }
++        std::sort(cols.begin(),cols.end()); cols.erase(std::unique(cols.begin(),cols.end()),cols.end());
++        active=static_cast<int>(cols.size());
++        nodes.upload(cols.data(),active);
++        hsc::Mat E=hsc::Mat::Zero(qm,active);
++        for(auto& e:entries)
++        {
++            bool iq=e.row>=qo && e.row<qo+qm, jq=e.col>=qo && e.col<qo+qm;
++            Eigen::Map<const hsc::M3> B(e.v);
++            if(iq==jq || B.squaredNorm()==0) continue;
++            int q=(iq?e.row:e.col)-qo, f=iq?e.col:e.row;
++            int c=static_cast<int>(std::lower_bound(cols.begin(),cols.end(),f)-cols.begin());
++            if(iq) E.block<3,3>(q,c)+=B;
++            else E.block<3,3>(q,c)+=B.transpose();
++        }
++        // Full-pivot ACA with a fixed rank cap, as in the supplement. Only a
++        // roundoff zero-pivot guard may stop early. No SVD truncation or rtol.
++        int cap=std::min({max_rank,qm,active});
++        U=hsc::Mat::Zero(qm,cap); V=hsc::Mat::Zero(active,cap);
++        hsc::Mat R=E;
++        Float scale=E.norm(); rank=0;
++        for(;rank<cap;++rank)
++        {
++            Eigen::Index i,j; Float peak=R.cwiseAbs().maxCoeff(&i,&j);
++            if(peak<=std::numeric_limits<Float>::epsilon()*scale) break;
++            U.col(rank)=R.col(j); V.col(rank)=R.row(i).transpose()/R(i,j);
++            R.noalias()-=U.col(rank)*V.col(rank).transpose();
++        }
++        U.conservativeResize(Eigen::NoChange,rank); V.conservativeResize(Eigen::NoChange,rank);
++        aca_error=scale>0?R.norm()/scale:0;
++        // Block-Jacobi Neumann approximation of A^-1 (12 DOFs/body).
++        hsc::Mat B=hsc::Mat::Zero(qm,qm);
++        for(int i=0;i<qm;i+=12)
++        {
++            Eigen::Matrix<Float,12,12> block=A.block<12,12>(i,i);
++            Eigen::LLT<Eigen::Matrix<Float,12,12>> llt(block);
++            UIPC_ASSERT(llt.info()==Eigen::Success,"HSC: non-SPD ABD block {}",i/12);
++            B.block<12,12>(i,i)=llt.solve(Eigen::Matrix<Float,12,12>::Identity());
++        }
++        hsc::Mat T=hsc::Mat::Identity(qm,qm)-omega*B*A;
++        hsc::Mat termA=omega*B; P=termA;
++        for(int k=1;k<order;++k) { termA=(T*termA).eval(); P+=termA; }
++        P=((P+P.transpose())*.5).eval();
++        // The paper's fixed five terms can miss nearly free collective modes
++        // of a vehicle constrained by very stiff joints. Extend the SAME
++        // Neumann polynomial by doubling its length, P_2r=P_r+P_r(I-A P_r).
++        // This is an explicit robustness extension, not the fixed-r paper run
++        // and not a fallback to another/global solver. FEM keeps five terms.
++        const hsc::Mat I=hsc::Mat::Identity(qm,qm);
++        hsc::Mat inverse_residual=I-A*P;
++        abd_inverse_error=inverse_residual.norm()/std::sqrt(Float(qm));
++        doublings=0;
++        while(adaptive_abd && abd_inverse_error>abd_inverse_tol && doublings<48)
++        {
++            P=(P+P*inverse_residual).eval();
++            P=((P+P.transpose())*.5).eval();
++            inverse_residual=I-A*P;
++            abd_inverse_error=inverse_residual.norm()/std::sqrt(Float(qm));
++            ++doublings;
++            UIPC_ASSERT(P.allFinite() && std::isfinite(abd_inverse_error),
++                        "HSC ABD Neumann extension diverged at doubling {}",doublings);
++        }
++        UIPC_ASSERT(!adaptive_abd || abd_inverse_error<=abd_inverse_tol,
++                    "HSC ABD inverse residual {} exceeds {} after {} doublings",
++                    abd_inverse_error,abd_inverse_tol,doublings);
++        hsc::Mat C=U.transpose()*P*U;
++        C=((C+C.transpose())*.5).eval();
++        UIPC_ASSERT(P.allFinite() && C.allFinite(),"HSC: nonfinite Neumann/Schur factors");
++        dV.upload(V.data(),V.size()); dC.upload(C.data(),C.size());
++        t1.resize(rank); t2.resize(rank);
++        for(auto v:{&r,&z,&p,&Ap,&term,&tmp,&aux,&rhs}) v->resize(N);
++    }
++
++    void D_product(hsc::CV x,hsc::V y)
++    {
++        // x has zero ABD entries. Masking H*x therefore gives exactly D*x.
++        spmv(x,y);
++        hsc::mask_q<<<hsc::blocks(qm),256>>>(y,qo,qm);
++    }
++    void VT(hsc::CV x)
++    {
++        if(rank) hsc::transpose_V<<<rank,256>>>(dV.data,nodes.data,active,x,t1.data);
++    }
++    void subtract_factor(hsc::V y,const Float* c)
++    {
++        if(rank) hsc::subtract_V<<<hsc::blocks(active),256>>>(dV.data,nodes.data,active,rank,c,y);
++    }
++    void schur(hsc::CV x,hsc::V y)
++    {
++        D_product(x,y);
++        if(rank)
++        {
++            VT(x);
++            hsc::small_product<<<hsc::blocks(rank),256>>>(dC.data,t1.data,t2.data,rank);
++            subtract_factor(y,t2.data);
++        }
++    }
++    void precondition(hsc::CV b)
++    {
++        z.buffer_view().fill(0); term.buffer_view().fill(0);
++        hsc::jacobi<<<hsc::blocks(fn/3),256>>>(invD.data,b,z.view(),fo,fn,omega);
++        term.buffer_view().copy_from(z.cview().buffer_view());
++        for(int k=1;k<order;++k)
++        {
++            D_product(term.cview(),tmp.view());
++            aux.buffer_view().fill(0);
++            hsc::jacobi<<<hsc::blocks(fn/3),256>>>(invD.data,tmp.cview(),aux.view(),fo,fn,omega);
++            hsc::axpby<<<hsc::blocks(N),256>>>(term.view(),aux.cview(),-1,1,N);
++            hsc::axpby<<<hsc::blocks(N),256>>>(z.view(),term.cview(),1,1,N);
++        }
++    }
++    void do_solve(GlobalLinearSystem::SolvingInfo& info) override
++    {
++        auto start=std::chrono::steady_clock::now();
++        setup(info);
++        auto prepared=std::chrono::steady_clock::now();
++        auto x=info.x(); auto b=info.b();
++        x.buffer_view().fill(0);
++        hsc::Vec bq(qm);
++        hsc::check(cudaMemcpy(bq.data(),b.buffer_view().data()+qo,qm*sizeof(Float),cudaMemcpyDeviceToHost));
++        hsc::Vec c=U.transpose()*P*bq;
++        t2.upload(c.data(),rank);
++        rhs.buffer_view().copy_from(b.buffer_view());
++        hsc::mask_q<<<hsc::blocks(qm),256>>>(rhs.view(),qo,qm);
++        subtract_factor(rhs.view(),t2.data);
++        r.buffer_view().copy_from(rhs.cview().buffer_view());
++        Float normb=ctx().norm(rhs.cview()),relative=normb>0?1:0;
++        Float rz=0; int iterations=0;
++        if(normb>0)
++        {
++            precondition(r.cview());
++            p.buffer_view().copy_from(z.cview().buffer_view());
++            rz=ctx().dot(r.cview(),z.cview());
++            while(iterations<max_iter && relative>tol)
++            {
++                schur(p.cview(),Ap.view());
++                Float denom=ctx().dot(p.cview(),Ap.cview());
++                UIPC_ASSERT(std::isfinite(denom) && denom>0 && std::isfinite(rz) && rz>0,
++                            "HSC Schur PCG breakdown: iteration={}, pSp={}, rz={}. No fallback.",iterations,denom,rz);
++                hsc::update<<<hsc::blocks(N),256>>>(x,r.view(),p.cview(),Ap.cview(),rz/denom,N);
++                ++iterations;
++                relative=ctx().norm(r.cview())/normb;
++                if(relative<=tol)
++                {
++                    // One true residual check on convergence, not a per-iteration audit.
++                    schur(x.as_const(),Ap.view());
++                    r.buffer_view().copy_from(rhs.cview().buffer_view());
++                    hsc::axpby<<<hsc::blocks(N),256>>>(r.view(),Ap.cview(),-1,1,N);
++                    relative=ctx().norm(r.cview())/normb;
++                    if(relative<=tol) break;
++                    precondition(r.cview());
++                    p.buffer_view().copy_from(z.cview().buffer_view());
++                    rz=ctx().dot(r.cview(),z.cview());
++                    continue;
++                }
++                precondition(r.cview());
++                Float next=ctx().dot(r.cview(),z.cview());
++                hsc::axpby<<<hsc::blocks(N),256>>>(p.view(),z.cview(),1,next/rz,N);
++                rz=next;
++            }
++        }
++        UIPC_ASSERT(relative<=tol,"HSC Schur PCG did not converge: iterations={}, residual={}",iterations,relative);
++        VT(x.as_const());
++        hsc::Vec vt=hsc::Vec::Zero(rank);
++        if(rank) hsc::check(cudaMemcpy(vt.data(),t1.data,rank*sizeof(Float),cudaMemcpyDeviceToHost));
++        hsc::Vec dq=P*(bq-U*vt);
++        hsc::check(cudaMemcpy(x.buffer_view().data()+qo,dq.data(),qm*sizeof(Float),cudaMemcpyHostToDevice));
++        Float descent=ctx().dot(b,x.as_const());
++        Float bn=ctx().norm(b);
++        UIPC_ASSERT(std::isfinite(descent) && (descent>0 || bn==0),"HSC returned a non-descent direction");
++        spmv(x.as_const(),Ap.view());
++        r.buffer_view().copy_from(b.buffer_view());
++        hsc::axpby<<<hsc::blocks(N),256>>>(r.view(),Ap.cview(),-1,1,N);
++        Float full_residual=bn>0?ctx().norm(r.cview())/bn:0;
++        auto end=std::chrono::steady_clock::now();
++        double setup_ms=std::chrono::duration<double,std::milli>(prepared-start).count();
++        double total_ms=std::chrono::duration<double,std::milli>(end-start).count();
++        SizeT mesh_contacts=0,ground_contacts=0;
++        auto sf=contacts->find<SimplexTrajectoryFilter>();
++        auto gf=contacts->find<VertexHalfPlaneTrajectoryFilter>();
++        if(sf) mesh_contacts=sf->PTs().size()+sf->EEs().size()+sf->PEs().size()+sf->PPs().size();
++        if(gf) ground_contacts=gf->PHs().size();
++        info.iter_count(iterations);
++        logger::info("LinearHSC: frame={} newton={} FEM={} ABD={} active={} rank={} ACAerr={} "
++                     "iters={} SchurResidual={} fullResidual={} setup_ms={} total_ms={}",
++                     engine().frame(),engine().newton_iter(),fn,qm,active,rank,aca_error,
++                     iterations,relative,full_residual,setup_ms,total_ms);
++        std::ofstream out(std::filesystem::path(workspace())/"hsc_stats.jsonl",std::ios::app);
++        out<<fmt::format("{{\"frame\":{},\"newton\":{},\"fem_dofs\":{},\"abd_dofs\":{},"
++                         "\"active_fem_dofs\":{},\"rank\":{},\"aca_relative_error\":{},"
++                         "\"pcg_iterations\":{},\"schur_relative_residual\":{},\"full_relative_residual\":{},"
++                         "\"setup_ms\":{},\"total_ms\":{},\"active_mesh_contacts\":{},\"active_ground_contacts\":{},"
++                         "\"adaptive_abd_inverse\":{},\"neumann_doublings\":{},\"abd_inverse_residual\":{},"
++                         "\"full_residual_limit\":{},\"accepted\":{},"
++                         "\"solver\":\"linear_hsc\",\"fallback\":false}}\n",
++                         engine().frame(),engine().newton_iter(),fn,qm,active,rank,aca_error,
++                         iterations,relative,full_residual,setup_ms,total_ms,mesh_contacts,ground_contacts,
++                         bool(adaptive_abd),doublings,abd_inverse_error,full_residual_limit,
++                         std::isfinite(full_residual) && full_residual<=full_residual_limit);
++        out.flush();
++        UIPC_ASSERT(std::isfinite(full_residual) && full_residual<=full_residual_limit,
++                    "HSC full-system residual {} exceeds {} despite Schur residual {}. No fallback.",
++                    full_residual,full_residual_limit,relative);
++    }
++};
++REGISTER_SIM_SYSTEM(LinearHSC);
++} // namespace uipc::backend::cuda
+--- /dev/null
++++ b/include/uipc/constitution/log_neo_hookean.h
+@@ -0,0 +1,28 @@
++// Adapted from libuipc stable_neo_hookean (Apache-2.0); local LogNeoHookean extension.
++#pragma once
++#include <uipc/constitution/finite_element_constitution.h>
++#include <uipc/constitution/elastic_moduli.h>
++#include <uipc/common/unit.h>
++
++namespace uipc::constitution
++{
++class UIPC_CONSTITUTION_API LogNeoHookean : public FiniteElementConstitution
++{
++    using Base = FiniteElementConstitution;
++
++  public:
++    LogNeoHookean(const Json& config = default_config()) noexcept;
++
++    void apply_to(geometry::SimplicialComplex& sc,
++                  const ElasticModuli& moduli = ElasticModuli::youngs_poisson(120.0_kPa, 0.49),
++                  Float mass_density = 1e3) const;
++
++    static Json default_config() noexcept;
++
++  protected:
++    virtual U64 get_uid() const noexcept override;
++
++  private:
++    Json m_config;
++};
++}  // namespace uipc::constitution
+--- /dev/null
++++ b/src/backends/cuda/finite_element/constitutions/log_neo_hookean_3d.cu
+@@ -0,0 +1,253 @@
++// Adapted from libuipc stable_neo_hookean (Apache-2.0); local LogNeoHookean extension.
++#include <finite_element/fem_3d_constitution.h>
++#include <finite_element/constitutions/log_neo_hookean_function.h>
++#include <finite_element/fem_utils.h>
++#include <kernel_cout.h>
++#include <cuda_tool/cuda_tool.h>
++#include <Eigen/Dense>
++#include <utils/matrix_assembler.h>
++
++namespace uipc::backend::cuda
++{
++namespace
++{
++    // Logarithmic NH with a positive determinant domain and projected Hessian.
++    namespace SNH = log_nh;
++
++    constexpr SizeT StencilSize     = 4;
++    constexpr SizeT HalfHessianSize = StencilSize * (StencilSize + 1) / 2;
++
++    __global__ void LogNeoHookean3D_do_compute_energy_kernel(
++        cuda_tool::CBufferView<Float>     mus,
++        cuda_tool::CBufferView<Float>     lambdas,
++        cuda_tool::BufferView<Float>      energies,
++        cuda_tool::CBufferView<Vector4i>  indices,
++        cuda_tool::CBufferView<Vector3>   xs,
++        cuda_tool::CBufferView<Vector3>   starts,
++        cuda_tool::CBufferView<Matrix3x3> Dm_invs,
++        cuda_tool::CBufferView<Float>     volumes,
++        Float                             dt,
++        int                               n)
++    {
++        int I = blockIdx.x * blockDim.x + threadIdx.x;
++        if(I >= n)
++            return;
++        const Vector4i&  tet    = indices(I);
++        const Matrix3x3& Dm_inv = Dm_invs(I);
++        Float            mu     = mus(I);
++        Float            lambda = lambdas(I);
++
++        const Vector3& x0 = xs(tet(0));
++        const Vector3& x1 = xs(tet(1));
++        const Vector3& x2 = xs(tet(2));
++        const Vector3& x3 = xs(tet(3));
++
++        auto F = fem::F(x0, x1, x2, x3, Dm_inv);
++
++        const auto F0 = fem::F(starts(tet(0)), starts(tet(1)),
++                               starts(tet(2)), starts(tet(3)), Dm_inv);
++        if(!log_nh::feasible_segment(F0, F))
++        {
++            energies(I) = HUGE_VAL;
++            return;
++        }
++
++        Float E;
++
++        SNH::E(E, mu, lambda, F);
++        E *= dt * dt * volumes(I);
++        energies(I) = E;
++    }
++
++    __global__ void LogNeoHookean3D_do_compute_gradient_hessian_kernel(
++        cuda_tool::CBufferView<Float>          mus,
++        cuda_tool::CBufferView<Float>          lambdas,
++        cuda_tool::CBufferView<Vector4i>       indices,
++        cuda_tool::CBufferView<Vector3>        xs,
++        cuda_tool::CBufferView<Matrix3x3>      Dm_invs,
++        cuda_tool::DoubletVectorView<Float, 3> G3s,
++        cuda_tool::TripletMatrixView<Float, 3> H3x3s,
++        cuda_tool::CBufferView<Float>          volumes,
++        Float                                  dt,
++        bool                                   gradient_only,
++        int                                    n)
++    {
++        int I = blockIdx.x * blockDim.x + threadIdx.x;
++        if(I >= n)
++            return;
++        const Vector4i&  tet    = indices(I);
++        const Matrix3x3& Dm_inv = Dm_invs(I);
++        Float            mu     = mus(I);
++        Float            lambda = lambdas(I);
++
++        const Vector3& x0 = xs(tet(0));
++        const Vector3& x1 = xs(tet(1));
++        const Vector3& x2 = xs(tet(2));
++        const Vector3& x3 = xs(tet(3));
++
++        auto F = fem::F(x0, x1, x2, x3, Dm_inv);
++
++        auto Vdt2 = volumes(I) * dt * dt;
++
++        Matrix3x3 dEdF;
++        SNH::dEdF(dEdF, mu, lambda, F);
++        auto VecdEdF = flatten(dEdF);
++        VecdEdF *= Vdt2;
++
++        auto shape_gradients = fem::tetrahedron_shape_gradients(Dm_inv);
++
++        DoubletVectorAssembler DVA{G3s};
++#pragma unroll
++        for(int i = 0; i < StencilSize; ++i)
++        {
++            Vector3 G = fem::project_F_gradient(shape_gradients.col(i), VecdEdF);
++            DVA(I * StencilSize + i).write(tet(i), G);
++        }
++
++        if(gradient_only)
++            return;
++
++        // Project the symmetric 9x9 Hessian before the shape-gradient pullback.
++        Matrix9x9 ddEddF;
++        SNH::ddEddF_spd(ddEddF, mu, lambda, F);
++        ddEddF *= Vdt2;
++
++        IndexT hessian_offset = I * HalfHessianSize;
++#pragma unroll
++        for(int i = 0; i < StencilSize; ++i)
++        {
++#pragma unroll
++            for(int j = i; j < StencilSize; ++j)
++            {
++                int left  = i;
++                int right = j;
++                if(tet(left) > tet(right))
++                {
++                    left  = j;
++                    right = i;
++                }
++
++                Matrix3x3 H = fem::project_F_hessian_block(
++                    shape_gradients.col(left), ddEddF, shape_gradients.col(right));
++                H3x3s(hessian_offset++).write(tet(left), tet(right), H);
++            }
++        }
++    }
++}  // namespace
++
++class LogNeoHookean3D final : public FEM3DConstitution
++{
++  public:
++    // Constitution UID by libuipc specification
++    static constexpr U64   ConstitutionUID = 10010;
++    static constexpr SizeT StencilSize     = 4;
++    static constexpr SizeT HalfHessianSize = StencilSize * (StencilSize + 1) / 2;
++
++    using FEM3DConstitution::FEM3DConstitution;
++
++    vector<Float> h_mus;
++    vector<Float> h_lambdas;
++
++    cuda_tool::DeviceBuffer<Float> mus;
++    cuda_tool::DeviceBuffer<Float> lambdas;
++
++    virtual U64 get_uid() const noexcept override { return ConstitutionUID; }
++
++    FiniteElementMethod* finite_element_method = nullptr;
++    virtual void do_build(BuildInfo& info) override
++    {
++        finite_element_method = &require<FiniteElementMethod>();
++    }
++
++    virtual void do_report_extent(ReportExtentInfo& info) override
++    {
++        info.energy_count(mus.size());
++        info.gradient_count(mus.size() * StencilSize);
++
++        if(info.gradient_only())
++            return;
++
++        info.hessian_count(mus.size() * HalfHessianSize);
++    }
++
++    virtual void do_init(FiniteElementMethod::FilteredInfo& info) override
++    {
++        using ForEachInfo = FiniteElementMethod::ForEachInfo;
++
++        auto geo_slots = world().scene().geometries();
++
++        auto N = info.primitive_count();
++
++        h_mus.resize(N);
++        h_lambdas.resize(N);
++
++        info.for_each(
++            geo_slots,
++            [](geometry::SimplicialComplex& sc) -> auto
++            {
++                auto mu     = sc.tetrahedra().find<Float>("mu");
++                auto lambda = sc.tetrahedra().find<Float>("lambda");
++
++                return zip(mu->view(), lambda->view());
++            },
++            [&](const ForEachInfo& I, auto mu_and_lambda)
++            {
++                auto&& [mu, lambda] = mu_and_lambda;
++
++                auto vI = I.global_index();
++
++                h_mus[vI]     = mu;
++                h_lambdas[vI] = lambda;
++            });
++
++        mus.resize(N);
++        mus.view().copy_from(h_mus.data());
++
++        lambdas.resize(N);
++        lambdas.view().copy_from(h_lambdas.data());
++    }
++
++    virtual void do_compute_energy(ComputeEnergyInfo& info) override
++    {
++        auto k = LogNeoHookean3D_do_compute_energy_kernel;
++        int  n = (int)info.indices().size();
++        if(n > 0)
++        {
++            k<<<cuda_tool::best_grid_dim(n, k), cuda_tool::best_block_dim(k), 0, nullptr>>>(
++                mus.cview(),
++                lambdas.cview(),
++                info.energies(),
++                info.indices(),
++                info.xs(),
++                finite_element_method->x_temps(),
++                info.Dm_invs(),
++                info.rest_volumes(),
++                info.dt(),
++                n);
++        }
++    }
++
++    virtual void do_compute_gradient_hessian(ComputeGradientHessianInfo& info) override
++    {
++        auto k = LogNeoHookean3D_do_compute_gradient_hessian_kernel;
++        int  n = (int)info.indices().size();
++        if(n > 0)
++        {
++            k<<<cuda_tool::best_grid_dim(n, k), cuda_tool::best_block_dim(k), 0, nullptr>>>(
++                mus.cview(),
++                lambdas.cview(),
++                info.indices(),
++                info.xs(),
++                info.Dm_invs(),
++                info.gradients(),
++                info.hessians(),
++                info.rest_volumes(),
++                info.dt(),
++                info.gradient_only(),
++                n);
++        }
++    }
++};
++
++REGISTER_SIM_SYSTEM(LogNeoHookean3D);
++}  // namespace uipc::backend::cuda
+--- /dev/null
++++ b/src/backends/cuda/finite_element/constitutions/log_neo_hookean_function.h
+@@ -0,0 +1,151 @@
++// Local extension to libuipc (Apache-2.0): non-inverting compressible NH.
++// Physical Lame parameters, column-major vectorization of F.
++#pragma once
++#include <type_define.h>
++#include <Eigen/Dense>
++#include <cmath>
++#include <limits>
++
++namespace uipc::backend::cuda::log_nh
++{
++constexpr Float min_jacobian = 1e-8;
++
++UIPC_GENERIC Float triple(const Vector3& a, const Vector3& b, const Vector3& c)
++{
++    return a.dot(b.cross(c));
++}
++
++UIPC_GENERIC Matrix3x3 cofactor(const Matrix3x3& F)
++{
++    Matrix3x3 C;
++    for(int i=0; i<3; ++i)
++        for(int j=0; j<3; ++j)
++            C(i,j)=F((i+1)%3,(j+1)%3)*F((i+2)%3,(j+2)%3)
++                   -F((i+1)%3,(j+2)%3)*F((i+2)%3,(j+1)%3);
++    return C;
++}
++
++UIPC_GENERIC Float determinant(const Matrix3x3& F)
++{
++    return F(0,0)*(F(1,1)*F(2,2)-F(1,2)*F(2,1))
++          -F(0,1)*(F(1,0)*F(2,2)-F(1,2)*F(2,0))
++          +F(0,2)*(F(1,0)*F(2,1)-F(1,1)*F(2,0));
++}
++
++// Check the entire Newton trial segment. Positive endpoints alone can skip
++// two roots of det(F0 + s*dF). Its minimum is at an endpoint or a derivative root.
++UIPC_GENERIC bool feasible_segment(const Matrix3x3& A, const Matrix3x3& end)
++{
++    const Matrix3x3 B = end - A;
++    const Float c0 = determinant(A);
++    const Float c1 = triple(B.col(0), A.col(1), A.col(2))
++                   + triple(A.col(0), B.col(1), A.col(2))
++                   + triple(A.col(0), A.col(1), B.col(2));
++    const Float c2 = triple(A.col(0), B.col(1), B.col(2))
++                   + triple(B.col(0), A.col(1), B.col(2))
++                   + triple(B.col(0), B.col(1), A.col(2));
++    const Float c3 = determinant(B);
++    if(!(c0 > min_jacobian && determinant(end) > min_jacobian))
++        return false;
++    const Float a = 3*c3, b = 2*c2, c = c1;
++    Float roots[2] = {-1, -1};
++    const Float scale = fabs(a) + fabs(b) + fabs(c);
++    const Float eps = 32*2.2204460492503131e-16*scale;
++    if(fabs(a) <= eps)
++    {
++        if(fabs(b) > eps) roots[0] = -c/b;
++    }
++    else
++    {
++        const Float disc = b*b - 4*a*c;
++        if(disc >= 0)
++        {
++            const Float q = -0.5*(b + copysign(sqrt(disc), b));
++            if(q == 0) roots[0] = -b/(2*a);
++            else { roots[0] = q/a; roots[1] = c/q; }
++        }
++    }
++    for(int i=0; i<2; ++i)
++    {
++        const Float s = roots[i];
++        if(s > 0 && s < 1 && !(((c3*s+c2)*s+c1)*s+c0 > min_jacobian))
++            return false;
++    }
++    return true;
++}
++
++UIPC_GENERIC void E(Float& energy, Float mu, Float lambda, const Matrix3x3& F)
++{
++    const Float J = determinant(F);
++    if(!(J > min_jacobian)) { energy = HUGE_VAL; return; }
++    const Float logJ = log(J);
++    energy = mu/2*(F.squaredNorm()-3) - mu*logJ + lambda/2*logJ*logJ;
++}
++
++UIPC_GENERIC void dEdF(Matrix3x3& P, Float mu, Float lambda, const Matrix3x3& F)
++{
++    const Float J=determinant(F);
++    const Matrix3x3 C=cofactor(F);
++    const Float q=(lambda*log(J)-mu)/J;
++    for(int i=0; i<9; ++i) P.data()[i]=mu*F.data()[i]+q*C.data()[i];
++}
++
++UIPC_GENERIC void raw_hessian(Matrix9x9& H, Float mu, Float lambda, const Matrix3x3& F)
++{
++    const Float J=determinant(F);
++    const Matrix3x3 G=cofactor(F)/J;
++    const Float q = lambda*log(J)-mu;
++    for(int a=0; a<3; ++a)
++        for(int i=0; i<3; ++i)
++            for(int b=0; b<3; ++b)
++                for(int j=0; j<3; ++j)
++                    H(i+3*a,j+3*b) = mu*(i==j && a==b)
++                        + lambda*G(i,a)*G(j,b) - q*G(i,b)*G(j,a);
++}
++
++UIPC_GENERIC void ddEddF_spd(Matrix9x9& H, Float mu, Float lambda, const Matrix3x3& F)
++{
++    raw_hessian(H, mu, lambda, F);
++    // Bounded cyclic Jacobi EVD with explicit small-matrix arithmetic for CUDA.
++    Matrix9x9 Q=Matrix9x9::Identity();
++    const Float threshold=1e-13*H.norm();
++    for(int sweep=0; sweep<32; ++sweep)
++    {
++        Float maximum=0;
++        for(int p=0; p<8; ++p)
++            for(int q=p+1; q<9; ++q)
++            {
++                const Float apq=H(p,q);
++                maximum=fmax(maximum,fabs(apq));
++                if(fabs(apq)<=threshold) continue;
++                const Float tau=(H(q,q)-H(p,p))/(2*apq);
++                const Float t=copysign(1/(fabs(tau)+sqrt(1+tau*tau)),tau);
++                const Float c=1/sqrt(1+t*t), s=t*c;
++                H(p,p)-=t*apq; H(q,q)+=t*apq;
++                H(p,q)=H(q,p)=0;
++                for(int k=0; k<9; ++k)
++                {
++                    if(k!=p && k!=q)
++                    {
++                        const Float kp=H(k,p), kq=H(k,q);
++                        H(k,p)=H(p,k)=c*kp-s*kq;
++                        H(k,q)=H(q,k)=s*kp+c*kq;
++                    }
++                    const Float qp=Q(k,p), qq=Q(k,q);
++                    Q(k,p)=c*qp-s*qq; Q(k,q)=s*qp+c*qq;
++                }
++            }
++        if(maximum<=threshold) break;
++    }
++    Vector<Float,9> values;
++    for(int i=0; i<9; ++i) values(i)=fmax(H(i,i),Float{0});
++    // Explicit small product avoids Eigen's host-oriented blocked GEMM path.
++    for(int i=0; i<9; ++i)
++        for(int j=0; j<9; ++j)
++        {
++            Float value=0;
++            for(int k=0; k<9; ++k) value+=Q(i,k)*values(k)*Q(j,k);
++            H(i,j)=value;
++        }
++}
++} // namespace uipc::backend::cuda::log_nh
+--- /dev/null
++++ b/src/constitution/log_neo_hookean.cpp
+@@ -0,0 +1,60 @@
++// Adapted from libuipc stable_neo_hookean (Apache-2.0); local LogNeoHookean extension.
++#include <uipc/constitution/log_neo_hookean.h>
++#include <uipc/builtin/constitution_uid_auto_register.h>
++#include <uipc/builtin/attribute_name.h>
++#include <uipc/builtin/constitution_type.h>
++#include <uipc/constitution/conversion.h>
++#include <uipc/common/log.h>
++
++namespace uipc::constitution
++{
++REGISTER_CONSTITUTION_UIDS()
++{
++    using namespace uipc::builtin;
++    list<UIDInfo> uids;
++    uids.push_back(UIDInfo{.uid  = 10010,
++                           .name = "LogNeoHookean",
++                           .type = string{builtin::FiniteElement}});
++    return uids;
++}
++
++LogNeoHookean::LogNeoHookean(const Json& config) noexcept
++    : m_config(config)
++{
++}
++
++void LogNeoHookean::apply_to(geometry::SimplicialComplex& sc,
++                                const ElasticModuli&         moduli,
++                                Float                        mass_density) const
++{
++    Base::apply_to(sc, mass_density);
++
++    auto mu     = moduli.mu();
++    auto lambda = moduli.lambda();
++
++    auto snh_mu = mu;
++    auto snh_lambda = lambda;
++
++    UIPC_ASSERT_THROW(sc.dim() == 3, "LogNeoHookean only supports 3D simplicial complex");
++
++    auto mu_attr = sc.tetrahedra().find<Float>("mu");
++    if(!mu_attr)
++        mu_attr = sc.tetrahedra().create<Float>("mu", snh_mu);
++    std::ranges::fill(geometry::view(*mu_attr), snh_mu);
++
++    auto lambda_attr = sc.tetrahedra().find<Float>("lambda");
++    if(!lambda_attr)
++        lambda_attr = sc.tetrahedra().create<Float>("lambda", snh_lambda);
++    std::ranges::fill(geometry::view(*lambda_attr), snh_lambda);
++}
++
++Json LogNeoHookean::default_config() noexcept
++{
++    return Json::object();
++}
++
++U64 LogNeoHookean::get_uid() const noexcept
++{
++    return 10010;
++}
++}  // namespace uipc::constitution
+--- /dev/null
++++ b/src/pybind/pyuipc/constitution/log_neo_hookean.cpp
+@@ -0,0 +1,42 @@
++// Adapted from libuipc stable_neo_hookean (Apache-2.0); local LogNeoHookean extension.
++#include <pyuipc/constitution/log_neo_hookean.h>
++#include <uipc/constitution/log_neo_hookean.h>
++
++namespace pyuipc::constitution
++{
++using namespace uipc::constitution;
++using namespace uipc::geometry;
++PyLogNeoHookean::PyLogNeoHookean(py::module& m)
++{
++    auto class_LogNeoHookean = py::class_<LogNeoHookean, FiniteElementConstitution>(
++        m, "LogNeoHookean", R"(LogNeoHookean constitution for non-inverting logarithmic neo-Hookean hyperelastic material.)");
++
++    class_LogNeoHookean.def(py::init<const Json&>(),
++                               py::arg("config") = LogNeoHookean::default_config(),
++                               R"(Create a LogNeoHookean constitution.
++Args:
++    config: Configuration dictionary (optional, uses default if not provided).)");
++
++    class_LogNeoHookean.def_static("default_config",
++                                      &LogNeoHookean::default_config,
++                                      R"(Get the default LogNeoHookean configuration.
++Returns:
++    dict: Default configuration dictionary.)");
++
++    class_LogNeoHookean.def("apply_to",
++                               [](LogNeoHookean& self,
++                                  SimplicialComplex& sc,
++                                  const ElasticModuli& moduli,
++                                  Float mass_density)
++                               { self.apply_to(sc, moduli, mass_density); },
++                               py::arg("sc"),
++                               py::arg("moduli") =
++                                   ElasticModuli::youngs_poisson(120.0_kPa, 0.49),
++                               py::arg("mass_density") = 1.0e3,
++                               R"(Apply LogNeoHookean constitution to a simplicial complex.
++Args:
++    sc: SimplicialComplex to apply to.
++    moduli: ElasticModuli (default: Young's modulus 120.0 kPa, Poisson's ratio 0.49).
++    mass_density: Mass density (default: 1000.0).)");
++}
++}  // namespace pyuipc::constitution
+--- /dev/null
++++ b/src/pybind/pyuipc/constitution/log_neo_hookean.h
+@@ -0,0 +1,12 @@
++// Adapted from libuipc stable_neo_hookean (Apache-2.0); local LogNeoHookean extension.
++#pragma once
++#include <pyuipc/pyuipc.h>
++
++namespace pyuipc::constitution
++{
++class PyLogNeoHookean
++{
++  public:
++    PyLogNeoHookean(py::module& m);
++};
++}  // namespace pyuipc::constitution

@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/inter_primitive_effect_system/constitutions/soft_vertex_stitch.cu",
+      "path": "references/spiriMirror__libuipc/src/backends/cuda/inter_primitive_effect_system/constitutions/soft_vertex_stitch.cu",
+      "sha256": "40c3d9abf8e5fa939c59ba3401d62eb5da7cab9850f9545b202c9ce5b178e725"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/affine_body_prismatic_joint_limit.md",
+      "path": "references/spiriMirror__libuipc/docs/specification/constitutions/affine_body_prismatic_joint_limit.md",
+      "sha256": "966a468c915867db517c38e17c28ee94975628500994dd255f7cb2fe11cc0802"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/constitution/soft_vertex_stitch.cpp",
+      "path": "references/spiriMirror__libuipc/src/constitution/soft_vertex_stitch.cpp",
+      "sha256": "6dd706390a7dd1546a06f7be6102657d5f74b3f3e0291f434a91e49e469df378"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/inter_primitive_effect_system/constitutions/details/soft_vertex_stitch.inl",
+      "path": "references/spiriMirror__libuipc/src/backends/cuda/inter_primitive_effect_system/constitutions/details/soft_vertex_stitch.inl",
+      "sha256": "51bf7a70ef7abfb590996b148e89769a389316bdee2260823f994d091bbb7bd4"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/constitution/affine_body_prismatic_joint_external_force.cpp",
+      "path": "references/spiriMirror__libuipc/src/constitution/affine_body_prismatic_joint_external_force.cpp",
+      "sha256": "5708c8e7b89e82cc55d26f05772c4ef7b185bd1a63d3193f2396f78ed07c72a3"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/constitution/affine_body_driving_prismatic_joint.cpp",
+      "path": "references/spiriMirror__libuipc/src/constitution/affine_body_driving_prismatic_joint.cpp",
+      "sha256": "9112dfadff5a49deb809bde2dd8ac6862843ff99de9f9083768197ae089d1c55"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/affine_body_prismatic_joint_external_force.md",
+      "path": "references/spiriMirror__libuipc/docs/specification/constitutions/affine_body_prismatic_joint_external_force.md",
+      "sha256": "2a74b9d198446523360b4b2229c8751fce3158100bc9cc8bafe4fa2da7ffb76c"
+    },
+    {
+      "repo": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/22_soft_vertex_stitch/main.py",
+      "path": "references/spiriMirror__libuipc-samples/examples/22_soft_vertex_stitch/main.py",
+      "sha256": "9091f9bbfe255fc2a2ea040091a78bf05fc2bb5d01332a8ab139f6e312660242"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/affine_body/affine_body_dynamics.cu",
+      "path": "references/spiriMirror__libuipc/src/backends/cuda/affine_body/affine_body_dynamics.cu",
+      "sha256": "14fd245e913185a36f5514a5db79f4afd19001fd06599c1144058993c319000d"
+    },
+    {
+      "repo": "spiriMirror/libuipc-samples",
+      "commit": "a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc-samples/a7ca63fb33a3d6964e28ef5d187e2c817d20b8f5/examples/36_vertex_stitch_family/main.py",
+      "path": "references/spiriMirror__libuipc-samples/examples/36_vertex_stitch_family/main.py",
+      "sha256": "d9c20596dfb73eb39893db572885c650fc57c6199fe1d9f7e987b430b713cb0a"
+    },
+    {
+      "repo": "projectchrono/chrono",
+      "commit": "c5651d36a204a12e5c349eda0b141f47551f9c36",
+      "url": "https://raw.githubusercontent.com/projectchrono/chrono/c5651d36a204a12e5c349eda0b141f47551f9c36/src/chrono_models/vehicle/hmmwv/HMMWV_Chassis.cpp",
+      "path": "references/projectchrono__chrono/src/chrono_models/vehicle/hmmwv/HMMWV_Chassis.cpp",
+      "sha256": "f81f9f389f26d28f047f88d48400236b4df562dbfa7628299eb342fe32d5c63c"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/constitution/affine_body_prismatic_joint.cpp",
+      "path": "references/spiriMirror__libuipc/src/constitution/affine_body_prismatic_joint.cpp",
+      "sha256": "a375a0ec1e3fa48504f7f4b22dba2c01ee9e24a199b4252a433988bc39c6de17"
+    },
+    {
+      "repo": "spiriMirror/libuipc",
+      "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/docs/specification/constitutions/affine_body_prismatic_joint.md",
+      "path": "references/spiriMirror__libuipc/docs/specification/constitutions/affine_body_prismatic_joint.md",
+      "sha256": "cc9524567da9dfb21c11084cdd391c5dc79501f3ed661ebb04567e7b0c5b11ee"
+    }
+  ],
+  "errors": []
+}

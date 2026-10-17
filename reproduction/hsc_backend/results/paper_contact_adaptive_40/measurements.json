@@ -1,0 +1,8 @@
+{
+  "first_mesh_contact_frame": 22,
+  "max_pcg_iterations": 1059.0,
+  "max_newton_iterations_per_frame": 23.0,
+  "accepted_solves": 601,
+  "minimum_tet_volume_ratio": 0.9163853307641108,
+  "maximum_bead_error_m": 1.2340419488344255E-05
+}

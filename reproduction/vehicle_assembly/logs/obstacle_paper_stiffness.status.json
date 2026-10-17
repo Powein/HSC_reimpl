@@ -1,0 +1,23 @@
+{
+  "pid": 2576,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\validate_assembly.py",
+    "--case",
+    "vehicle",
+    "--steps",
+    "12",
+    "--obstacles",
+    "12",
+    "--profile",
+    "paper_stiffness",
+    "--motor-speed",
+    "0.8",
+    "--label",
+    "obstacle_paper_stiffness"
+  ],
+  "timeout_s": 300,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\obstacle_paper_stiffness.log",
+  "exit_code": 0,
+  "elapsed_s": 66.04700000000048
+}

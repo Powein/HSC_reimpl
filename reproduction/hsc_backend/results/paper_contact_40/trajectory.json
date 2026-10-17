@@ -1,0 +1,1542 @@
+[
+  {
+    "frame": 0,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.009186037975424943,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          -0.9510350000000001,
+          -0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.009186037975424943,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          -0.9510350000000001,
+          0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.009186037975424943,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          -4.252965,
+          -0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.009186037975424943,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          -4.252965,
+          0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.0040000000000000036,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          0.0,
+          -1.01,
+          0.17857911662527892
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.0040000000000000036,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.17857911662527892
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.0040000000000000036,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          0.0,
+          1.01,
+          0.17857911662527892
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": 0.0,
+        "reported_joint_distance_m": 0.0,
+        "prismatic_lateral_error_m": 0.0,
+        "revolute_anchor_error_m": 0.0,
+        "spring_length_m": 0.35,
+        "spring_force_N": -5111.974000000001,
+        "spindle_center": [
+          -0.9510350000000001,
+          -0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": 0.0,
+        "reported_joint_distance_m": 0.0,
+        "prismatic_lateral_error_m": 0.0,
+        "revolute_anchor_error_m": 0.0,
+        "spring_length_m": 0.35,
+        "spring_force_N": -5111.974000000001,
+        "spindle_center": [
+          -0.9510350000000001,
+          0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 0.0,
+        "reported_joint_distance_m": 0.0,
+        "prismatic_lateral_error_m": 0.0,
+        "revolute_anchor_error_m": 0.0,
+        "spring_length_m": 0.35,
+        "spring_force_N": -5111.974000000001,
+        "spindle_center": [
+          -4.252965,
+          -0.91,
+          0.479
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 0.0,
+        "reported_joint_distance_m": 0.0,
+        "prismatic_lateral_error_m": 0.0,
+        "revolute_anchor_error_m": 0.0,
+        "spring_length_m": 0.35,
+        "spring_force_N": -5111.974000000001,
+        "spindle_center": [
+          -4.252965,
+          0.91,
+          0.479
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 1,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.49627480842238e-06,
+        "min_z_m": 0.009128042053639911,
+        "min_tet_volume_ratio": 0.9999898950876289,
+        "rim_center": [
+          -0.9510350371730988,
+          -0.9100000001242751,
+          0.47899967933962323
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.4962742380347195e-06,
+        "min_z_m": 0.00912804207522644,
+        "min_tet_volume_ratio": 0.9999898950939528,
+        "rim_center": [
+          -0.9510350373125055,
+          0.910000000163274,
+          0.4789996793607162
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.4962351128887673e-06,
+        "min_z_m": 0.009128035177947608,
+        "min_tet_volume_ratio": 0.9999898952740238,
+        "rim_center": [
+          -4.25296496246259,
+          -0.9100000001230224,
+          0.4789996724599048
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.4962348256624517e-06,
+        "min_z_m": 0.009128035200250547,
+        "min_tet_volume_ratio": 0.9999898952788696,
+        "rim_center": [
+          -4.25296496260201,
+          0.910000000164529,
+          0.47899967248368225
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 4.993834196175452e-08,
+        "min_z_m": 0.003786153345221193,
+        "min_tet_volume_ratio": 0.9999537028786575,
+        "rim_center": [
+          1.2510723701435746e-08,
+          -1.0099999411465415,
+          0.17838107580541077
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 4.993866284326422e-08,
+        "min_z_m": 0.0037861530457889985,
+        "min_tet_volume_ratio": 0.9999537029444916,
+        "rim_center": [
+          1.2448713706232628e-08,
+          5.892489430293344e-08,
+          0.17838107581003473
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 4.9938584412167206e-08,
+        "min_z_m": 0.0037861526778032416,
+        "min_tet_volume_ratio": 0.9999537032518439,
+        "rim_center": [
+          1.2469470225865483e-08,
+          1.0100000587900173,
+          0.17838107553400204
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -4.934257073750775e-07,
+        "reported_joint_distance_m": -4.934196067118264e-07,
+        "prismatic_lateral_error_m": 2.438868422706111e-09,
+        "revolute_anchor_error_m": 5.202069016439891e-09,
+        "spring_length_m": 0.3500004669198161,
+        "spring_force_N": -5111.952813962754,
+        "spindle_center": [
+          -0.9510350371314811,
+          -0.9100000001247809,
+          0.47899967415584094
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -4.954218824363294e-07,
+        "reported_joint_distance_m": -4.954157547666152e-07,
+        "prismatic_lateral_error_m": 2.4482653375967506e-09,
+        "revolute_anchor_error_m": 5.201081301134952e-09,
+        "spring_length_m": 0.35000046891599107,
+        "spring_force_N": -5111.952723388236,
+        "spindle_center": [
+          -0.9510350372703739,
+          0.9100000001625463,
+          0.4789996741779222
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 4.380170005632842e-07,
+        "reported_joint_distance_m": 4.3801158348778104e-07,
+        "prismatic_lateral_error_m": 2.1646994824202717e-09,
+        "revolute_anchor_error_m": 5.654744840011475e-09,
+        "spring_length_m": 0.349999535477108,
+        "spring_force_N": -5111.995077279122,
+        "spindle_center": [
+          -4.252964962425458,
+          -0.9100000001235563,
+          0.4789996668233817
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 4.3602350824495264e-07,
+        "reported_joint_distance_m": 4.360181181417761e-07,
+        "prismatic_lateral_error_m": 2.1553155577737997e-09,
+        "revolute_anchor_error_m": 5.653761610416817e-09,
+        "spring_length_m": 0.34999953747060036,
+        "spring_force_N": -5111.994986826324,
+        "spindle_center": [
+          -4.252964962564364,
+          0.9100000001637709,
+          0.47899966684814566
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 2,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.628523249256623e-07,
+        "min_z_m": 0.00908120927716502,
+        "min_tet_volume_ratio": 0.9999984873386972,
+        "rim_center": [
+          -0.9510350711621933,
+          -0.9100000002443857,
+          0.47899934780187026
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.6285247442885403e-07,
+        "min_z_m": 0.009081209549095953,
+        "min_tet_volume_ratio": 0.9999984871419624,
+        "rim_center": [
+          -0.9510350714115654,
+          0.9100000003251062,
+          0.4789993480737219
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.6280258882728285e-07,
+        "min_z_m": 0.009081071574504988,
+        "min_tet_volume_ratio": 0.9999984879422154,
+        "rim_center": [
+          -4.252964925007358,
+          -0.910000000242773,
+          0.4789992099593722
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.6280260650698096e-07,
+        "min_z_m": 0.009081071848665358,
+        "min_tet_volume_ratio": 0.9999984877584427,
+        "rim_center": [
+          -4.252964925256765,
+          0.9100000003267175,
+          0.4789992102349017
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 5.6968562242635187e-08,
+        "min_z_m": 0.003358777270114442,
+        "min_tet_volume_ratio": 0.9999467752260273,
+        "rim_center": [
+          -6.849403065737747e-09,
+          -1.0099998947059843,
+          0.177962130128623
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 5.696857204015412e-08,
+        "min_z_m": 0.0033587766504645745,
+        "min_tet_volume_ratio": 0.9999467752316367,
+        "rim_center": [
+          -6.962924348690824e-09,
+          1.0542693855079227e-07,
+          0.1779621301351503
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 5.696853501346378e-08,
+        "min_z_m": 0.003358775891650158,
+        "min_tet_volume_ratio": 0.9999467752784393,
+        "rim_center": [
+          -6.92350288229429e-09,
+          1.010000105177489,
+          0.17796212971410244
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -1.3661992111770616e-06,
+        "reported_joint_distance_m": -1.3661336881090177e-06,
+        "prismatic_lateral_error_m": 1.3361406292314933e-08,
+        "revolute_anchor_error_m": 2.7514495630469344e-09,
+        "spring_length_m": 0.35000133962496777,
+        "spring_force_N": -5111.913215806477,
+        "spindle_center": [
+          -0.9510350711190013,
+          -0.9100000002455136,
+          0.4789993450529884
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -1.3697000364467022e-06,
+        "reported_joint_distance_m": -1.3696343361576106e-06,
+        "prismatic_lateral_error_m": 1.3394691187718182e-08,
+        "revolute_anchor_error_m": 2.744721751779678e-09,
+        "spring_length_m": 0.35000134312579323,
+        "spring_force_N": -5111.91305695989,
+        "spindle_center": [
+          -0.9510350713674391,
+          0.9100000003236624,
+          0.4789993453315822
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 1.3517447126786465e-06,
+        "reported_joint_distance_m": 1.3516798832245009e-06,
+        "prismatic_lateral_error_m": 1.322007998150986e-08,
+        "revolute_anchor_error_m": 7.92251980817709e-09,
+        "spring_length_m": 0.349998621681044,
+        "spring_force_N": -5112.036539895996,
+        "spindle_center": [
+          -4.252964924906336,
+          -0.910000000243957,
+          0.47899920203974616
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 1.3482475586390214e-06,
+        "reported_joint_distance_m": 1.3481829062122744e-06,
+        "prismatic_lateral_error_m": 1.318682872335801e-08,
+        "revolute_anchor_error_m": 7.91579763958057e-09,
+        "spring_length_m": 0.34999862517819796,
+        "spring_force_N": -5112.036381216001,
+        "spindle_center": [
+          -4.252964925154808,
+          0.9100000003252189,
+          0.4789992023220112
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 3,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.4116864644172074e-07,
+        "min_z_m": 0.009046639663813132,
+        "min_tet_volume_ratio": 0.9999984958786088,
+        "rim_center": [
+          -0.9510351031074811,
+          -0.9100000003592695,
+          0.47899925600441656
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.4116891407579443e-07,
+        "min_z_m": 0.009046640741271181,
+        "min_tet_volume_ratio": 0.9999984955768239,
+        "rim_center": [
+          -0.9510351034488435,
+          0.9100000004857368,
+          0.4789992570823856
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.4093495602557484e-07,
+        "min_z_m": 0.009045857146309162,
+        "min_tet_volume_ratio": 0.9999984985627703,
+        "rim_center": [
+          -4.252964885112749,
+          -0.9100000003586479,
+          0.4789984728331332
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.409351520995697e-07,
+        "min_z_m": 0.00904585822641929,
+        "min_tet_volume_ratio": 0.9999984982822004,
+        "rim_center": [
+          -4.252964885454163,
+          0.9100000004863559,
+          0.4789984739146692
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 6.134274811301488e-08,
+        "min_z_m": 0.0027210400301569708,
+        "min_tet_volume_ratio": 0.9999437720181023,
+        "rim_center": [
+          -6.62522979489517e-08,
+          -1.0099998334388403,
+          0.17733588605842507
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 6.134273043934765e-08,
+        "min_z_m": 0.0027210391066651413,
+        "min_tet_volume_ratio": 0.9999437720170933,
+        "rim_center": [
+          -6.641709061220148e-08,
+          1.6675625341670123e-07,
+          0.1773358860660984
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 6.134275183446518e-08,
+        "min_z_m": 0.0027210379822344526,
+        "min_tet_volume_ratio": 0.9999437719808009,
+        "rim_center": [
+          -6.635833462001115e-08,
+          1.010000166390803,
+          0.17733588547452503
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -2.4466725865295833e-06,
+        "reported_joint_distance_m": -2.4464151851755716e-06,
+        "prismatic_lateral_error_m": 3.546126722656823e-08,
+        "revolute_anchor_error_m": 4.958790455374452e-09,
+        "spring_length_m": 0.35000242008684745,
+        "spring_force_N": -5111.86419088863,
+        "spindle_center": [
+          -0.9510351031705992,
+          -0.9100000003612918,
+          0.4789992609521442
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -2.450941453837912e-06,
+        "reported_joint_distance_m": -2.4506835833491368e-06,
+        "prismatic_lateral_error_m": 3.552175626188685e-08,
+        "revolute_anchor_error_m": 4.97678847446701e-09,
+        "spring_length_m": 0.3500024243557148,
+        "spring_force_N": -5111.863997192882,
+        "spindle_center": [
+          -0.9510351035107979,
+          0.9100000004832451,
+          0.4789992620481256
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 2.4358187403255133e-06,
+        "reported_joint_distance_m": 2.4355624802640056e-06,
+        "prismatic_lateral_error_m": 3.5303918905792526e-08,
+        "revolute_anchor_error_m": 1.5457989301819513e-08,
+        "spring_length_m": 0.3499975375955206,
+        "spring_force_N": -5112.085729233188,
+        "spindle_center": [
+          -4.25296488483668,
+          -0.910000000360746,
+          0.4789984573882107
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 2.431553425619931e-06,
+        "reported_joint_distance_m": 2.4312976343407148e-06,
+        "prismatic_lateral_error_m": 3.524348215651293e-08,
+        "revolute_anchor_error_m": 1.544001416041411e-08,
+        "spring_length_m": 0.34999754186083537,
+        "spring_force_N": -5112.085535698636,
+        "spindle_center": [
+          -4.25296488517693,
+          0.9100000004837908,
+          0.4789984584877447
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 4,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 1.3744346361567316e-06,
+        "min_z_m": 0.009025595329321724,
+        "min_tet_volume_ratio": 0.9999953350615776,
+        "rim_center": [
+          -0.9510352455829948,
+          -0.9100000003824069,
+          0.479005231261401
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 1.3744334991435365e-06,
+        "min_z_m": 0.009025598472108773,
+        "min_tet_volume_ratio": 0.999995335089658,
+        "rim_center": [
+          -0.9510352456952885,
+          0.9100000005817066,
+          0.4790052344061117
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 1.3621990863708828e-06,
+        "min_z_m": 0.009008624132987026,
+        "min_tet_volume_ratio": 0.9999952744115456,
+        "rim_center": [
+          -4.25296466755903,
+          -0.9100000003981965,
+          0.4789882356217332
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 1.3622005542552898e-06,
+        "min_z_m": 0.009008627276693262,
+        "min_tet_volume_ratio": 0.9999952744107178,
+        "rim_center": [
+          -4.25296466767134,
+          0.91000000056597,
+          0.4789882387676074
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 6.242832612394588e-09,
+        "min_z_m": 0.0018402408492114452,
+        "min_tet_volume_ratio": 0.9999933015426142,
+        "rim_center": [
+          -1.3144734543323669e-07,
+          -1.0099998146645182,
+          0.17645193879233634
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 6.242830488799326e-09,
+        "min_z_m": 0.0018402396237223004,
+        "min_tet_volume_ratio": 0.9999933015425609,
+        "rim_center": [
+          -1.3166388328406248e-07,
+          1.8559307856337424e-07,
+          0.17645193880177526
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 6.242841890760217e-09,
+        "min_z_m": 0.0018402381388021906,
+        "min_tet_volume_ratio": 0.999993301529631,
+        "rim_center": [
+          -1.31585787308155e-07,
+          1.0100001851107532,
+          0.17645193801572281
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.306869244510468e-06,
+        "reported_joint_distance_m": -5.3061344179059785e-06,
+        "prismatic_lateral_error_m": 8.812324282410287e-08,
+        "revolute_anchor_error_m": 2.401231223703021e-08,
+        "spring_length_m": 0.35000528105634726,
+        "spring_force_N": -5111.73437715126,
+        "spindle_center": [
+          -0.9510352459538794,
+          -0.9100000003849883,
+          0.47900525524396276
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.304807212832254e-06,
+        "reported_joint_distance_m": -5.3040726460859135e-06,
+        "prismatic_lateral_error_m": 8.808745670203771e-08,
+        "revolute_anchor_error_m": 2.4000945091826762e-08,
+        "spring_length_m": 0.3500052789943155,
+        "spring_force_N": -5111.734470713966,
+        "spindle_center": [
+          -0.9510352460643293,
+          0.9100000005785969,
+          0.47900525837739494
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.2631003203708505e-06,
+        "reported_joint_distance_m": 5.262371628224318e-06,
+        "prismatic_lateral_error_m": 8.740107879620394e-08,
+        "revolute_anchor_error_m": 3.424803264793561e-08,
+        "spring_length_m": 0.3499947110867821,
+        "spring_force_N": -5112.213979346683,
+        "spindle_center": [
+          -4.252964666941496,
+          -0.910000000400783,
+          0.4789882014056717
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.26516349913165e-06,
+        "reported_joint_distance_m": 5.264434546974233e-06,
+        "prismatic_lateral_error_m": 8.743688356083219e-08,
+        "revolute_anchor_error_m": 3.425937689593476e-08,
+        "spring_length_m": 0.3499947090236033,
+        "spring_force_N": -5112.214072961435,
+        "spindle_center": [
+          -4.252964667051964,
+          0.9100000005628035,
+          0.478988204540251
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 5,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 1.1748949924504915e-06,
+        "min_z_m": 0.009047875027648573,
+        "min_tet_volume_ratio": 0.9999963236140245,
+        "rim_center": [
+          -0.951035530118197,
+          -0.9100000003573484,
+          0.47901987272656504
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 1.174885595953529e-06,
+        "min_z_m": 0.00904787079615246,
+        "min_tet_volume_ratio": 0.9999963235996502,
+        "rim_center": [
+          -0.9510355296681475,
+          0.9100000006072037,
+          0.4790198684805092
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 1.1592135683476659e-06,
+        "min_z_m": 0.008994814206763664,
+        "min_tet_volume_ratio": 0.9999962466247597,
+        "rim_center": [
+          -4.2529642544580835,
+          -0.9100000003556142,
+          0.4789667807961366
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 1.1592067389754018e-06,
+        "min_z_m": 0.008994809976712148,
+        "min_tet_volume_ratio": 0.9999962465821168,
+        "rim_center": [
+          -4.252964254008044,
+          0.910000000608989,
+          0.4789667765507914
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.4102658208678615e-07,
+        "min_z_m": 0.0009217706849195121,
+        "min_tet_volume_ratio": 0.9998126218045453,
+        "rim_center": [
+          -6.693251816781809e-07,
+          -1.0100000959542854,
+          0.17548845611823824
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 1.4102777477222462e-07,
+        "min_z_m": 0.0009217704924084352,
+        "min_tet_volume_ratio": 0.9998126204386285,
+        "rim_center": [
+          -6.696102221248178e-07,
+          -9.564170885097844e-08,
+          0.17548845613111244
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 1.4102927627809874e-07,
+        "min_z_m": 0.0009217702442829884,
+        "min_tet_volume_ratio": 0.9998126189161229,
+        "rim_center": [
+          -6.695244162781092e-07,
+          1.0099999037581762,
+          0.17548845592948725
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.575051974279342e-06,
+        "reported_joint_distance_m": -5.574279282584116e-06,
+        "prismatic_lateral_error_m": 9.245774960060982e-08,
+        "revolute_anchor_error_m": 2.5470040094821747e-08,
+        "spring_length_m": 0.3500055490542609,
+        "spring_force_N": -5111.722217003876,
+        "spindle_center": [
+          -0.9510355304375602,
+          -0.9100000003599474,
+          0.47901989817259094
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.57172051973057e-06,
+        "reported_joint_distance_m": -5.570948267011277e-06,
+        "prismatic_lateral_error_m": 9.240113043385091e-08,
+        "revolute_anchor_error_m": 2.5451654423615928e-08,
+        "spring_length_m": 0.35000554572280634,
+        "spring_force_N": -5111.72236816542,
+        "spindle_center": [
+          -0.951035529985766,
+          0.9100000006040788,
+          0.47901989390822886
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.536381675160919e-06,
+        "reported_joint_distance_m": 5.535614387402889e-06,
+        "prismatic_lateral_error_m": 9.181965418524857e-08,
+        "revolute_anchor_error_m": 3.5734642920755466e-08,
+        "spring_length_m": 0.34999443762061133,
+        "spring_force_N": -5112.22638761097,
+        "spindle_center": [
+          -4.252964253893031,
+          -0.9100000003580979,
+          0.47896674508751474
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.53971382670794e-06,
+        "reported_joint_distance_m": 5.5389460998878295e-06,
+        "prismatic_lateral_error_m": 9.187628532924484e-08,
+        "revolute_anchor_error_m": 3.5753005852793315e-08,
+        "spring_length_m": 0.34999443428845983,
+        "spring_force_N": -5112.226538804138,
+        "spindle_center": [
+          -4.252964253441248,
+          0.9100000006059297,
+          0.4789667408238496
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 6,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.1672270035217274e-07,
+        "min_z_m": 0.009036154314795848,
+        "min_tet_volume_ratio": 0.9999985569363654,
+        "rim_center": [
+          -0.9510357832901412,
+          -0.9100000003648518,
+          0.4790348010909406
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.1672213458861477e-07,
+        "min_z_m": 0.009036141239929716,
+        "min_tet_volume_ratio": 0.9999985567343566,
+        "rim_center": [
+          -0.9510357823708054,
+          0.9100000006105944,
+          0.4790347880135846
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.1606919121909384e-07,
+        "min_z_m": 0.008946283470319371,
+        "min_tet_volume_ratio": 0.9999985607523566,
+        "rim_center": [
+          -4.2529638723243375,
+          -0.9100000002952957,
+          0.4789449291433293
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.1606729555706835e-07,
+        "min_z_m": 0.008946270394174274,
+        "min_tet_volume_ratio": 0.9999985610275136,
+        "rim_center": [
+          -4.25296387140499,
+          0.9100000006800935,
+          0.47894491606511835
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 8.273054787212966e-07,
+        "min_z_m": 0.0008530943042726357,
+        "min_tet_volume_ratio": 0.9990305425502953,
+        "rim_center": [
+          -3.7229033836288217e-06,
+          -1.010002008642983,
+          0.17532767955093073
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 8.273055490260586e-07,
+        "min_z_m": 0.0008530942954930479,
+        "min_tet_volume_ratio": 0.999030542633469,
+        "rim_center": [
+          -3.723364064782418e-06,
+          -2.0083797279159687e-06,
+          0.17532767955472364
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 8.273051203539906e-07,
+        "min_z_m": 0.0008530943092170349,
+        "min_tet_volume_ratio": 0.9990305430119455,
+        "rim_center": [
+          -3.7233770667486414e-06,
+          1.009997990985223,
+          0.17532767961581336
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.576790370860271e-06,
+        "reported_joint_distance_m": -5.576020548550045e-06,
+        "prismatic_lateral_error_m": 9.215650792008748e-08,
+        "revolute_anchor_error_m": 2.5282876590190087e-08,
+        "spring_length_m": 0.3500055502006719,
+        "spring_force_N": -5111.72216498658,
+        "spindle_center": [
+          -0.9510357835363917,
+          -0.9100000003674952,
+          0.47903482635507794
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.573330366566381e-06,
+        "reported_joint_distance_m": -5.572561002693751e-06,
+        "prismatic_lateral_error_m": 9.209817435287319e-08,
+        "revolute_anchor_error_m": 2.526400178464972e-08,
+        "spring_length_m": 0.3500055467406676,
+        "spring_force_N": -5111.722321980946,
+        "spindle_center": [
+          -0.9510357826155594,
+          0.9100000006073846,
+          0.4790348132588206
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.558335979374135e-06,
+        "reported_joint_distance_m": 5.557568685778505e-06,
+        "prismatic_lateral_error_m": 9.185124087678486e-08,
+        "revolute_anchor_error_m": 3.565603746499311e-08,
+        "spring_length_m": 0.34999441507432155,
+        "spring_force_N": -5112.227410627168,
+        "spindle_center": [
+          -4.25296387183614,
+          -0.910000000297784,
+          0.47894489350768815
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.561795144672051e-06,
+        "reported_joint_distance_m": 5.561027392748577e-06,
+        "prismatic_lateral_error_m": 9.190956025919301e-08,
+        "revolute_anchor_error_m": 3.5674895478493494e-08,
+        "spring_length_m": 0.34999441161515643,
+        "spring_force_N": -5112.227567583456,
+        "spindle_center": [
+          -4.252963870915294,
+          0.9100000006770945,
+          0.4789448804105918
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 7,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.3288351271052825e-07,
+        "min_z_m": 0.009061650546065309,
+        "min_tet_volume_ratio": 0.9999985658652031,
+        "rim_center": [
+          -0.9510360016970026,
+          -0.9100000003907176,
+          0.4790496041730008
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.3288329281572495e-07,
+        "min_z_m": 0.009061628600102829,
+        "min_tet_volume_ratio": 0.9999985656405476,
+        "rim_center": [
+          -0.9510360003770953,
+          0.9100000005954119,
+          0.4790495822278481
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.3300506404845757e-07,
+        "min_z_m": 0.008935289927751418,
+        "min_tet_volume_ratio": 0.9999985632146499,
+        "rim_center": [
+          -4.252963525770586,
+          -0.9100000002159898,
+          0.4789232445058307
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.330051041622591e-07,
+        "min_z_m": 0.008935267982430531,
+        "min_tet_volume_ratio": 0.9999985633770583,
+        "rim_center": [
+          -4.2529635244506645,
+          0.9100000007700932,
+          0.4789232225597012
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 3.601493186523841e-07,
+        "min_z_m": 0.0008921312559303379,
+        "min_tet_volume_ratio": 0.9995606121678968,
+        "rim_center": [
+          -5.100748677979131e-06,
+          -1.010002365639618,
+          0.17541905577662445
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 3.601493618104859e-07,
+        "min_z_m": 0.0008921312343730032,
+        "min_tet_volume_ratio": 0.9995606127251793,
+        "rim_center": [
+          -5.101251276709479e-06,
+          -2.3653933207232744e-06,
+          0.17541905577803624
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 3.601491444988199e-07,
+        "min_z_m": 0.0008921312368075237,
+        "min_tet_volume_ratio": 0.9995606132931931,
+        "rim_center": [
+          -5.101291185820562e-06,
+          1.0099976339740366,
+          0.17541905583116418
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.577097630331175e-06,
+        "reported_joint_distance_m": -5.57632703256808e-06,
+        "prismatic_lateral_error_m": 9.207383533555205e-08,
+        "revolute_anchor_error_m": 2.527099245522666e-08,
+        "spring_length_m": 0.3500055504768563,
+        "spring_force_N": -5111.7221524549805,
+        "spindle_center": [
+          -0.9510360018798634,
+          -0.9100000003934148,
+          0.4790496294233858
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.573630760495623e-06,
+        "reported_joint_distance_m": -5.572860624301414e-06,
+        "prismatic_lateral_error_m": 9.201554784106227e-08,
+        "revolute_anchor_error_m": 2.5252098534399014e-08,
+        "spring_length_m": 0.3500055470099864,
+        "spring_force_N": -5111.722309760865,
+        "spindle_center": [
+          -0.9510360005586025,
+          0.9100000005921417,
+          0.47904960745930525
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.559776068744241e-06,
+        "reported_joint_distance_m": 5.559007839618134e-06,
+        "prismatic_lateral_error_m": 9.178740309952738e-08,
+        "revolute_anchor_error_m": 3.565164601525865e-08,
+        "spring_length_m": 0.3499944136031571,
+        "spring_force_N": -5112.22747737984,
+        "spindle_center": [
+          -4.252963525344967,
+          -0.9100000002184694,
+          0.47892320887615153
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.563241976237828e-06,
+        "reported_joint_distance_m": 5.5624732856719776e-06,
+        "prismatic_lateral_error_m": 9.184567509136133e-08,
+        "revolute_anchor_error_m": 3.567054757022037e-08,
+        "spring_length_m": 0.3499944101372497,
+        "spring_force_N": -5112.227634642052,
+        "spindle_center": [
+          -4.2529635240236905,
+          0.9100000007670861,
+          0.4789231869111086
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 8,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.2542689685327044e-07,
+        "min_z_m": 0.009133722263072679,
+        "min_tet_volume_ratio": 0.9999985649205914,
+        "rim_center": [
+          -0.951036190682497,
+          -0.9100000004315452,
+          0.4790643188649285
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.2542675861956468e-07,
+        "min_z_m": 0.009133691510588907,
+        "min_tet_volume_ratio": 0.9999985646918624,
+        "rim_center": [
+          -0.951036189016768,
+          0.9100000005645121,
+          0.47906428811482454
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.2547007184370214e-07,
+        "min_z_m": 0.008971097815804872,
+        "min_tet_volume_ratio": 0.9999985628491153,
+        "rim_center": [
+          -4.252963209215101,
+          -0.91000000012254,
+          0.4789016957642955
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.254701939186476e-07,
+        "min_z_m": 0.00897106706706065,
+        "min_tet_volume_ratio": 0.9999985630234199,
+        "rim_center": [
+          -4.252963207549365,
+          0.9100000008734691,
+          0.47890166501358733
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.4214617343585803e-07,
+        "min_z_m": 0.0009175422210666151,
+        "min_tet_volume_ratio": 0.9998182808234567,
+        "rim_center": [
+          -5.334536852344575e-06,
+          -1.010002347485516,
+          0.17547340397773267
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 1.4214615841183475e-07,
+        "min_z_m": 0.0009175422178110829,
+        "min_tet_volume_ratio": 0.9998182810510305,
+        "rim_center": [
+          -5.335018714901146e-06,
+          -2.3472338252255136e-06,
+          0.17547340397858452
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 1.4214616601212726e-07,
+        "min_z_m": 0.0009175422153697008,
+        "min_tet_volume_ratio": 0.9998182811992797,
+        "rim_center": [
+          -5.335046106654805e-06,
+          1.009997652139018,
+          0.17547340399063358
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.5684623334505866e-06,
+        "reported_joint_distance_m": -5.567689254749008e-06,
+        "prismatic_lateral_error_m": 9.203321301328029e-08,
+        "revolute_anchor_error_m": 2.5328563585367917e-08,
+        "spring_length_m": 0.3500055418447545,
+        "spring_force_N": -5111.722544128289,
+        "spindle_center": [
+          -0.9510361908110063,
+          -0.910000000434258,
+          0.47906434417443083
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.565000770733169e-06,
+        "reported_joint_distance_m": -5.56422815645449e-06,
+        "prismatic_lateral_error_m": 9.197503046481729e-08,
+        "revolute_anchor_error_m": 2.530963478952017e-08,
+        "spring_length_m": 0.35000553838319187,
+        "spring_force_N": -5111.722701193363,
+        "spindle_center": [
+          -0.9510361891440392,
+          0.9100000005612208,
+          0.47906431340536093
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.551028497566116e-06,
+        "reported_joint_distance_m": 5.550257810694573e-06,
+        "prismatic_lateral_error_m": 9.17445321192573e-08,
+        "revolute_anchor_error_m": 3.570951125246669e-08,
+        "spring_length_m": 0.34999442235392353,
+        "spring_force_N": -5112.227080322235,
+        "spindle_center": [
+          -4.252963208843,
+          -0.9100000001249791,
+          0.47890166007495294
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.5544894685896665e-06,
+        "reported_joint_distance_m": 5.553718317353897e-06,
+        "prismatic_lateral_error_m": 9.180270504030262e-08,
+        "revolute_anchor_error_m": 3.572844703543627e-08,
+        "spring_length_m": 0.34999441889295246,
+        "spring_force_N": -5112.2272373604665,
+        "spindle_center": [
+          -4.252963207176023,
+          0.9100000008704986,
+          0.4789016293052914
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 9,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.140891791208488e-07,
+        "min_z_m": 0.009142595630265598,
+        "min_tet_volume_ratio": 0.9999985620554063,
+        "rim_center": [
+          -0.951036355252044,
+          -0.9100000004819596,
+          0.47907913749505554
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.1408835268923593e-07,
+        "min_z_m": 0.00914255600446077,
+        "min_tet_volume_ratio": 0.9999985623076735,
+        "rim_center": [
+          -0.9510363532802207,
+          0.9100000005195408,
+          0.4790790978686489
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.1379604966269286e-07,
+        "min_z_m": 0.008943454316070305,
+        "min_tet_volume_ratio": 0.9999985634611402,
+        "rim_center": [
+          -4.252962915841698,
+          -0.9100000000138285,
+          0.47887999569814044
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.1379674314458163e-07,
+        "min_z_m": 0.00894341468831137,
+        "min_tet_volume_ratio": 0.9999985632266243,
+        "rim_center": [
+          -4.252962913869856,
+          0.9100000009877302,
+          0.4788799560708244
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.424858010986153e-07,
+        "min_z_m": 0.000918522266947944,
+        "min_tet_volume_ratio": 0.999820336514308,
+        "rim_center": [
+          -5.16606207718641e-06,
+          -1.0100022964958428,
+          0.1754779840498398
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 1.424858181636259e-07,
+        "min_z_m": 0.0009185222672781939,
+        "min_tet_volume_ratio": 0.999820336506909,
+        "rim_center": [
+          -5.166519941264762e-06,
+          -2.2962367910725487e-06,
+          0.17547798405005063
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 1.4248586636250142e-07,
+        "min_z_m": 0.0009185222635312,
+        "min_tet_volume_ratio": 0.9998203364713297,
+        "rim_center": [
+          -5.166532322109279e-06,
+          1.0099977031388254,
+          0.17547798404659992
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.569911960372416e-06,
+        "reported_joint_distance_m": -5.569138659968279e-06,
+        "prismatic_lateral_error_m": 9.19516322650367e-08,
+        "revolute_anchor_error_m": 2.5302170769522324e-08,
+        "spring_length_m": 0.35000554331628037,
+        "spring_force_N": -5111.72247735922,
+        "spindle_center": [
+          -0.9510363553288576,
+          -0.9100000004847213,
+          0.47907916277819174
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.56644570604308e-06,
+        "reported_joint_distance_m": -5.565672871879267e-06,
+        "prismatic_lateral_error_m": 9.189350739720427e-08,
+        "revolute_anchor_error_m": 2.5283163161071313e-08,
+        "spring_length_m": 0.35000553985002597,
+        "spring_force_N": -5111.722634637177,
+        "spindle_center": [
+          -0.9510363533558965,
+          0.9100000005162527,
+          0.47907912313282425
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.551701532136498e-06,
+        "reported_joint_distance_m": 5.550930729250484e-06,
+        "prismatic_lateral_error_m": 9.165044574728913e-08,
+        "revolute_anchor_error_m": 3.5681518505378105e-08,
+        "spring_length_m": 0.3499944217027878,
+        "spring_force_N": -5112.227109866893,
+        "spindle_center": [
+          -4.252962915520734,
+          -0.9100000000162142,
+          0.4788799600363948
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.555166870253356e-06,
+        "reported_joint_distance_m": 5.554395601250453e-06,
+        "prismatic_lateral_error_m": 9.170855612993564e-08,
+        "revolute_anchor_error_m": 3.570054022659681e-08,
+        "spring_length_m": 0.3499944182374496,
+        "spring_force_N": -5112.227267103278,
+        "spindle_center": [
+          -4.2529629135477585,
+          0.9100000009847611,
+          0.47887992039011107
+        ]
+      }
+    ]
+  },
+  {
+    "frame": 10,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 2.0990952982973515e-07,
+        "min_z_m": 0.009163927630689447,
+        "min_tet_volume_ratio": 0.9999985665099895,
+        "rim_center": [
+          -0.9510364962274076,
+          -0.910000000540791,
+          0.4790939443445611
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 2.0990936038029316e-07,
+        "min_z_m": 0.00916387912140569,
+        "min_tet_volume_ratio": 0.9999985662857034,
+        "rim_center": [
+          -0.9510364939880681,
+          0.910000000465226,
+          0.4790938958363355
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 2.0977781516193653e-07,
+        "min_z_m": 0.008928286712887463,
+        "min_tet_volume_ratio": 0.9999985657251164,
+        "rim_center": [
+          -4.252962645886325,
+          -0.9099999998942636,
+          0.47885830394136253
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 2.0977789175203922e-07,
+        "min_z_m": 0.008928238204594811,
+        "min_tet_volume_ratio": 0.9999985659248566,
+        "rim_center": [
+          -4.252962643646972,
+          0.9100000011117026,
+          0.47885825543218336
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.7486546203005734e-07,
+        "min_z_m": 0.0009143496468256493,
+        "min_tet_volume_ratio": 0.9997823556192486,
+        "rim_center": [
+          -4.966699754183181e-06,
+          -1.0100022402581372,
+          0.17547082024404498
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 1.74865463279496e-07,
+        "min_z_m": 0.0009143496479492785,
+        "min_tet_volume_ratio": 0.9997823555496768,
+        "rim_center": [
+          -4.967147981806119e-06,
+          -2.2399960424121374e-06,
+          0.1754708202438642
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 1.7486547547064293e-07,
+        "min_z_m": 0.0009143496475832939,
+        "min_tet_volume_ratio": 0.9997823554923324,
+        "rim_center": [
+          -4.967154263827376e-06,
+          1.0099977593798626,
+          0.17547082024117475
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -5.571124246689472e-06,
+        "reported_joint_distance_m": -5.5703506688127224e-06,
+        "prismatic_lateral_error_m": 9.188288325175873e-08,
+        "revolute_anchor_error_m": 2.528078205245287e-08,
+        "spring_length_m": 0.3500055445174511,
+        "spring_force_N": -5111.722422857255,
+        "spindle_center": [
+          -0.9510364962581279,
+          -0.9100000005435359,
+          0.4790939696066386
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -5.567650828278458e-06,
+        "reported_joint_distance_m": -5.56687771875557e-06,
+        "prismatic_lateral_error_m": 9.18247591572064e-08,
+        "revolute_anchor_error_m": 2.5261827534188623e-08,
+        "spring_length_m": 0.3500055410440327,
+        "spring_force_N": -5111.722580460271,
+        "spindle_center": [
+          -0.9510364940177478,
+          0.9100000004618971,
+          0.47909392107941706
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 5.553276397697888e-06,
+        "reported_joint_distance_m": 5.552505263035103e-06,
+        "prismatic_lateral_error_m": 9.158779409148997e-08,
+        "revolute_anchor_error_m": 3.566451566001732e-08,
+        "spring_length_m": 0.3499944201168066,
+        "spring_force_N": -5112.227181829263,
+        "spindle_center": [
+          -4.252962645611095,
+          -0.9099999998966566,
+          0.4788582682960961
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 5.556748877414125e-06,
+        "reported_joint_distance_m": 5.555977274491885e-06,
+        "prismatic_lateral_error_m": 9.164590204733785e-08,
+        "revolute_anchor_error_m": 3.568347052744621e-08,
+        "spring_length_m": 0.3499944166443269,
+        "spring_force_N": -5112.227339389687,
+        "spindle_center": [
+          -4.252962643370699,
+          0.9100000011087752,
+          0.4788582197679359
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+# Local papers, duplicate archives and working files.
+/*.pdf
+*.zip
+/tmp/
+/reproduction/downloads/*.pdf
+
+# Installed packages, build products and caches.
+_deps/
+_cache/
+_geometry/
+_runtime/
+__pycache__/
+.venv/
+venv/
+*.py[cod]
+*.dll
+*.pyd
+*.exe
+*.pdb
+*.cubin
+*.ptx
+*.fatbin
+
+# Host-specific build locations and generated runtime configuration.
+/reproduction/hsc_backend/build_location.json
+/reproduction/hsc_backend/build_prepared.json
+/reproduction/hsc_backend/dependencies_ready.json
+/reproduction/hsc_backend/local_ports.json
+/reproduction/hsc_backend/runtime.json
+/reproduction/hsc_backend/windows_sdk.json
+/reproduction/hsc_backend/*.log
+
+# Temporary process state; preserve formal measurements and mesh snapshots.
+.*.lock
+*.interrupted-*
+/result/vehicle_full_pass/postprocess.json
+/result/vehicle_full_pass/summary-progress.log
+
+# Keep summaries of superseded attempts, without their bulk intermediate data.
+/result/vehicle_full_pass/attempts/**
+!/result/vehicle_full_pass/attempts/**/
+!/result/vehicle_full_pass/attempts/**/status.json
+!/result/vehicle_full_pass/attempts/**/parameters.json
+!/result/vehicle_full_pass/attempts/README.md
+
+# Local credentials must never become project files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+

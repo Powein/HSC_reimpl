@@ -1,0 +1,15 @@
+{
+  "pid": 3280,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\validate_assembly.py",
+    "--case",
+    "bead",
+    "--steps",
+    "40"
+  ],
+  "timeout_s": 180,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\bead_test.log",
+  "exit_code": 1,
+  "elapsed_s": 3.0159999999996217
+}

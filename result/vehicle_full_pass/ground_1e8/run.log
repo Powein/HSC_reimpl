@@ -1,0 +1,246 @@
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact default kappa 10000000000 is clamped to [10525188386.56847] (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (0,1) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,1) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,2) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,3) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,4) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,5) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (2,5) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (3,5) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,6) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,7) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,8) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (2,8) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (6,8) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,9) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,10) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,11) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (2,11) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (9,11) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,12) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,13) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,14) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (2,14) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (12,14) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,15) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,16) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,17) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,18) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,19) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+[2026-10-17 16:08:00.147] [warning] [cuda] Contact kappa 10000000000 for model (1,20) is clamped to 10525188386.56847 (valid range: [10525188386.56847, 1052518838656.847])
+ground_1e8: HSC initialized at frame 0
+ground_1e8: frame=1 t=0.033s clearance=-5.528m crossings=0/4 Newton=8 elapsed=9.4s
+ground_1e8: frame=2 t=0.067s clearance=-5.527m crossings=0/4 Newton=4 elapsed=12.7s
+ground_1e8: frame=3 t=0.100s clearance=-5.524m crossings=0/4 Newton=7 elapsed=18.6s
+ground_1e8: frame=4 t=0.133s clearance=-5.520m crossings=0/4 Newton=8 elapsed=32.0s
+ground_1e8: frame=5 t=0.167s clearance=-5.514m crossings=0/4 Newton=10 elapsed=51.9s
+ground_1e8: frame=6 t=0.200s clearance=-5.506m crossings=0/4 Newton=11 elapsed=73.7s
+ground_1e8: frame=7 t=0.233s clearance=-5.495m crossings=0/4 Newton=8 elapsed=88.0s
+ground_1e8: frame=8 t=0.267s clearance=-5.486m crossings=0/4 Newton=17 elapsed=130.8s
+ground_1e8: frame=9 t=0.300s clearance=-5.486m crossings=0/4 Newton=18 elapsed=182.1s
+ground_1e8: frame=10 t=0.333s clearance=-5.486m crossings=0/4 Newton=19 elapsed=239.1s
+ground_1e8: frame=11 t=0.367s clearance=-5.485m crossings=0/4 Newton=21 elapsed=303.7s
+ground_1e8: frame=12 t=0.400s clearance=-5.484m crossings=0/4 Newton=25 elapsed=386.1s
+ground_1e8: frame=13 t=0.433s clearance=-5.475m crossings=0/4 Newton=39 elapsed=525.6s
+ground_1e8: frame=14 t=0.467s clearance=-5.469m crossings=0/4 Newton=28 elapsed=615.0s
+ground_1e8: frame=15 t=0.500s clearance=-5.459m crossings=0/4 Newton=34 elapsed=727.4s
+ground_1e8: frame=16 t=0.533s clearance=-5.444m crossings=0/4 Newton=32 elapsed=833.6s
+ground_1e8: frame=17 t=0.567s clearance=-5.428m crossings=0/4 Newton=27 elapsed=922.0s
+ground_1e8: frame=18 t=0.600s clearance=-5.415m crossings=0/4 Newton=28 elapsed=1010.2s
+ground_1e8: frame=19 t=0.633s clearance=-5.404m crossings=0/4 Newton=25 elapsed=1089.5s
+ground_1e8: frame=20 t=0.667s clearance=-5.394m crossings=0/4 Newton=29 elapsed=1184.3s
+ground_1e8: frame=21 t=0.700s clearance=-5.384m crossings=0/4 Newton=21 elapsed=1247.5s
+ground_1e8: frame=22 t=0.733s clearance=-5.373m crossings=0/4 Newton=34 elapsed=1367.3s
+ground_1e8: frame=23 t=0.767s clearance=-5.360m crossings=0/4 Newton=24 elapsed=1447.3s
+ground_1e8: frame=24 t=0.800s clearance=-5.347m crossings=0/4 Newton=34 elapsed=1565.3s
+ground_1e8: frame=25 t=0.833s clearance=-5.332m crossings=0/4 Newton=19 elapsed=1624.3s
+ground_1e8: frame=26 t=0.867s clearance=-5.316m crossings=0/4 Newton=26 elapsed=1715.1s
+ground_1e8: frame=27 t=0.900s clearance=-5.298m crossings=0/4 Newton=25 elapsed=1802.4s
+ground_1e8: frame=28 t=0.933s clearance=-5.277m crossings=0/4 Newton=22 elapsed=1874.1s
+ground_1e8: frame=29 t=0.967s clearance=-5.255m crossings=0/4 Newton=33 elapsed=1988.4s
+ground_1e8: frame=30 t=1.000s clearance=-5.231m crossings=0/4 Newton=25 elapsed=2068.1s
+ground_1e8: frame=31 t=1.033s clearance=-5.205m crossings=0/4 Newton=29 elapsed=2159.9s
+ground_1e8: frame=32 t=1.067s clearance=-5.178m crossings=0/4 Newton=33 elapsed=2264.8s
+ground_1e8: frame=33 t=1.100s clearance=-5.149m crossings=0/4 Newton=47 elapsed=2409.8s
+ground_1e8: frame=34 t=1.133s clearance=-5.119m crossings=0/4 Newton=23 elapsed=2473.7s
+ground_1e8: frame=35 t=1.167s clearance=-5.088m crossings=0/4 Newton=25 elapsed=2545.2s
+ground_1e8: frame=36 t=1.200s clearance=-5.057m crossings=0/4 Newton=30 elapsed=2631.4s
+ground_1e8: frame=37 t=1.233s clearance=-5.025m crossings=0/4 Newton=33 elapsed=2725.7s
+ground_1e8: frame=38 t=1.267s clearance=-4.992m crossings=0/4 Newton=33 elapsed=2822.5s
+ground_1e8: frame=39 t=1.300s clearance=-4.960m crossings=0/4 Newton=31 elapsed=2913.7s
+ground_1e8: frame=40 t=1.333s clearance=-4.927m crossings=0/4 Newton=27 elapsed=2995.3s
+ground_1e8: frame=41 t=1.367s clearance=-4.894m crossings=0/4 Newton=29 elapsed=3079.2s
+ground_1e8: frame=42 t=1.400s clearance=-4.861m crossings=0/4 Newton=37 elapsed=3187.0s
+ground_1e8: frame=43 t=1.433s clearance=-4.828m crossings=0/4 Newton=25 elapsed=3262.6s
+ground_1e8: frame=44 t=1.467s clearance=-4.795m crossings=0/4 Newton=29 elapsed=3351.5s
+ground_1e8: frame=45 t=1.500s clearance=-4.762m crossings=0/4 Newton=27 elapsed=3431.5s
+ground_1e8: frame=46 t=1.533s clearance=-4.730m crossings=0/4 Newton=37 elapsed=3551.0s
+ground_1e8: frame=47 t=1.567s clearance=-4.697m crossings=1/4 Newton=30 elapsed=3635.7s
+ground_1e8: frame=48 t=1.600s clearance=-4.665m crossings=1/4 Newton=40 elapsed=3765.8s
+ground_1e8: frame=49 t=1.633s clearance=-4.633m crossings=1/4 Newton=22 elapsed=3828.3s
+ground_1e8: frame=50 t=1.667s clearance=-4.602m crossings=2/4 Newton=41 elapsed=3967.8s
+ground_1e8: frame=51 t=1.700s clearance=-4.572m crossings=2/4 Newton=51 elapsed=4156.3s
+ground_1e8: frame=52 t=1.733s clearance=-4.543m crossings=2/4 Newton=28 elapsed=4256.3s
+ground_1e8: frame=53 t=1.767s clearance=-4.515m crossings=2/4 Newton=58 elapsed=4477.9s
+ground_1e8: frame=54 t=1.800s clearance=-4.487m crossings=2/4 Newton=30 elapsed=4577.1s
+ground_1e8: frame=55 t=1.833s clearance=-4.459m crossings=2/4 Newton=32 elapsed=4686.5s
+ground_1e8: frame=56 t=1.867s clearance=-4.431m crossings=2/4 Newton=27 elapsed=4774.7s
+ground_1e8: frame=57 t=1.900s clearance=-4.402m crossings=2/4 Newton=35 elapsed=4895.8s
+ground_1e8: frame=58 t=1.933s clearance=-4.374m crossings=2/4 Newton=44 elapsed=5052.2s
+ground_1e8: frame=59 t=1.967s clearance=-4.344m crossings=2/4 Newton=30 elapsed=5154.2s
+ground_1e8: frame=60 t=2.000s clearance=-4.314m crossings=2/4 Newton=22 elapsed=5225.6s
+ground_1e8: frame=61 t=2.033s clearance=-4.283m crossings=2/4 Newton=26 elapsed=5309.9s
+ground_1e8: frame=62 t=2.067s clearance=-4.251m crossings=2/4 Newton=32 elapsed=5422.9s
+ground_1e8: frame=63 t=2.100s clearance=-4.218m crossings=2/4 Newton=28 elapsed=5514.7s
+ground_1e8: frame=64 t=2.133s clearance=-4.184m crossings=2/4 Newton=30 elapsed=5612.8s
+ground_1e8: frame=65 t=2.167s clearance=-4.150m crossings=2/4 Newton=22 elapsed=5687.6s
+ground_1e8: frame=66 t=2.200s clearance=-4.115m crossings=2/4 Newton=34 elapsed=5811.2s
+ground_1e8: frame=67 t=2.233s clearance=-4.080m crossings=2/4 Newton=31 elapsed=5924.8s
+ground_1e8: frame=68 t=2.267s clearance=-4.044m crossings=2/4 Newton=35 elapsed=6055.7s
+ground_1e8: frame=69 t=2.300s clearance=-4.008m crossings=2/4 Newton=37 elapsed=6190.0s
+ground_1e8: frame=70 t=2.333s clearance=-3.973m crossings=2/4 Newton=37 elapsed=6330.3s
+ground_1e8: frame=71 t=2.367s clearance=-3.938m crossings=2/4 Newton=26 elapsed=6433.4s
+ground_1e8: frame=72 t=2.400s clearance=-3.901m crossings=2/4 Newton=25 elapsed=6533.6s
+ground_1e8: frame=73 t=2.433s clearance=-3.868m crossings=2/4 Newton=37 elapsed=6693.6s
+ground_1e8: frame=74 t=2.467s clearance=-3.827m crossings=2/4 Newton=48 elapsed=6890.0s
+ground_1e8: frame=75 t=2.500s clearance=-3.770m crossings=2/4 Newton=46 elapsed=7080.8s
+ground_1e8: frame=76 t=2.533s clearance=-3.721m crossings=2/4 Newton=33 elapsed=7207.1s
+ground_1e8: frame=77 t=2.567s clearance=-3.675m crossings=2/4 Newton=36 elapsed=7324.8s
+ground_1e8: frame=78 t=2.600s clearance=-3.635m crossings=2/4 Newton=30 elapsed=7395.6s
+ground_1e8: frame=79 t=2.633s clearance=-3.596m crossings=2/4 Newton=29 elapsed=7463.1s
+ground_1e8: frame=80 t=2.667s clearance=-3.559m crossings=2/4 Newton=37 elapsed=7555.3s
+ground_1e8: frame=81 t=2.700s clearance=-3.524m crossings=2/4 Newton=32 elapsed=7639.5s
+ground_1e8: frame=82 t=2.733s clearance=-3.491m crossings=2/4 Newton=23 elapsed=7699.4s
+ground_1e8: frame=83 t=2.767s clearance=-3.460m crossings=2/4 Newton=25 elapsed=7761.8s
+ground_1e8: frame=84 t=2.800s clearance=-3.430m crossings=2/4 Newton=25 elapsed=7826.0s
+ground_1e8: frame=85 t=2.833s clearance=-3.401m crossings=2/4 Newton=18 elapsed=7872.0s
+ground_1e8: frame=86 t=2.867s clearance=-3.374m crossings=2/4 Newton=18 elapsed=7914.4s
+ground_1e8: frame=87 t=2.900s clearance=-3.346m crossings=2/4 Newton=22 elapsed=7968.9s
+ground_1e8: frame=88 t=2.933s clearance=-3.320m crossings=2/4 Newton=18 elapsed=8011.0s
+ground_1e8: frame=89 t=2.967s clearance=-3.292m crossings=2/4 Newton=26 elapsed=8072.5s
+ground_1e8: frame=90 t=3.000s clearance=-3.265m crossings=2/4 Newton=24 elapsed=8129.0s
+ground_1e8: frame=91 t=3.033s clearance=-3.236m crossings=2/4 Newton=27 elapsed=8193.4s
+ground_1e8: frame=92 t=3.067s clearance=-3.207m crossings=2/4 Newton=15 elapsed=8227.3s
+ground_1e8: frame=93 t=3.100s clearance=-3.176m crossings=2/4 Newton=20 elapsed=8271.6s
+ground_1e8: frame=94 t=3.133s clearance=-3.145m crossings=2/4 Newton=38 elapsed=8352.1s
+ground_1e8: frame=95 t=3.167s clearance=-3.113m crossings=2/4 Newton=28 elapsed=8410.7s
+ground_1e8: frame=96 t=3.200s clearance=-3.080m crossings=2/4 Newton=27 elapsed=8472.0s
+ground_1e8: frame=97 t=3.233s clearance=-3.047m crossings=2/4 Newton=35 elapsed=8548.1s
+ground_1e8: frame=98 t=3.267s clearance=-3.014m crossings=2/4 Newton=34 elapsed=8623.2s
+ground_1e8: frame=99 t=3.300s clearance=-2.980m crossings=2/4 Newton=36 elapsed=8702.2s
+ground_1e8: frame=100 t=3.333s clearance=-2.946m crossings=2/4 Newton=34 elapsed=8775.5s
+ground_1e8: frame=101 t=3.367s clearance=-2.913m crossings=2/4 Newton=22 elapsed=8821.9s
+ground_1e8: frame=102 t=3.400s clearance=-2.880m crossings=2/4 Newton=28 elapsed=8880.8s
+ground_1e8: frame=103 t=3.433s clearance=-2.848m crossings=2/4 Newton=24 elapsed=8931.6s
+ground_1e8: frame=104 t=3.467s clearance=-2.816m crossings=2/4 Newton=30 elapsed=8996.6s
+ground_1e8: frame=105 t=3.500s clearance=-2.784m crossings=2/4 Newton=29 elapsed=9061.3s
+ground_1e8: frame=106 t=3.533s clearance=-2.753m crossings=2/4 Newton=30 elapsed=9126.2s
+ground_1e8: frame=107 t=3.567s clearance=-2.723m crossings=2/4 Newton=37 elapsed=9203.7s
+ground_1e8: frame=108 t=3.600s clearance=-2.693m crossings=2/4 Newton=33 elapsed=9272.6s
+ground_1e8: frame=109 t=3.633s clearance=-2.663m crossings=2/4 Newton=23 elapsed=9317.1s
+ground_1e8: frame=110 t=3.667s clearance=-2.633m crossings=2/4 Newton=29 elapsed=9379.6s
+ground_1e8: frame=111 t=3.700s clearance=-2.603m crossings=2/4 Newton=26 elapsed=9433.6s
+ground_1e8: frame=112 t=3.733s clearance=-2.573m crossings=2/4 Newton=28 elapsed=9495.3s
+ground_1e8: frame=113 t=3.767s clearance=-2.543m crossings=2/4 Newton=26 elapsed=9550.5s
+ground_1e8: frame=114 t=3.800s clearance=-2.512m crossings=2/4 Newton=19 elapsed=9591.0s
+ground_1e8: frame=115 t=3.833s clearance=-2.482m crossings=2/4 Newton=34 elapsed=9666.0s
+ground_1e8: frame=116 t=3.867s clearance=-2.450m crossings=2/4 Newton=22 elapsed=9711.1s
+ground_1e8: frame=117 t=3.900s clearance=-2.419m crossings=2/4 Newton=21 elapsed=9756.3s
+ground_1e8: frame=118 t=3.933s clearance=-2.387m crossings=2/4 Newton=34 elapsed=9831.9s
+ground_1e8: frame=119 t=3.967s clearance=-2.355m crossings=2/4 Newton=24 elapsed=9882.8s
+ground_1e8: frame=120 t=4.000s clearance=-2.323m crossings=2/4 Newton=25 elapsed=9935.1s
+ground_1e8: frame=121 t=4.033s clearance=-2.291m crossings=2/4 Newton=30 elapsed=10004.7s
+ground_1e8: frame=122 t=4.067s clearance=-2.259m crossings=2/4 Newton=31 elapsed=10083.9s
+ground_1e8: frame=123 t=4.100s clearance=-2.227m crossings=2/4 Newton=26 elapsed=10149.9s
+ground_1e8: frame=124 t=4.133s clearance=-2.196m crossings=2/4 Newton=24 elapsed=10207.4s
+ground_1e8: frame=125 t=4.167s clearance=-2.178m crossings=2/4 Newton=29 elapsed=10293.3s
+ground_1e8: frame=126 t=4.200s clearance=-2.178m crossings=2/4 Newton=37 elapsed=10414.0s
+ground_1e8: frame=127 t=4.233s clearance=-2.178m crossings=2/4 Newton=39 elapsed=10531.1s
+ground_1e8: frame=128 t=4.267s clearance=-2.152m crossings=2/4 Newton=23 elapsed=10612.5s
+ground_1e8: frame=129 t=4.300s clearance=-2.133m crossings=2/4 Newton=32 elapsed=10720.8s
+ground_1e8: frame=130 t=4.333s clearance=-2.126m crossings=2/4 Newton=29 elapsed=10823.8s
+ground_1e8: frame=131 t=4.367s clearance=-2.119m crossings=2/4 Newton=27 elapsed=10918.8s
+ground_1e8: frame=132 t=4.400s clearance=-2.103m crossings=2/4 Newton=27 elapsed=11012.7s
+ground_1e8: frame=133 t=4.433s clearance=-2.086m crossings=2/4 Newton=26 elapsed=11103.1s
+ground_1e8: frame=134 t=4.467s clearance=-2.068m crossings=2/4 Newton=49 elapsed=11280.0s
+ground_1e8: frame=135 t=4.500s clearance=-2.048m crossings=2/4 Newton=34 elapsed=11405.0s
+ground_1e8: frame=136 t=4.533s clearance=-2.025m crossings=2/4 Newton=29 elapsed=11508.2s
+ground_1e8: frame=137 t=4.567s clearance=-2.000m crossings=2/4 Newton=30 elapsed=11616.2s
+ground_1e8: frame=138 t=4.600s clearance=-1.973m crossings=2/4 Newton=31 elapsed=11727.7s
+ground_1e8: frame=139 t=4.633s clearance=-1.944m crossings=2/4 Newton=32 elapsed=11835.3s
+ground_1e8: frame=140 t=4.667s clearance=-1.913m crossings=2/4 Newton=25 elapsed=11920.4s
+ground_1e8: frame=141 t=4.700s clearance=-1.881m crossings=2/4 Newton=43 elapsed=12066.8s
+ground_1e8: frame=142 t=4.733s clearance=-1.847m crossings=2/4 Newton=30 elapsed=12171.9s
+ground_1e8: frame=143 t=4.767s clearance=-1.814m crossings=2/4 Newton=29 elapsed=12265.8s
+ground_1e8: frame=144 t=4.800s clearance=-1.780m crossings=2/4 Newton=37 elapsed=12396.4s
+ground_1e8: frame=145 t=4.833s clearance=-1.745m crossings=2/4 Newton=30 elapsed=12496.7s
+ground_1e8: frame=146 t=4.867s clearance=-1.711m crossings=2/4 Newton=33 elapsed=12602.9s
+ground_1e8: frame=147 t=4.900s clearance=-1.677m crossings=2/4 Newton=36 elapsed=12721.5s
+ground_1e8: frame=148 t=4.933s clearance=-1.643m crossings=2/4 Newton=29 elapsed=12818.1s
+ground_1e8: frame=149 t=4.967s clearance=-1.610m crossings=2/4 Newton=34 elapsed=12930.3s
+ground_1e8: frame=150 t=5.000s clearance=-1.577m crossings=2/4 Newton=27 elapsed=13017.8s
+ground_1e8: frame=151 t=5.033s clearance=-1.546m crossings=2/4 Newton=28 elapsed=13111.6s
+ground_1e8: frame=152 t=5.067s clearance=-1.517m crossings=2/4 Newton=31 elapsed=13212.1s
+ground_1e8: frame=153 t=5.100s clearance=-1.487m crossings=2/4 Newton=41 elapsed=13354.8s
+ground_1e8: frame=154 t=5.133s clearance=-1.459m crossings=2/4 Newton=32 elapsed=13460.6s
+ground_1e8: frame=155 t=5.167s clearance=-1.431m crossings=2/4 Newton=24 elapsed=13534.0s
+ground_1e8: frame=156 t=5.200s clearance=-1.404m crossings=2/4 Newton=19 elapsed=13590.0s
+ground_1e8: frame=157 t=5.233s clearance=-1.377m crossings=2/4 Newton=24 elapsed=13664.5s
+ground_1e8: frame=158 t=5.267s clearance=-1.347m crossings=2/4 Newton=45 elapsed=13806.4s
+ground_1e8: frame=159 t=5.300s clearance=-1.319m crossings=3/4 Newton=21 elapsed=13879.4s
+ground_1e8: frame=160 t=5.333s clearance=-1.292m crossings=3/4 Newton=21 elapsed=13954.1s
+ground_1e8: frame=161 t=5.367s clearance=-1.264m crossings=4/4 Newton=43 elapsed=14119.0s
+ground_1e8: frame=162 t=5.400s clearance=-1.235m crossings=4/4 Newton=23 elapsed=14192.4s
+ground_1e8: frame=163 t=5.433s clearance=-1.205m crossings=4/4 Newton=28 elapsed=14287.7s
+ground_1e8: frame=164 t=5.467s clearance=-1.174m crossings=4/4 Newton=28 elapsed=14392.3s
+ground_1e8: frame=165 t=5.500s clearance=-1.142m crossings=4/4 Newton=29 elapsed=14498.2s
+ground_1e8: frame=166 t=5.533s clearance=-1.109m crossings=4/4 Newton=27 elapsed=14591.0s
+ground_1e8: frame=167 t=5.567s clearance=-1.076m crossings=4/4 Newton=39 elapsed=14736.9s
+ground_1e8: frame=168 t=5.600s clearance=-1.042m crossings=4/4 Newton=31 elapsed=14845.0s
+ground_1e8: frame=169 t=5.633s clearance=-1.007m crossings=4/4 Newton=65 elapsed=15085.5s
+ground_1e8: frame=170 t=5.667s clearance=-0.972m crossings=4/4 Newton=49 elapsed=15272.4s
+ground_1e8: frame=171 t=5.700s clearance=-0.937m crossings=4/4 Newton=48 elapsed=15441.2s
+ground_1e8: frame=172 t=5.733s clearance=-0.902m crossings=4/4 Newton=30 elapsed=15538.8s
+ground_1e8: frame=173 t=5.767s clearance=-0.868m crossings=4/4 Newton=32 elapsed=15649.6s
+ground_1e8: frame=174 t=5.800s clearance=-0.836m crossings=4/4 Newton=76 elapsed=16562.6s
+ground_1e8: frame=175 t=5.833s clearance=-0.804m crossings=4/4 Newton=31 elapsed=16853.7s
+ground_1e8: frame=176 t=5.867s clearance=-0.774m crossings=4/4 Newton=32 elapsed=16971.1s
+ground_1e8: frame=177 t=5.900s clearance=-0.745m crossings=4/4 Newton=40 elapsed=17126.9s
+ground_1e8: frame=178 t=5.933s clearance=-0.717m crossings=4/4 Newton=34 elapsed=17251.4s
+ground_1e8: frame=179 t=5.967s clearance=-0.690m crossings=4/4 Newton=20 elapsed=17321.3s
+ground_1e8: frame=180 t=6.000s clearance=-0.664m crossings=4/4 Newton=30 elapsed=17427.8s
+ground_1e8: frame=181 t=6.033s clearance=-0.639m crossings=4/4 Newton=29 elapsed=17533.1s
+ground_1e8: frame=182 t=6.067s clearance=-0.615m crossings=4/4 Newton=27 elapsed=17630.6s
+ground_1e8: frame=183 t=6.100s clearance=-0.592m crossings=4/4 Newton=46 elapsed=17806.8s
+ground_1e8: frame=184 t=6.133s clearance=-0.569m crossings=4/4 Newton=25 elapsed=17896.7s
+ground_1e8: frame=185 t=6.167s clearance=-0.547m crossings=4/4 Newton=21 elapsed=17971.0s
+ground_1e8: frame=186 t=6.200s clearance=-0.525m crossings=4/4 Newton=25 elapsed=18060.8s
+ground_1e8: frame=187 t=6.233s clearance=-0.502m crossings=4/4 Newton=25 elapsed=18149.2s
+ground_1e8: frame=188 t=6.267s clearance=-0.477m crossings=4/4 Newton=24 elapsed=18240.5s
+ground_1e8: frame=189 t=6.300s clearance=-0.453m crossings=4/4 Newton=25 elapsed=18330.7s
+ground_1e8: frame=190 t=6.333s clearance=-0.425m crossings=4/4 Newton=28 elapsed=18432.9s
+ground_1e8: frame=191 t=6.367s clearance=-0.401m crossings=4/4 Newton=24 elapsed=18514.9s
+ground_1e8: frame=192 t=6.400s clearance=-0.372m crossings=4/4 Newton=18 elapsed=18564.1s
+ground_1e8: frame=193 t=6.433s clearance=-0.342m crossings=4/4 Newton=16 elapsed=18603.0s
+ground_1e8: frame=194 t=6.467s clearance=-0.318m crossings=4/4 Newton=15 elapsed=18640.8s
+ground_1e8: frame=195 t=6.500s clearance=-0.297m crossings=4/4 Newton=14 elapsed=18673.7s
+ground_1e8: frame=196 t=6.533s clearance=-0.272m crossings=4/4 Newton=19 elapsed=18719.8s
+ground_1e8: frame=197 t=6.567s clearance=-0.244m crossings=4/4 Newton=20 elapsed=18769.0s
+ground_1e8: frame=198 t=6.600s clearance=-0.213m crossings=4/4 Newton=25 elapsed=18829.8s
+ground_1e8: frame=199 t=6.633s clearance=-0.180m crossings=4/4 Newton=18 elapsed=18870.6s
+ground_1e8: frame=200 t=6.667s clearance=-0.143m crossings=4/4 Newton=31 elapsed=18942.4s
+ground_1e8: frame=201 t=6.700s clearance=-0.105m crossings=4/4 Newton=31 elapsed=19014.7s
+ground_1e8: frame=202 t=6.733s clearance=-0.065m crossings=4/4 Newton=36 elapsed=19098.8s
+ground_1e8: frame=203 t=6.767s clearance=-0.025m crossings=4/4 Newton=22 elapsed=19151.7s
+ground_1e8: frame=204 t=6.800s clearance=0.011m crossings=4/4 Newton=31 elapsed=19233.2s
+ground_1e8: frame=205 t=6.833s clearance=0.047m crossings=4/4 Newton=30 elapsed=19318.7s
+ground_1e8: frame=206 t=6.867s clearance=0.082m crossings=4/4 Newton=23 elapsed=19379.4s
+ground_1e8: frame=207 t=6.900s clearance=0.116m crossings=4/4 Newton=27 elapsed=19453.9s
+ground_1e8: frame=208 t=6.933s clearance=0.148m crossings=4/4 Newton=29 elapsed=19498.2s
+ground_1e8: frame=209 t=6.967s clearance=0.180m crossings=4/4 Newton=23 elapsed=19530.2s
+ground_1e8: frame=210 t=7.000s clearance=0.210m crossings=4/4 Newton=22 elapsed=19559.2s
+ground_1e8: frame=211 t=7.033s clearance=0.239m crossings=4/4 Newton=17 elapsed=19581.5s
+ground_1e8: frame=212 t=7.067s clearance=0.268m crossings=4/4 Newton=34 elapsed=19630.2s
+ground_1e8: frame=213 t=7.100s clearance=0.296m crossings=4/4 Newton=28 elapsed=19670.0s
+{"status": "COMPLETED_FULL_PASS", "case": "ground_1e8", "solver": "linear_hsc", "config_sha256": "1dfafff19a2773e2384cc32ea9777d63305062c48688bfe5177eeb313a28f2f2", "backend_sha256": "00b7948774882818f3a6620bd05ceac825f26726a902c8affedc4533cb449903", "native_workspace": "E:\\HC-HSC-build-jaq6yw9h\\runs\\vehicle_full_pass_noninverting\\ground_1e8", "completed_frames": 213, "simulation_time_s": 7.1, "elapsed_s": 19669.9703074, "passage": {"vehicle_min_x_m": 1.1943950476934373, "obstacle_max_x_m": 0.8985529324293452, "clearance_m": 0.2958421152640921, "crossed_wheels": ["wheel_0", "wheel_1", "wheel_2", "wheel_3"], "consecutive_clear_frames": 5, "contact_seen": true, "passed": true}, "wheel_crossings": {"wheel_0": {"frame": 47, "obstacle": "loose_0", "wheel_center": [0.21082868217150838, -0.9295246213550883, 0.7750916985776447], "obstacle_center": [0.20693735883551295, -1.011909411003307, 0.17385348293477096]}, "wheel_1": {"frame": 50, "obstacle": "loose_2", "wheel_center": [0.3063502719536583, 0.8930500559266764, 0.7974053328674178], "obstacle_center": [0.2965649939911411, 1.0473235212985599, 0.1782286614497594]}, "wheel_2": {"frame": 159, "obstacle": "loose_0", "wheel_center": [0.3513497236432386, -0.915959156062251, 0.7742095802860037], "obstacle_center": [0.33557248250952665, -0.9219604416222451, 0.17338183659583395]}, "wheel_3": {"frame": 161, "obstacle": "loose_2", "wheel_center": [0.440082125415446, 0.906527383360676, 0.7977482460545187], "obstacle_center": [0.42779364446632484, 1.0677767582529911, 0.18612375166252146]}}, "hsc": {"linear_solves": 6161, "fallbacks": 0, "max_schur_relative_residual": 9.999894084128152e-05, "max_full_relative_residual": 9.897796757886158e-05, "max_pcg_iterations": 2405, "max_mesh_contacts": 131, "max_ground_contacts": 194, "max_aca_error": 2.6380048314129607e-16, "min_rank": 84, "max_rank": 96, "min_neumann_doublings": 13, "max_neumann_doublings": 16}}

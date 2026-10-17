@@ -1,0 +1,9 @@
+{
+  "upstream_files_sha256_verified": 54,
+  "python_sources_syntax": "PASS",
+  "probe_status": "PASS",
+  "bundle_file_count": 80,
+  "bundle_bytes": 6089392,
+  "bundle_sha256": "73f5d14a3f66aa6cc13a8262a04be4b3d30d633ca9baca492f9252d63c1bbc76",
+  "archive_crc": "PASS"
+}

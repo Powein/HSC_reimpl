@@ -1,0 +1,23 @@
+{
+  "pid": 7016,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\validate_assembly.py",
+    "--case",
+    "vehicle",
+    "--steps",
+    "40",
+    "--obstacles",
+    "3",
+    "--motor-speed",
+    "2.0",
+    "--start-x",
+    "-2.6",
+    "--label",
+    "obstacle_entry"
+  ],
+  "timeout_s": 300,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\obstacle_entry.log",
+  "exit_code": 0,
+  "elapsed_s": 211.14100000000144
+}

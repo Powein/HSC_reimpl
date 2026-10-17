@@ -1,0 +1,11 @@
+{
+  "pid": 2516,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\check_tire_overlap.py"
+  ],
+  "timeout_s": 90,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\independent_tire_overlap.log",
+  "exit_code": 0,
+  "elapsed_s": 2.0
+}

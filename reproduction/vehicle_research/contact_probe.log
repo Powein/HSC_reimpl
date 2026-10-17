@@ -1,0 +1,34 @@
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 11:04:53.922] [warning] [cuda] Contact default kappa 100000000 is clamped to [214607448137.27426] (valid range: [214607448137.27426, 21460744813727.426])
+completed 30 frames
+completed 60 frames
+completed 90 frames
+completed 120 frames
+{
+  "status": "PASS",
+  "engine": "pyuipc 0.0.28 CUDA",
+  "scope": "Two aligned 6-tet cubes: one ABD falling onto one FEM cube above a plane; stock solver, not HSC.",
+  "friction_enabled": true,
+  "friction_quantitatively_validated": false,
+  "vehicle_scene_simulated": false,
+  "steps": 120,
+  "dt": 0.005,
+  "minimum_fem_ground_distance_m": 0.0006603992668818497,
+  "minimum_abd_fem_vertical_aabb_gap_m": -0.011290672082451436,
+  "aabb_gap_is_not_a_penetration_test": true,
+  "overlapping_tet_pairs_all_frames": 0,
+  "overlap_check": "Independent tetrahedron separating-axis test, tolerance 1e-9 m; touching permitted.",
+  "minimum_fem_signed_tet_volume_m3": 0.003951951507713803,
+  "final_fem_compression_m": 0.003951472441683979,
+  "elapsed_seconds": 8.14329699999871,
+  "final": {
+    "frame": 120,
+    "fem_min_z": 0.0007642070645815629,
+    "abd_min_z": 0.2903349508888403,
+    "vertical_aabb_gap": -0.006477783734057274,
+    "overlapping_tet_pairs": 0,
+    "min_fem_signed_tet_volume_m3": 0.0043658847276035265,
+    "fem_height": 0.296048527558316,
+    "abd_com_z": 0.4440017938705684
+  }
+}

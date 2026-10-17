@@ -1,0 +1,52 @@
+{
+  "source_hashes": {
+    "HC.pdf": "be4f3d2a6f9b1af4148bdb0ec29cc8bb78261b3419ddbed536f8c983ea418a52",
+    "Guo-2026-HSC.zip": "ec833f3d707233b9d3efb9c5e979b10e7ef6a2dcdb6e7835a8658cb30b0e455b"
+  },
+  "original_files_unchanged": true,
+  "author_current_zip_identical_to_user_zip": true,
+  "archive_file_count": 34,
+  "missing_local_includes": [
+    {
+      "file": "sparse_matrix_square\\sparse_assembly_fem_abd_cuda.cuh",
+      "include": "sparse_blocks_nonsquare_cuda.cuh"
+    },
+    {
+      "file": "sparse_matrix_square\\spmv_cuda.cuh",
+      "include": "sparse_blocks_nonsquare_cuda.cuh"
+    }
+  ],
+  "nvcc_on_path": null,
+  "has_standalone_build": false,
+  "has_scene_assets": false,
+  "has_ACA_implementation": false,
+  "has_Schur_implementation": false,
+  "has_documented_PCG_fem_abd_coupling_cuda": false,
+  "missing_runtime_components": [
+    "FEM/ABD full energy assembly and time integrator",
+    "IPC barrier/friction and CCD",
+    "full HSC/ACA driver",
+    "paper scenes, meshes, initial/boundary conditions and benchmark outputs"
+  ],
+  "source_paper_parameter_differences": {
+    "ACA_termination": {
+      "technical_appendix_page_2": "fixed maximum rank only",
+      "reference_main": "fixed kmax=min(m,n), roundoff-level zero-pivot guard",
+      "reference_extra": "tolerance-based sweep separately labeled diagnostic"
+    },
+    "omega": {
+      "paper_section_3_3": 0.7,
+      "source_PCG_default": 0.6667
+    },
+    "neumann_order": {
+      "paper_experiment_default": 5,
+      "source_PCG_default": 1
+    },
+    "tolerance": {
+      "paper_section_5": "1e-4 (norm convention unspecified)",
+      "paper_figure_2": "relative residual < 1e-5, max 1000",
+      "source": "squared residual; tol=1e-12, relative_residual=false"
+    },
+    "block_12_inverse": "jacobi_cuda.cuh uses scalar diagonal inversion for block_size > 3; reference uses full 12x12 block inverse"
+  }
+}

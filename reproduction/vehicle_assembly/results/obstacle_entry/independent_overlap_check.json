@@ -1,0 +1,1358 @@
+{
+  "status": "PASS",
+  "test": "Independent tetrahedron SAT (4+4 face normals and 36 edge-cross axes)",
+  "tolerance_m": 1e-09,
+  "frames": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "tire_pair_checks": 189,
+  "analytic_sanity_cases": {
+    "identical": true,
+    "contained": true,
+    "overlapping": true,
+    "touching": true,
+    "separated": true,
+    "aabb_overlap_but_tets_separate": true
+  },
+  "narrow_phase_tet_pairs": 2704,
+  "positive_volume_overlaps": 0,
+  "excluded_scope": [
+    "between saved frames",
+    "self contact",
+    "ABD meshes"
+  ],
+  "elapsed_s": 0.5949496000012005,
+  "entries": [
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 0,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 5,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 10,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 15,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 20,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 95,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 203,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 25,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 485,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 249,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 30,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 588,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 236,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 35,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "wheel_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "loose_0",
+      "aabb_tet_candidates": 539,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_1",
+      "b": "wheel_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_1",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_1",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_1",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 309,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_2",
+      "b": "wheel_3",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_2",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_2",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_2",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_3",
+      "b": "loose_0",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_3",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "wheel_3",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "loose_0",
+      "b": "loose_1",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "loose_0",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    },
+    {
+      "frame": 40,
+      "a": "loose_1",
+      "b": "loose_2",
+      "aabb_tet_candidates": 0,
+      "positive_volume_overlaps": 0
+    }
+  ]
+}

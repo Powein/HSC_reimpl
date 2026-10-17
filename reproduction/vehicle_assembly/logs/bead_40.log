@@ -1,0 +1,84 @@
+runtime_path_ascii: False
+using_ascii_temp_runtime: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 11:28:39.247] [error] Intersection detected between Edge(65,67) in Geometry(1) Instance(0) Object[1] and Triangle(2255,2307,2300) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.247] [error] Intersection detected between Edge(67,69) in Geometry(1) Instance(0) Object[1] and Triangle(2254,2255,2300) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.247] [error] Intersection detected between Edge(2254,2255) in Geometry(2) Instance(1) Object[2] and Triangle(65,66,67) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2255,2300) in Geometry(2) Instance(1) Object[2] and Triangle(67,69,3) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2254,2255) in Geometry(2) Instance(1) Object[2] and Triangle(69,70,71) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2255,2300) in Geometry(2) Instance(1) Object[2] and Triangle(65,66,67) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(95,97) in Geometry(1) Instance(0) Object[1] and Triangle(2252,2296,2297) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2252,2296) in Geometry(2) Instance(1) Object[2] and Triangle(93,95,3) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2252,2296) in Geometry(2) Instance(1) Object[2] and Triangle(95,96,97) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(67,68) in Geometry(1) Instance(0) Object[1] and Triangle(896,2255,2254) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(68,69) in Geometry(1) Instance(0) Object[1] and Triangle(896,2255,2254) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(69,70) in Geometry(1) Instance(0) Object[1] and Triangle(896,2255,2254) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(66,67) in Geometry(1) Instance(0) Object[1] and Triangle(896,2255,2254) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(68,69) in Geometry(1) Instance(0) Object[1] and Triangle(2254,2255,2300) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(69,70) in Geometry(1) Instance(0) Object[1] and Triangle(2254,2255,2300) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(94,95) in Geometry(1) Instance(0) Object[1] and Triangle(893,2253,2252) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(95,96) in Geometry(1) Instance(0) Object[1] and Triangle(893,2253,2252) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(22,23) in Geometry(1) Instance(0) Object[1] and Triangle(2266,2267,2292) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(22,23) in Geometry(1) Instance(0) Object[1] and Triangle(980,2267,2266) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(14,15) in Geometry(1) Instance(0) Object[1] and Triangle(993,2266,2265) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(14,15) in Geometry(1) Instance(0) Object[1] and Triangle(2265,2266,2280) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(12,13) in Geometry(1) Instance(0) Object[1] and Triangle(993,2266,2265) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(20,21) in Geometry(1) Instance(0) Object[1] and Triangle(2266,2267,2292) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(12,13) in Geometry(1) Instance(0) Object[1] and Triangle(2265,2266,2280) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(20,21) in Geometry(1) Instance(0) Object[1] and Triangle(980,2267,2266) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(21,22) in Geometry(1) Instance(0) Object[1] and Triangle(2266,2267,2292) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(21,22) in Geometry(1) Instance(0) Object[1] and Triangle(980,2267,2266) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(19,20) in Geometry(1) Instance(0) Object[1] and Triangle(2266,2267,2292) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(19,20) in Geometry(1) Instance(0) Object[1] and Triangle(980,2267,2266) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(11,12) in Geometry(1) Instance(0) Object[1] and Triangle(993,2266,2265) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(11,12) in Geometry(1) Instance(0) Object[1] and Triangle(2265,2266,2280) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(13,14) in Geometry(1) Instance(0) Object[1] and Triangle(993,2266,2265) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(13,14) in Geometry(1) Instance(0) Object[1] and Triangle(2265,2266,2280) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(93,95) in Geometry(1) Instance(0) Object[1] and Triangle(2252,2253,2296) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2252,2253) in Geometry(2) Instance(1) Object[2] and Triangle(93,94,95) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2252,2253) in Geometry(2) Instance(1) Object[2] and Triangle(95,96,97) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(3,95) in Geometry(1) Instance(0) Object[1] and Triangle(2252,2296,2297) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(3,67) in Geometry(1) Instance(0) Object[1] and Triangle(2255,2307,2300) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2250,2251) in Geometry(2) Instance(1) Object[2] and Triangle(36,38,37) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2250,2251) in Geometry(2) Instance(1) Object[2] and Triangle(35,36,37) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2242,2250) in Geometry(2) Instance(1) Object[2] and Triangle(45,46,47) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2242,2250) in Geometry(2) Instance(1) Object[2] and Triangle(41,42,43) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(42,43) in Geometry(1) Instance(0) Object[1] and Triangle(888,2250,2242) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(42,43) in Geometry(1) Instance(0) Object[1] and Triangle(2242,2250,2309) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(44,45) in Geometry(1) Instance(0) Object[1] and Triangle(888,2250,2242) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(43,44) in Geometry(1) Instance(0) Object[1] and Triangle(888,2250,2242) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(44,45) in Geometry(1) Instance(0) Object[1] and Triangle(2242,2250,2309) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(43,44) in Geometry(1) Instance(0) Object[1] and Triangle(2242,2250,2309) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(45,46) in Geometry(1) Instance(0) Object[1] and Triangle(888,2250,2242) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(36,37) in Geometry(1) Instance(0) Object[1] and Triangle(889,2251,2250) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(36,37) in Geometry(1) Instance(0) Object[1] and Triangle(2250,2251,2308) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(45,46) in Geometry(1) Instance(0) Object[1] and Triangle(2242,2250,2309) in Geometry(2) Instance(1) Object[2], SelfColl(0,1)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2265,2266) in Geometry(2) Instance(1) Object[2] and Triangle(10,12,11) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2265,2266) in Geometry(2) Instance(1) Object[2] and Triangle(14,16,15) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2266,2267) in Geometry(2) Instance(1) Object[2] and Triangle(22,24,23) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.248] [error] Intersection detected between Edge(2266,2267) in Geometry(2) Instance(1) Object[2] and Triangle(18,20,19) in Geometry(1) Instance(0) Object[1], SelfColl(1,0)
+[2026-10-17 11:28:39.250] [error] [class uipc::backend::cuda::SimplicialSurfaceDistanceCheck(3)]:
+Geometry(1) in Object[test_wheel_rim(1)] is too close (distance=0, thickness=0) to Geometry(2) in Object[test_wheel_tire(2)]
+Close mesh has 158 vertices, 0 edges, and 142 triangles.
+Close mesh is saved at C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\hc_assembly_bead\sanity_check\3\close_mesh.obj.
+Create mesh [close_mesh<SimplicialComplex>] for post-processing.
+Geometries:
+  - close_mesh: <SimplicialComplex>
+[2026-10-17 11:28:39.250] [error] [class uipc::backend::cuda::SimplicialSurfaceIntersectionCheck(1)]:
+Geometry(1) in Object[test_wheel_rim(1)] intersects with Geometry(2) in Object[test_wheel_tire(2)]
+Intersected mesh has 62 vertices, 33 edges, and 28 triangles.
+Intersected mesh is saved at C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\hc_assembly_bead\sanity_check\1\intersected_mesh.obj.
+Create mesh [intersected_mesh<SimplicialComplex>] for post-processing.
+Geometries:
+  - intersected_mesh: <SimplicialComplex>
+[2026-10-17 11:28:39.250] [error] World is not valid, skipping init.
+Traceback (most recent call last):
+  File "C:\Users\Powei\Desktop\∏¥œ÷HC\reproduction\vehicle_assembly\validate_assembly.py", line 93, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Powei\Desktop\∏¥œ÷HC\reproduction\vehicle_assembly\validate_assembly.py", line 43, in main
+    sim.init()
+  File "C:\Users\Powei\Desktop\∏¥œ÷HC\reproduction\vehicle_assembly\scene.py", line 189, in init
+    if not self.world.is_valid():raise RuntimeError('libuipc initialization failed; inspect sanity-check report')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: libuipc initialization failed; inspect sanity-check report

@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "case": "vehicle",
+  "profile": "paper_stiffness",
+  "steps": 12,
+  "dt": 0.005,
+  "checks": {
+    "world_valid": true,
+    "bead_error_under_0_5mm": true,
+    "positive_fem_tet_volumes": true,
+    "tire_ground_clearance": true,
+    "prismatic_lateral_error_under_1mm": true,
+    "revolute_anchor_error_under_1mm": true,
+    "suspension_travel_within_limits": true,
+    "wheel_rotation_transmitted": true
+  },
+  "max_bead_error_m": 1.1043756218357517e-05,
+  "min_tet_volume_ratio": 0.9982418188609637,
+  "minimum_tire_z_m": 0.00048295376493666614,
+  "max_prismatic_lateral_error_m": 4.30601054547456e-08,
+  "max_revolute_anchor_error_m": 7.443830383049773e-08,
+  "measured_wheel_angle_rad": 0.04799977158762186,
+  "motor_angle_error_rad": 2.2841237815041104e-07,
+  "suspension_force_balance": null,
+  "chassis_displacement_x_m": 0.00875811768166379,
+  "elapsed_s": 63.41066800000044,
+  "not_validated": [
+    "HSC solver",
+    "paper scene equivalence",
+    "full obstacle traversal",
+    "all continuous collision pairs independently"
+  ],
+  "last_frame": {
+    "frame": 12,
+    "wheels": [
+      {
+        "name": "wheel_0",
+        "max_bead_error_m": 3.94517788845143e-06,
+        "min_z_m": 0.0006015744586899973,
+        "min_tet_volume_ratio": 0.9993921871765284,
+        "rim_center": [
+          -1.342045292012642,
+          -0.9100967426387423,
+          0.470549393499074
+        ]
+      },
+      {
+        "name": "wheel_1",
+        "max_bead_error_m": 4.109455931194847e-06,
+        "min_z_m": 0.0005975161208120091,
+        "min_tet_volume_ratio": 0.999377584847132,
+        "rim_center": [
+          -1.3420141095749498,
+          0.9099032624552849,
+          0.47054346435962774
+        ]
+      },
+      {
+        "name": "wheel_2",
+        "max_bead_error_m": 8.846683434469838e-06,
+        "min_z_m": 0.000544180555671715,
+        "min_tet_volume_ratio": 0.9988589484952529,
+        "rim_center": [
+          -4.644046333037323,
+          -0.9100398694875946,
+          0.47046305025479473
+        ]
+      },
+      {
+        "name": "wheel_3",
+        "max_bead_error_m": 9.177202455786855e-06,
+        "min_z_m": 0.0005319627890438192,
+        "min_tet_volume_ratio": 0.9987929602460734,
+        "rim_center": [
+          -4.6440150477192566,
+          0.9099601355423697,
+          0.470441758794883
+        ]
+      },
+      {
+        "name": "loose_0",
+        "max_bead_error_m": 1.84170374131523e-07,
+        "min_z_m": 0.0009181277847144295,
+        "min_tet_volume_ratio": 0.9997422277237378,
+        "rim_center": [
+          1.8579957779279831e-06,
+          -1.0100008495727024,
+          0.17547145380425938
+        ]
+      },
+      {
+        "name": "loose_1",
+        "max_bead_error_m": 2.396807519182066e-06,
+        "min_z_m": 0.0009154004297544448,
+        "min_tet_volume_ratio": 0.9996951761110366,
+        "rim_center": [
+          -3.2195083189048304e-06,
+          -4.561931535282414e-06,
+          0.17546347060895567
+        ]
+      },
+      {
+        "name": "loose_2",
+        "max_bead_error_m": 2.490438073223486e-07,
+        "min_z_m": 0.0009172770762263448,
+        "min_tet_volume_ratio": 0.9997591656611146,
+        "rim_center": [
+          -1.6670829773380907e-06,
+          1.0099971333594702,
+          0.17546518449068768
+        ]
+      },
+      {
+        "name": "loose_3",
+        "max_bead_error_m": 3.3974263640430527e-07,
+        "min_z_m": 0.0009085971041546716,
+        "min_tet_volume_ratio": 0.9996699560428538,
+        "rim_center": [
+          1.0100108482874732,
+          -1.0100137527928414,
+          0.17545802383229306
+        ]
+      },
+      {
+        "name": "loose_4",
+        "max_bead_error_m": 1.405731987628395e-07,
+        "min_z_m": 0.0009210387764834894,
+        "min_tet_volume_ratio": 0.9998525571102452,
+        "rim_center": [
+          1.010000966588845,
+          -2.6353261027809267e-06,
+          0.17549282123381418
+        ]
+      },
+      {
+        "name": "loose_5",
+        "max_bead_error_m": 2.9402820065544985e-07,
+        "min_z_m": 0.0009177177002356521,
+        "min_tet_volume_ratio": 0.9997706694713223,
+        "rim_center": [
+          1.0099991929088625,
+          1.0099971794180465,
+          0.17547395535379665
+        ]
+      },
+      {
+        "name": "loose_6",
+        "max_bead_error_m": 3.101568910473584e-07,
+        "min_z_m": 0.0009166793811482342,
+        "min_tet_volume_ratio": 0.9997619952609237,
+        "rim_center": [
+          2.020002536263842,
+          -1.010011910435349,
+          0.17546715368596885
+        ]
+      },
+      {
+        "name": "loose_7",
+        "max_bead_error_m": 3.6767202680754385e-07,
+        "min_z_m": 0.0009157940967142144,
+        "min_tet_volume_ratio": 0.9997387464995959,
+        "rim_center": [
+          2.0200022094773997,
+          -8.073755205957187e-06,
+          0.17546249201602535
+        ]
+      },
+      {
+        "name": "loose_8",
+        "max_bead_error_m": 6.824915056986745e-07,
+        "min_z_m": 0.0009150965902562925,
+        "min_tet_volume_ratio": 0.9997303605658419,
+        "rim_center": [
+          2.0199947811888452,
+          1.010000819957466,
+          0.17546192639082697
+        ]
+      },
+      {
+        "name": "loose_9",
+        "max_bead_error_m": 2.954788694009565e-07,
+        "min_z_m": 0.0009201574316842102,
+        "min_tet_volume_ratio": 0.9998291576202571,
+        "rim_center": [
+          3.030000719067077,
+          -1.010003855712145,
+          0.1754854490453052
+        ]
+      },
+      {
+        "name": "loose_10",
+        "max_bead_error_m": 1.7468861003202274e-07,
+        "min_z_m": 0.0009187729733265193,
+        "min_tet_volume_ratio": 0.999795997164763,
+        "rim_center": [
+          3.030000308028699,
+          -1.9455767944032685e-06,
+          0.17547505086064466
+        ]
+      },
+      {
+        "name": "loose_11",
+        "max_bead_error_m": 2.60278463763686e-07,
+        "min_z_m": 0.0009163954207738076,
+        "min_tet_volume_ratio": 0.9997396828044736,
+        "rim_center": [
+          3.0300031496183197,
+          1.0099973608404864,
+          0.17546486430135655
+        ]
+      }
+    ],
+    "suspensions": [
+      {
+        "name": "suspension_0",
+        "travel_m": -0.016922004279439504,
+        "reported_joint_distance_m": -0.01692201074054149,
+        "prismatic_lateral_error_m": 6.572448423653187e-09,
+        "revolute_anchor_error_m": 5.072491340715003e-08,
+        "spring_length_m": 0.3669219777148568,
+        "spring_force_N": -4344.155548591923,
+        "spindle_center": [
+          -1.3420452433128236,
+          -0.9100967440173157,
+          0.4705493843430944
+        ]
+      },
+      {
+        "name": "suspension_1",
+        "travel_m": -0.01689779883078208,
+        "reported_joint_distance_m": -0.016897805096757583,
+        "prismatic_lateral_error_m": 2.2451882041542814e-09,
+        "revolute_anchor_error_m": 4.5511264541912735e-08,
+        "spring_length_m": 0.36689777226619924,
+        "spring_force_N": -4345.253847527016,
+        "spindle_center": [
+          -1.3420140658057187,
+          0.909903261068565,
+          0.4705434549153762
+        ]
+      },
+      {
+        "name": "suspension_2",
+        "travel_m": 0.004789314409421164,
+        "reported_joint_distance_m": 0.0047893148224496815,
+        "prismatic_lateral_error_m": 2.4394471641081142e-08,
+        "revolute_anchor_error_m": 7.443830383049773e-08,
+        "spring_length_m": 0.34521065902599685,
+        "spring_force_N": -5329.2857369547055,
+        "spindle_center": [
+          -4.64404640476589,
+          -0.9100398691170186,
+          0.47046303244380167
+        ]
+      },
+      {
+        "name": "suspension_3",
+        "travel_m": 0.0047981568035048265,
+        "reported_joint_distance_m": 0.004798157216430505,
+        "prismatic_lateral_error_m": 2.9126817396785194e-08,
+        "revolute_anchor_error_m": 7.2727323617053e-08,
+        "spring_length_m": 0.34520181663191357,
+        "spring_force_N": -5329.68695207543,
+        "spindle_center": [
+          -4.644015116777864,
+          0.9099601357167092,
+          0.47044174035609254
+        ]
+      }
+    ]
+  }
+}

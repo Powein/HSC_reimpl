@@ -1,0 +1,68 @@
+{
+  "status": "STOPPED_FOR_COMMON_MATERIAL_CORRECTION",
+  "case": "ground_1e8",
+  "solver": "linear_hsc",
+  "config_sha256": "9bc87ce92a1b57e1cfba3efe0ae3c639be7168cd13f6d7d148c47f29a6a0b159",
+  "backend_sha256": "714923a0df7432a61823f6a26381dc2660bbb556a46fd0aad8073fcdbb078248",
+  "native_workspace": "E:\\HC-HSC-build-jaq6yw9h\\runs\\vehicle_full_pass\\ground_1e8",
+  "completed_frames": 78,
+  "simulation_time_s": 2.6,
+  "elapsed_s": 6365.078562300001,
+  "passage": {
+    "vehicle_min_x_m": -2.8717555681336995,
+    "obstacle_max_x_m": 0.7748669285130371,
+    "clearance_m": -3.6466224966467364,
+    "crossed_wheels": [
+      "wheel_0",
+      "wheel_1"
+    ],
+    "consecutive_clear_frames": 0,
+    "contact_seen": true,
+    "passed": false
+  },
+  "wheel_crossings": {
+    "wheel_0": {
+      "frame": 47,
+      "obstacle": "loose_0",
+      "wheel_center": [
+        0.20653674280426965,
+        -0.9386264246923046,
+        0.7753065514512387
+      ],
+      "obstacle_center": [
+        0.2017677459179781,
+        -1.023846157285881,
+        0.17407532569801915
+      ]
+    },
+    "wheel_1": {
+      "frame": 50,
+      "obstacle": "loose_2",
+      "wheel_center": [
+        0.30619973324838007,
+        0.8836630103210247,
+        0.7975350418752598
+      ],
+      "obstacle_center": [
+        0.2962481255671552,
+        1.0355144053629761,
+        0.17754236918379307
+      ]
+    }
+  },
+  "hsc": {
+    "linear_solves": 2315,
+    "fallbacks": 0,
+    "max_schur_relative_residual": 9.999819255211625E-05,
+    "max_full_relative_residual": 9.957857533271959E-05,
+    "max_pcg_iterations": 2352,
+    "max_mesh_contacts": 100,
+    "max_ground_contacts": 194,
+    "max_aca_error": 2.300522508500137E-17,
+    "min_rank": 84,
+    "max_rank": 84,
+    "min_neumann_doublings": 13,
+    "max_neumann_doublings": 16
+  },
+  "stop_reason": "The soft case has negative tetrahedron volume (minimum -0.0186021438605995). Both cases will restart with the same non-inverting logarithmic Neo-Hookean model and segment feasibility check."
+}

@@ -1,0 +1,158 @@
+{
+  "model": "Chrono-derived replacement with explicit bead attachment; NOT paper-exact",
+  "profile": "assembly",
+  "config": {
+    "cfl": {
+      "enable": 0
+    },
+    "collision_detection": {
+      "method": "stackless_bvh"
+    },
+    "contact": {
+      "adaptive": {
+        "init_kappa": 1000000000.0,
+        "kappa_eval_scale": 1e-16,
+        "max_kappa": 100000000000.0,
+        "min_kappa": 100000000.0
+      },
+      "al-ipc": {
+        "alpha_lower_bound": 1e-06,
+        "decay_factor": 0.3,
+        "mu_scale_abd": 100000.0,
+        "mu_scale_diag_norm": 0.1,
+        "mu_scale_fem": 50000000.0,
+        "mu_scale_mode": "per_vertex",
+        "toi_threshold": 0.1
+      },
+      "constitution": "ipc",
+      "d_hat": 0.001,
+      "d_hat_relative": 0.0,
+      "enable": 1,
+      "eps_velocity": 0.01,
+      "eps_velocity_relative": 0.0,
+      "friction": {
+        "enable": true
+      }
+    },
+    "diff_sim": {
+      "enable": 0
+    },
+    "dt": 0.005,
+    "extras": {
+      "debug": {
+        "dump_linear_pcg": 0,
+        "dump_linear_system": 0,
+        "dump_mas_matrices": 0,
+        "dump_surface": 0
+      },
+      "strict_mode": {
+        "enable": 0
+      }
+    },
+    "gravity": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        -9.8
+      ]
+    ],
+    "integrator": {
+      "type": "bdf1"
+    },
+    "line_search": {
+      "max_iter": 32,
+      "report_energy": 0
+    },
+    "linear_system": {
+      "check_interval": 5,
+      "fem_preconditioner": "mas",
+      "solver": "fused_pcg",
+      "tol_rate": 0.001,
+      "use_cuda_graph": 1
+    },
+    "newton": {
+      "ccd_tol": 1.0,
+      "max_iter": 200,
+      "min_iter": 0,
+      "semi_implicit": {
+        "K_min": 6,
+        "beta_tol": 0.001,
+        "enable": 0
+      },
+      "transrate_tol": 0.1,
+      "use_adaptive_tol": 0,
+      "velocity_tol": 0.003,
+      "velocity_tol_relative": 0.0
+    },
+    "sanity_check": {
+      "enable": 1,
+      "mode": "normal"
+    }
+  },
+  "materials": {
+    "mounted_E": 100000000.0,
+    "loose_E": 1000000.0,
+    "poisson": 0.3,
+    "density": 1000.0,
+    "abd_kappa": 1000000000.0,
+    "bead_k": 100000000.0
+  },
+  "bodies": [
+    {
+      "name": "test_wheel_rim",
+      "mass_kg": 18.8,
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.75
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 137,
+      "surface_triangles": 192,
+      "virtual_anchors": 39
+    }
+  ],
+  "wheels": [
+    {
+      "name": "test_wheel",
+      "vertices": 3548,
+      "tets": 11171,
+      "bead_nodes": 39,
+      "tire_mass_kg": 63.8094666062332
+    }
+  ],
+  "suspensions": [],
+  "contact_exclusions": [],
+  "bindings": [
+    {
+      "name": "test_wheel_bead",
+      "pairs": 39,
+      "stiffness_N_per_m": 100000000.0,
+      "rest_length_m": 0.0
+    }
+  ]
+}

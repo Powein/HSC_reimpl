@@ -1,0 +1,699 @@
+[
+  {
+    "frame": 0,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.28018603797542496,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 1,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.4425301478911824e-07,
+        "min_z_m": 0.2801657626474038,
+        "min_tet_volume_ratio": 0.9998854189368069,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 2,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.778749627369737e-07,
+        "min_z_m": 0.2801628754686438,
+        "min_tet_volume_ratio": 0.9998707179091975,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 3,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.660518667882761e-07,
+        "min_z_m": 0.2801638980521111,
+        "min_tet_volume_ratio": 0.999876007497897,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 4,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.618439740037222e-07,
+        "min_z_m": 0.28016425214667534,
+        "min_tet_volume_ratio": 0.9998777103080261,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 5,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6210517102180074e-07,
+        "min_z_m": 0.2801642319885763,
+        "min_tet_volume_ratio": 0.9998775863803453,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 6,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6244304875502146e-07,
+        "min_z_m": 0.2801642037307182,
+        "min_tet_volume_ratio": 0.9998774489417849,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 7,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6247768931398197e-07,
+        "min_z_m": 0.28016420133343295,
+        "min_tet_volume_ratio": 0.9998774398152733,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 8,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624584094604366e-07,
+        "min_z_m": 0.2801642030399126,
+        "min_tet_volume_ratio": 0.9998774483097527,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 9,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624528720018271e-07,
+        "min_z_m": 0.28016420344347703,
+        "min_tet_volume_ratio": 0.9998774497635101,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 10,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245325917882855e-07,
+        "min_z_m": 0.28016420337780124,
+        "min_tet_volume_ratio": 0.9998774490930691,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 11,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245366186773053e-07,
+        "min_z_m": 0.2801642033399777,
+        "min_tet_volume_ratio": 0.9998774488765187,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 12,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537072091255e-07,
+        "min_z_m": 0.2801642033393262,
+        "min_tet_volume_ratio": 0.9998774489672777,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 13,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537108892155e-07,
+        "min_z_m": 0.2801642033419814,
+        "min_tet_volume_ratio": 0.999877449042174,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 14,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245371576815226e-07,
+        "min_z_m": 0.28016420334245934,
+        "min_tet_volume_ratio": 0.9998774490507599,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 15,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537140073612e-07,
+        "min_z_m": 0.28016420334231074,
+        "min_tet_volume_ratio": 0.999877449035167,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 16,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537103863112e-07,
+        "min_z_m": 0.28016420334223213,
+        "min_tet_volume_ratio": 0.99987744902413,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 17,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245370915756706e-07,
+        "min_z_m": 0.2801642033422242,
+        "min_tet_volume_ratio": 0.9998774490223148,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 18,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245370950492627e-07,
+        "min_z_m": 0.28016420334223324,
+        "min_tet_volume_ratio": 0.9998774490245245,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 19,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099614504e-07,
+        "min_z_m": 0.28016420334223957,
+        "min_tet_volume_ratio": 0.9998774490264142,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 20,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245371007525335e-07,
+        "min_z_m": 0.28016420334224096,
+        "min_tet_volume_ratio": 0.9998774490268919,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 21,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245371007327373e-07,
+        "min_z_m": 0.2801642033422401,
+        "min_tet_volume_ratio": 0.9998774490265937,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 22,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.2801642033422391,
+        "min_tet_volume_ratio": 0.9998774490262794,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 23,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245370995947073e-07,
+        "min_z_m": 0.28016420334223874,
+        "min_tet_volume_ratio": 0.999877449026153,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 24,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099593124e-07,
+        "min_z_m": 0.28016420334223885,
+        "min_tet_volume_ratio": 0.9998774490261957,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 25,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.6245370995964045e-07,
+        "min_z_m": 0.28016420334223896,
+        "min_tet_volume_ratio": 0.9998774490262368,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 26,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.28016420334223907,
+        "min_tet_volume_ratio": 0.9998774490262721,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 27,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.28016420334223907,
+        "min_tet_volume_ratio": 0.9998774490262721,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 28,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262615,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 29,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 30,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 31,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 32,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 33,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262491,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 34,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 35,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 36,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 37,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 38,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 39,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 40,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.624537099599685e-07,
+        "min_z_m": 0.280164203342239,
+        "min_tet_volume_ratio": 0.9998774490262473,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  }
+]

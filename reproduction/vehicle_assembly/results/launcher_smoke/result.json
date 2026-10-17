@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "case": "bead",
+  "profile": "assembly",
+  "steps": 1,
+  "dt": 0.005,
+  "checks": {
+    "world_valid": true,
+    "bead_error_under_0_5mm": true,
+    "positive_fem_tet_volumes": true,
+    "tire_ground_clearance": true
+  },
+  "max_bead_error_m": 2.442495077204099e-07,
+  "min_tet_volume_ratio": 0.9998854187235923,
+  "minimum_tire_z_m": 0.28016576264655624,
+  "max_prismatic_lateral_error_m": 0.0,
+  "max_revolute_anchor_error_m": 0.0,
+  "measured_wheel_angle_rad": null,
+  "motor_angle_error_rad": null,
+  "suspension_force_balance": null,
+  "chassis_displacement_x_m": null,
+  "elapsed_s": 0.9882969000009325,
+  "not_validated": [
+    "HSC solver",
+    "paper scene equivalence",
+    "full obstacle traversal",
+    "all continuous collision pairs independently"
+  ],
+  "last_frame": {
+    "frame": 1,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.442495077204099e-07,
+        "min_z_m": 0.28016576264655624,
+        "min_tet_volume_ratio": 0.9998854187235923,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  }
+}

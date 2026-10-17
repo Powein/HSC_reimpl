@@ -1,0 +1,21 @@
+runtime_path_ascii: False
+using_ascii_temp_runtime: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime
+[2026-10-17 11:02:29.395] [info] Synchronize backend module [cuda]'s Polymorphic Memory Resource: 0x7ff823575000->0x7ff823575000
+[2026-10-17 11:02:29.396] [info] [cuda] Initializing Cuda Backend...
+[2026-10-17 11:02:29.424] [info] [cuda] Device: [0] NVIDIA GeForce RTX 3060 Ti
+[2026-10-17 11:02:29.424] [info] [cuda] Compute Capability: 8.6
+[2026-10-17 11:02:29.424] [info] [cuda] Total Global Memory: 8191 MB
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 11:02:29.737] [info] [cuda] Cuda Backend Init Success.
+[2026-10-17 11:02:29.737] [info] Cuda Backend Shutdown Success.
+Libuipc compatibility doctor
+============================================================
+[OK  ] Python: CPython 3.12.14 (cp312, AMD64)
+[OK  ] pyuipc package: version 0.0.28 at C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime\uipc
+[OK  ] Native ABI: extension=cp312, interpreter=cp312
+[OK  ] CUDA backend: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime\uipc\_native\uipc_backend_cuda.dll
+[OK  ] CUDA runtime: self-contained runtime built with CUDA 12.8.93; no system CUDA Toolkit is required
+[OK  ] CUDA backend load: backend and its dynamic dependencies loaded
+[OK  ] NVIDIA driver: NVIDIA GeForce RTX 3060 Ti (sm_86, driver 616.92, SASS, requires >= 528.33)
+[OK  ] GPU architecture #0: sm_86 against [75-real,80-real,86-real,89-real,120-real,89-virtual] (native build metadata, selected SASS)
+[OK  ] CUDA engine probe: Engine('cuda') constructed and destroyed successfully

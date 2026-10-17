@@ -1,0 +1,11 @@
+{
+  "command": "C:\\Users\\Powei\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe -X utf8 \"C:\\Users\\Powei\\Desktop\\复现HC\\reproduction\\run.py\"",
+  "working_directory": "C:\\Users\\Powei\\Desktop\\复现HC\\reproduction",
+  "monitored_pid": 29772,
+  "hard_timeout_seconds": 600,
+  "observed_exit_code": 0,
+  "started_utc": "2026-10-17T02:44:22.9492726Z",
+  "completed_utc": "2026-10-17T02:44:35.9662271Z",
+  "stdout": "run.log",
+  "stderr": "stderr.log"
+}

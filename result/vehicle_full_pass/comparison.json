@@ -1,0 +1,238 @@
+{
+  "cases": [
+    {
+      "case": "ground_1e8",
+      "status": "COMPLETED_FULL_PASS",
+      "mounted_E_Pa": 10000000000.0,
+      "loose_E_Pa": 100000000.0,
+      "dt_s": 0.03333333333333333,
+      "frames": 213,
+      "simulation_time_s": 7.1,
+      "wall_time_s": 19669.9703074,
+      "chassis_travel_x_m": 6.253969334761315,
+      "final_tail_clearance_m": 0.2958421152640921,
+      "wheel_crossings": {
+        "wheel_0": {
+          "frame": 47,
+          "obstacle": "loose_0",
+          "wheel_center": [
+            0.21082868217150838,
+            -0.9295246213550883,
+            0.7750916985776447
+          ],
+          "obstacle_center": [
+            0.20693735883551295,
+            -1.011909411003307,
+            0.17385348293477096
+          ]
+        },
+        "wheel_1": {
+          "frame": 50,
+          "obstacle": "loose_2",
+          "wheel_center": [
+            0.3063502719536583,
+            0.8930500559266764,
+            0.7974053328674178
+          ],
+          "obstacle_center": [
+            0.2965649939911411,
+            1.0473235212985599,
+            0.1782286614497594
+          ]
+        },
+        "wheel_2": {
+          "frame": 159,
+          "obstacle": "loose_0",
+          "wheel_center": [
+            0.3513497236432386,
+            -0.915959156062251,
+            0.7742095802860037
+          ],
+          "obstacle_center": [
+            0.33557248250952665,
+            -0.9219604416222451,
+            0.17338183659583395
+          ]
+        },
+        "wheel_3": {
+          "frame": 161,
+          "obstacle": "loose_2",
+          "wheel_center": [
+            0.440082125415446,
+            0.906527383360676,
+            0.7977482460545187
+          ],
+          "obstacle_center": [
+            0.42779364446632484,
+            1.0677767582529911,
+            0.18612375166252146
+          ]
+        }
+      },
+      "mounted_peak_elastic_displacement_m": 0.00022062572611366224,
+      "loose_peak_elastic_displacement_m": 0.013544448978667967,
+      "max_bead_error_m": 2.9114883417162576e-05,
+      "min_tet_volume_ratio": 0.6894656731538005,
+      "min_tire_vertex_z_m": 2.186723974108385e-05,
+      "max_abd_orthogonality_error_squared": 4.3714265386856006e-08,
+      "max_newton_iterations": 76,
+      "all_frames_converged": true,
+      "hsc": {
+        "linear_solves": 6161,
+        "fallbacks": 0,
+        "max_schur_relative_residual": 9.999894084128152e-05,
+        "max_full_relative_residual": 9.897796757886158e-05,
+        "max_pcg_iterations": 2405,
+        "max_mesh_contacts": 131,
+        "max_ground_contacts": 194,
+        "max_aca_error": 2.6380048314129607e-16,
+        "min_rank": 84,
+        "max_rank": 96,
+        "min_neumann_doublings": 13,
+        "max_neumann_doublings": 16
+      },
+      "obstacle_final_centers_m": {
+        "loose_0": [
+          0.337183436227335,
+          -0.926853528005838,
+          0.17525672946778553
+        ],
+        "loose_1": [
+          3.950383547604395e-07,
+          3.4790209330368165e-07,
+          0.17525672950179083
+        ],
+        "loose_2": [
+          0.4285615081600955,
+          1.0773964736304373,
+          0.17525672949994603
+        ]
+      }
+    },
+    {
+      "case": "ground_1e6",
+      "status": "COMPLETED_FULL_PASS",
+      "mounted_E_Pa": 10000000000.0,
+      "loose_E_Pa": 1000000.0,
+      "dt_s": 0.03333333333333333,
+      "frames": 209,
+      "simulation_time_s": 6.966666666666667,
+      "wall_time_s": 19444.569925599997,
+      "chassis_travel_x_m": 6.132092659720343,
+      "final_tail_clearance_m": 0.2821401636176092,
+      "wheel_crossings": {
+        "wheel_0": {
+          "frame": 46,
+          "obstacle": "loose_0",
+          "wheel_center": [
+            0.2045834112789613,
+            -0.9013900454999845,
+            0.743625326382964
+          ],
+          "obstacle_center": [
+            0.18745977917293166,
+            -1.0357548448152771,
+            0.14630190729769152
+          ]
+        },
+        "wheel_1": {
+          "frame": 46,
+          "obstacle": "loose_2",
+          "wheel_center": [
+            0.20219886648405544,
+            0.9186221458163869,
+            0.7401825617926414
+          ],
+          "obstacle_center": [
+            0.18226959931956038,
+            1.014407906127024,
+            0.14006224950944027
+          ]
+        },
+        "wheel_2": {
+          "frame": 157,
+          "obstacle": "loose_0",
+          "wheel_center": [
+            0.3007706900998215,
+            -0.8999288612677192,
+            0.7443948005031423
+          ],
+          "obstacle_center": [
+            0.28885500259499275,
+            -1.0555636604925336,
+            0.1478772463292367
+          ]
+        },
+        "wheel_3": {
+          "frame": 157,
+          "obstacle": "loose_2",
+          "wheel_center": [
+            0.3037916857587089,
+            0.9200675798594276,
+            0.7410674356911103
+          ],
+          "obstacle_center": [
+            0.3000805726358368,
+            1.023240995447717,
+            0.1407502684162867
+          ]
+        }
+      },
+      "mounted_peak_elastic_displacement_m": 0.00020466907999796576,
+      "loose_peak_elastic_displacement_m": 0.2466370837869594,
+      "max_bead_error_m": 6.237716607100831e-05,
+      "min_tet_volume_ratio": 0.16172756269345853,
+      "min_tire_vertex_z_m": 2.5262649662646602e-05,
+      "max_abd_orthogonality_error_squared": 5.016279457365491e-08,
+      "max_newton_iterations": 101,
+      "all_frames_converged": true,
+      "hsc": {
+        "linear_solves": 6402,
+        "fallbacks": 0,
+        "max_schur_relative_residual": 9.999943200817072e-05,
+        "max_full_relative_residual": 9.979432920855605e-05,
+        "max_pcg_iterations": 3062,
+        "max_mesh_contacts": 574,
+        "max_ground_contacts": 421,
+        "max_aca_error": 1.4690176064936188e-16,
+        "min_rank": 84,
+        "max_rank": 96,
+        "min_neumann_doublings": 13,
+        "max_neumann_doublings": 16
+      },
+      "obstacle_final_centers_m": {
+        "loose_0": [
+          0.2977670126541312,
+          -1.05094756186805,
+          0.17174480205739645
+        ],
+        "loose_1": [
+          3.6983641084844676e-05,
+          -7.565366574460959e-06,
+          0.1716696287271397
+        ],
+        "loose_2": [
+          0.31769843375742746,
+          1.0339712667289576,
+          0.17176988913763566
+        ]
+      }
+    }
+  ],
+  "comparison_control": {
+    "same_common_configuration": true,
+    "only_loose_E_changes": true,
+    "same_backend": true,
+    "same_scene_source": true,
+    "changed_parameter": "loose_E",
+    "mounted_E_Pa": [
+      10000000000.0,
+      10000000000.0
+    ],
+    "loose_E_Pa": [
+      100000000.0,
+      1000000.0
+    ]
+  },
+  "both_completed": true
+}

@@ -1,0 +1,290 @@
+runtime_path_ascii: False
+using_ascii_temp_runtime: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime
+
+CLASS SoftVertexStitch available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.SoftVertexStitch, config: json = {}) -> None
+
+Create a SoftVertexStitch constitution.
+Args:
+    config: Configuration dictionary (optional, uses default if not provided).
+
+create_geometry create_geometry(*args, **kwargs)
+Overloaded function.
+
+1. create_geometry(self: uipc._native.pyuipc.constitution.SoftVertexStitch, aim_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], stitched_vert_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], kappa: typing.SupportsFloat | typing.SupportsIndex = 1000000.0, rest_length: typing.SupportsFloat | typing.SupportsIndex = 0.0) -> uipc._native.pyuipc.geometry.Geometry
+
+Create geometry for vertex stitching.
+Args:
+    aim_geo_slots: Tuple of geometry slots to stitch.
+    stitched_vert_ids: Array of vertex ID pairs [geometry0_vert, geometry1_vert] to stitch.
+    kappa: Stitching stiffness (default: 1e6).
+    rest_length: Rest length of the spring (default: 0.0). When 0, the singularity-free
+        harmonic energy E=0.5*k*||x-y||^2 is used.
+Returns:
+    Geometry: Created stitching geometry.
+
+2. create_geometry(self: uipc._native.pyuipc.constitution.SoftVertexStitch, aim_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], stitched_vert_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], contact_elements: tuple[uipc._native.pyuipc.core.ContactElement, uipc._native.pyuipc.core.ContactElement], kappa: typing.SupportsFloat | typing.SupportsIndex = 1000000.0, rest_length: typing.SupportsFloat | typing.SupportsIndex = 0.0) -> uipc._native.pyuipc.geometry.Geometry
+
+Create geometry for vertex stitching with contact elements.
+Args:
+    aim_geo_slots: Tuple of geometry slots to stitch.
+    stitched_vert_ids: Array of vertex ID pairs [geometry0_vert, geometry1_vert] to stitch.
+    contact_elements: Tuple of two contact element objects.
+    kappa: Stitching stiffness (default: 1e6).
+    rest_length: Rest length of the spring (default: 0.0). When 0, the singularity-free
+        harmonic energy E=0.5*k*||x-y||^2 is used.
+Returns:
+    Created stitching geometry.
+
+
+CLASS SoftVertexTriangleStitch available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.SoftVertexTriangleStitch, config: json = {}) -> None
+
+Create a SoftVertexTriangleStitch constitution.
+
+create_geometry create_geometry(*args, **kwargs)
+Overloaded function.
+
+1. create_geometry(self: uipc._native.pyuipc.constitution.SoftVertexTriangleStitch, aim_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], rest_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], stitched_vert_tri_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], moduli: uipc._native.pyuipc.constitution.ElasticModuli = ElasticModuli(lambda_=1973154.3624161056, mu=40268.45637583893), min_separate_distance: typing.SupportsFloat | typing.SupportsIndex = 0.001) -> uipc._native.pyuipc.geometry.Geometry
+
+Create stitch geometry from explicit (vertex_index, triangle_index) pairs.
+    When a tet is degenerate, rest vertex is offset by min_separate_distance (default 1 mm).
+Args:
+    aim_geo_slots: Tuple (vertex_provider_slot, triangle_provider_slot).
+    rest_geo_slots: Tuple of rest geometry slots for Dm_inv/rest_volume.
+    stitched_vert_tri_ids: Nx2 array [vertex_id, triangle_id] per pair.
+    moduli: ElasticModuli (default: Young's modulus 120 kPa, Poisson's ratio 0.49).
+    min_separate_distance: Distance (m) when tet is degenerate. Default 0.001 (1 mm).
+Returns:
+    Geometry: Stitch geometry.
+
+2. create_geometry(self: uipc._native.pyuipc.constitution.SoftVertexTriangleStitch, aim_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], rest_geo_slots: tuple[uipc._native.pyuipc.geometry.SimplicialComplexSlot, uipc._native.pyuipc.geometry.SimplicialComplexSlot], pair_geometry: uipc._native.pyuipc.geometry.Geometry, moduli: uipc._native.pyuipc.constitution.ElasticModuli = ElasticModuli(lambda_=1973154.3624161056, mu=40268.45637583893), min_separate_distance: typing.SupportsFloat | typing.SupportsIndex = 0.001) -> uipc._native.pyuipc.geometry.Geometry
+
+Create stitch geometry from the Geometry returned by closest_vertex_triangle_pairs.
+    When a tet is degenerate, uses min_separate_distance (default 1 mm). For per-instance values, add instance attribute 'min_separate_distance' (Float) to pair_geometry and modify it.
+Args:
+    aim_geo_slots: Tuple (vertex_provider_slot, triangle_provider_slot).
+    rest_geo_slots: Tuple of rest geometry slots.
+    pair_geometry: Geometry with instances holding topo Vector2i (vertex_index, triangle_index).
+    moduli: ElasticModuli (default: Young's modulus 120 kPa, Poisson's ratio 0.49).
+    min_separate_distance: Distance (m) when tet is degenerate. Default 0.001 (1 mm).
+Returns:
+    Geometry: Stitch geometry.
+
+
+CLASS AffineBodyPrismaticJoint available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJoint, config: json = {}) -> None
+
+Create an AffineBodyPrismaticJoint.
+Args:
+    config: Configuration dictionary (optional, uses default if not provided).
+
+create_geometry create_geometry(*args, **kwargs)
+Overloaded function.
+
+1. create_geometry(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJoint, position0s: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], position1s: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> uipc._native.pyuipc.geometry.SimplicialComplex
+
+Create prismatic joint geometry using world-space axis endpoints.
+
+Args:
+    position0s: World positions of the first axis endpoint for each joint (Nx3 array).
+    position1s: World positions of the second axis endpoint for each joint (Nx3 array).
+    l_geo_slots: Left geometry slots for each joint.
+    l_instance_ids: Instance IDs for left geometries.
+    r_geo_slots: Right geometry slots for each joint.
+    r_instance_ids: Instance IDs for right geometries.
+    strength_ratios: Strength ratio for each joint.
+
+Returns:
+    SimplicialComplex: The joint geometry mesh.
+
+2. create_geometry(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJoint, l_position0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_position1: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], r_position0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], r_position1: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> uipc._native.pyuipc.geometry.SimplicialComplex
+
+Create prismatic joint geometry using local-space axis endpoints.
+
+Args:
+    l_position0: Local positions of the first axis endpoint on the left body (Nx3 array).
+    l_position1: Local positions of the second axis endpoint on the left body (Nx3 array).
+    r_position0: Local positions of the first axis endpoint on the right body (Nx3 array).
+    r_position1: Local positions of the second axis endpoint on the right body (Nx3 array).
+    l_geo_slots: Left geometry slots for each joint.
+    l_instance_ids: Instance IDs for left geometries.
+    r_geo_slots: Right geometry slots for each joint.
+    r_instance_ids: Instance IDs for right geometries.
+    strength_ratios: Strength ratio for each joint.
+
+Returns:
+    SimplicialComplex: The joint geometry mesh.
+
+apply_to apply_to(*args, **kwargs)
+Overloaded function.
+
+1. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, l_geo_slots: list, r_geo_slots: list, strength_ratio: typing.SupportsFloat | typing.SupportsIndex = 100.0) -> None
+
+Create joint between two affine bodies (single-instance mode).
+sc: Every edge in the simplicial complex is treated as a joint axis.
+l_geo_slots: List of left geometry slots for each joint.
+r_geo_slots: List of right geometry slots for each joint.
+strength_ratio: Stiffness = strength_ratio * (BodyMassA + BodyMassB) for all joints.
+
+2. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> None
+
+Create joint between two affine bodies (multi-instance mode).
+sc: Every edge in the simplicial complex is treated as a joint axis.
+l_geo_slots: List of left geometry slots for each joint.
+l_instance_ids: List of instance IDs for left geometries.
+r_geo_slots: List of right geometry slots for each joint.
+r_instance_ids: List of instance IDs for right geometries.
+strength_ratios: List of strength ratios for each joint (one per edge).
+
+
+CLASS AffineBodyRevoluteJoint available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.AffineBodyRevoluteJoint, config: json = {}) -> None
+
+Create an AffineBodyRevoluteJoint.
+Args:
+    config: Configuration dictionary (optional, uses default if not provided).
+
+create_geometry create_geometry(*args, **kwargs)
+Overloaded function.
+
+1. create_geometry(self: uipc._native.pyuipc.constitution.AffineBodyRevoluteJoint, position0s: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], position1s: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> uipc._native.pyuipc.geometry.SimplicialComplex
+
+Create revolute joint geometry using world-space axis endpoints.
+
+Args:
+    position0s: World positions of the first axis endpoint for each joint (Nx3 array).
+    position1s: World positions of the second axis endpoint for each joint (Nx3 array).
+    l_geo_slots: Left geometry slots for each joint.
+    l_instance_ids: Instance IDs for left geometries.
+    r_geo_slots: Right geometry slots for each joint.
+    r_instance_ids: Instance IDs for right geometries.
+    strength_ratios: Strength ratio for each joint.
+
+Returns:
+    SimplicialComplex: The joint geometry mesh.
+
+2. create_geometry(self: uipc._native.pyuipc.constitution.AffineBodyRevoluteJoint, l_position0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_position1: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], r_position0: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], r_position1: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> uipc._native.pyuipc.geometry.SimplicialComplex
+
+Create revolute joint geometry using local-space axis endpoints.
+
+Args:
+    l_position0: Local positions of the first axis endpoint on the left body (Nx3 array).
+    l_position1: Local positions of the second axis endpoint on the left body (Nx3 array).
+    r_position0: Local positions of the first axis endpoint on the right body (Nx3 array).
+    r_position1: Local positions of the second axis endpoint on the right body (Nx3 array).
+    l_geo_slots: Left geometry slots for each joint.
+    l_instance_ids: Instance IDs for left geometries.
+    r_geo_slots: Right geometry slots for each joint.
+    r_instance_ids: Instance IDs for right geometries.
+    strength_ratios: Strength ratio for each joint.
+
+Returns:
+    SimplicialComplex: The joint geometry mesh.
+
+apply_to apply_to(*args, **kwargs)
+Overloaded function.
+
+1. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyRevoluteJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, l_geo_slots: list, r_geo_slots: list, strength_ratio: typing.SupportsFloat | typing.SupportsIndex = 100.0) -> None
+
+Create joint between two affine bodies (single-instance mode).
+sc: Every edge in the simplicial complex is treated as a joint axis.
+l_geo_slots: List of left geometry slots for each joint.
+r_geo_slots: List of right geometry slots for each joint.
+strength_ratio: Stiffness = strength_ratio * (BodyMassA + BodyMassB) for all joints.
+
+2. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyRevoluteJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, l_geo_slots: list, l_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], r_geo_slots: list, r_instance_ids: typing.Annotated[numpy.typing.ArrayLike, numpy.int32], strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> None
+
+Create joint between two affine bodies (multi-instance mode).
+sc: Every edge in the simplicial complex is treated as a joint axis.
+l_geo_slots: List of left geometry slots for each joint.
+l_instance_ids: List of instance IDs for left geometries.
+r_geo_slots: List of right geometry slots for each joint.
+r_instance_ids: List of instance IDs for right geometries.
+strength_ratios: List of strength ratios for each joint (one per edge).
+
+
+CLASS AffineBodyPrismaticJointLimit available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJointLimit, config: json = {}) -> None
+
+Create an AffineBodyPrismaticJointLimit.
+Args:
+    config: Configuration dictionary (optional).
+
+apply_to apply_to(*args, **kwargs)
+Overloaded function.
+
+1. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJointLimit, sc: uipc._native.pyuipc.geometry.SimplicialComplex, lower: typing.SupportsFloat | typing.SupportsIndex, upper: typing.SupportsFloat | typing.SupportsIndex, strength: typing.SupportsFloat | typing.SupportsIndex = 1.0) -> None
+
+Apply scalar lower/upper/strength to all joint edges.
+
+2. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyPrismaticJointLimit, sc: uipc._native.pyuipc.geometry.SimplicialComplex, lowers: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], uppers: typing.Annotated[numpy.typing.ArrayLike, numpy.float64], strengths: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> None
+
+Apply per-edge lower/upper/strength vectors.
+
+
+CLASS AffineBodyDrivingPrismaticJoint available True
+__init__ __init__(self: uipc._native.pyuipc.constitution.AffineBodyDrivingPrismaticJoint, config: json = {}) -> None
+
+Create an AffineBodyDrivingPrismaticJoint.
+Args:
+    config: Configuration dictionary (optional, uses default if not provided).
+
+apply_to apply_to(*args, **kwargs)
+Overloaded function.
+
+1. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyDrivingPrismaticJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, strength_ratio: typing.SupportsFloat | typing.SupportsIndex = 100.0) -> None
+
+Create joint between two affine bodies (single-instance mode).
+edges: Every edge in the simplicial complex is treated as a joint axis.
+strength_ratio: The strength ratio of the joint constraint applied to all joints (default: 100).
+
+2. apply_to(self: uipc._native.pyuipc.constitution.AffineBodyDrivingPrismaticJoint, sc: uipc._native.pyuipc.geometry.SimplicialComplex, strength_ratios: typing.Annotated[numpy.typing.ArrayLike, numpy.float64]) -> None
+
+Create joint between two affine bodies (multi-instance mode).
+edges: Every edge in the simplicial complex is treated as a joint axis.
+strength_ratios: List of strength ratios for each joint (one per edge).
+
+ContactTabular create create(self: uipc._native.pyuipc.core.ContactTabular, name: str = '') -> uipc._native.pyuipc.core.ContactElement
+
+Create a new contact element.
+Args:
+    name: Element name (optional).
+Returns:
+    ContactElement: Created contact element.
+
+ContactTabular insert insert(self: uipc._native.pyuipc.core.ContactTabular, L: uipc._native.pyuipc.core.ContactElement, R: uipc._native.pyuipc.core.ContactElement, friction_rate: typing.SupportsFloat | typing.SupportsIndex, resistance: typing.SupportsFloat | typing.SupportsIndex, enable: bool = True, config: json = {}) -> int
+
+Insert a contact model between two elements.
+Args:
+    L: Left element ID.
+    R: Right element ID.
+    friction_rate: Friction rate value.
+    resistance: Resistance value.
+    enable: Whether the contact is enabled (default: True).
+    config: Reserved for future model extensions; must currently be empty.
+
+ContactTabular default_model default_model(*args, **kwargs)
+Overloaded function.
+
+1. default_model(self: uipc._native.pyuipc.core.ContactTabular, friction_rate: typing.SupportsFloat | typing.SupportsIndex, resistance: typing.SupportsFloat | typing.SupportsIndex, enable: bool = True, config: json = {}) -> None
+
+Set the default contact model parameters.
+Args:
+    friction_rate: Default friction rate.
+    resistance: Default resistance value.
+    enable: Whether contacts are enabled by default (default: True).
+    config: Reserved for future model extensions; must currently be empty.
+
+2. default_model(self: uipc._native.pyuipc.core.ContactTabular) -> uipc._native.pyuipc.core.ContactModel
+
+Get the default contact model.
+Returns:
+    ContactModel: Default contact model.
+
+ContactTabular default_element default_element(self: uipc._native.pyuipc.core.ContactTabular) -> uipc._native.pyuipc.core.ContactElement
+
+Get the default contact element.
+Returns:
+    ContactElement: Reference to default element.
+

@@ -1,0 +1,19 @@
+{
+  "pid": 21920,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\validate_assembly.py",
+    "--case",
+    "suspension",
+    "--steps",
+    "120",
+    "--motor-speed",
+    "0.8",
+    "--label",
+    "suspension_drive"
+  ],
+  "timeout_s": 240,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\suspension_drive.log",
+  "exit_code": 0,
+  "elapsed_s": 21.014999999999418
+}

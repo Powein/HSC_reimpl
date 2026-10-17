@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "architecture": "compute_86",
+  "cases_per_check": 20,
+  "max_absolute_errors": {
+    "affine_P": 0.0,
+    "affine_gradient": 0.0,
+    "affine_Hessian": 3.552713678800501e-15,
+    "rotational_energy": 2.1316282072803006e-14,
+    "rotational_gradient": 1.7763568394002505e-15,
+    "rotational_Hessian": 0.0,
+    "rotational_gradient_finite_difference": 8.330172107662293e-10,
+    "rotational_Hessian_finite_difference": 3.045845797799984e-10,
+    "spmv_3": 8.881784197001252e-16,
+    "spmv_12": 3.552713678800501e-15,
+    "dmv_accumulate_3": 8.881784197001252e-16,
+    "dmv_accumulate_12": 1.7763568394002505e-15
+  },
+  "tolerances": {
+    "affine_P": 1e-10,
+    "affine_gradient": 1e-10,
+    "affine_Hessian": 1e-10,
+    "rotational_energy": 1e-10,
+    "rotational_gradient": 1e-10,
+    "rotational_Hessian": 1e-10,
+    "rotational_gradient_finite_difference": 2e-08,
+    "rotational_Hessian_finite_difference": 2e-08,
+    "spmv_3": 1e-10,
+    "spmv_12": 1e-10,
+    "dmv_accumulate_3": 1e-10,
+    "dmv_accumulate_12": 1e-10
+  },
+  "source_functions": [
+    {
+      "file": "math/math_cuda.cuh",
+      "function": "vecSubs",
+      "body_sha256": "f2e310262967b3ca825ff0bcef68c0b14dd4d1141af4c6c7be7293f39cfcf7a0"
+    },
+    {
+      "file": "math/math_cuda.cuh",
+      "function": "dot3",
+      "body_sha256": "52881182d0a8ec671afe2a47bb34f44e417e5e0695570fd6aeb9517c0e2f7b15"
+    },
+    {
+      "file": "math/math_cuda.cuh",
+      "function": "affine_transform",
+      "body_sha256": "8ece31ad1846656b5fb4407a6e07e27e8749ed72a4fee432fe7333840502f528"
+    },
+    {
+      "file": "affine_projection/affine_projection_cuda.cuh",
+      "function": "affine_projection",
+      "body_sha256": "2f73223ca98644cefd80c645981bb4b7d17efc445277c9b13c0cc9d4143bcdee"
+    },
+    {
+      "file": "affine_projection/affine_projection_cuda.cuh",
+      "function": "affine_projection_gradient3x1",
+      "body_sha256": "6ef6c1d612a8908f0bf0d16ecbc586e2d46d6153b620f3e51b3bca3534a5806b"
+    },
+    {
+      "file": "affine_projection/affine_projection_cuda.cuh",
+      "function": "affine_projection_Hessian3x3",
+      "body_sha256": "1e8e47ffee6412a46591ca42cdcf569c7fb774f94785fc676e63fa883132caa6"
+    },
+    {
+      "file": "rotational/rotational_cuda.cuh",
+      "function": "rotational_energy",
+      "body_sha256": "49da53adaf3d1ee60898e683b15423033b4d1ae147bd2c6381083a8a981e0d24"
+    },
+    {
+      "file": "rotational/rotational_cuda.cuh",
+      "function": "rotational_gradient",
+      "body_sha256": "d79659911c3cc85fcae4262a19aa2a2d15940fc2e811822676f0d634f4b3a3d0"
+    },
+    {
+      "file": "rotational/rotational_cuda.cuh",
+      "function": "rotational_Hessian",
+      "body_sha256": "ce3758307e9a92b69d56e2c16070ff2be58cdca4c580a4db5ed0ab200a4096fe"
+    },
+    {
+      "file": "sparse_matrix_square/spmv_cuda.cuh",
+      "function": "spmv_sm_kernel",
+      "body_sha256": "f2fe1325616d61b65fae70b7e36111f4b9c62119efef4260628167ad7f598f65"
+    },
+    {
+      "file": "sparse_linear_solvers/conjugate_gradient_cuda.cuh",
+      "function": "dmv_accumulate_kernel",
+      "body_sha256": "637b90d2af90098d9711314db1bb4d0de970d1970935b06d9827d3c23ce3a9b0"
+    }
+  ],
+  "scope": "Selected author function bodies compiled and executed; full public library not built",
+  "rotational_scope": "Tests the distributed point-matching energy, not the complete paper Eq. (11) joint"
+}

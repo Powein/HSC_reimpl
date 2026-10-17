@@ -1,0 +1,28 @@
+CUDA Backend Kernel Console Init Success!
+[2026-10-17 11:03:59.889] [warning] [cuda] Contact default kappa 100000000 is clamped to [214607448137.27426] (valid range: [214607448137.27426, 21460744813727.426])
+completed 30 frames
+completed 60 frames
+completed 90 frames
+completed 120 frames
+{
+  "status": "CHECK_FAILED",
+  "engine": "pyuipc 0.0.28 CUDA",
+  "scope": "Two aligned 6-tet cubes: one ABD falling onto one FEM cube above a plane; stock solver, not HSC.",
+  "friction_enabled": true,
+  "friction_quantitatively_validated": false,
+  "vehicle_scene_simulated": false,
+  "steps": 120,
+  "dt": 0.005,
+  "minimum_fem_ground_distance_m": 0.0006603992668818497,
+  "minimum_abd_fem_vertical_aabb_gap_m": -0.011290672082433506,
+  "final_fem_compression_m": 0.003951472441791448,
+  "elapsed_seconds": 7.5384405000004335,
+  "final": {
+    "frame": 120,
+    "fem_min_z": 0.0007642070645824543,
+    "abd_min_z": 0.29033495088891736,
+    "vertical_aabb_gap": -0.006477783733873643,
+    "fem_height": 0.29604852755820854,
+    "abd_com_z": 0.4440017938705592
+  }
+}

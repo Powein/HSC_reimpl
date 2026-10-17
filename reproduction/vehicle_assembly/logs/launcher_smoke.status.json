@@ -1,0 +1,25 @@
+{
+  "pid": 29640,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\validate_assembly.py",
+    "--case",
+    "bead",
+    "--steps",
+    "1",
+    "--obstacles",
+    "0",
+    "--profile",
+    "assembly",
+    "--motor-speed",
+    "0",
+    "--start-x",
+    "-3",
+    "--label",
+    "launcher_smoke"
+  ],
+  "timeout_s": 60,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\launcher_smoke.log",
+  "exit_code": 0,
+  "elapsed_s": 3.0159999999996217
+}

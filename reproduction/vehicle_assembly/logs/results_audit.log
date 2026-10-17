@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_reference_hashes_match": true,
+    "reference_downloads_complete": true,
+    "closed_valid_proxies": true,
+    "all_five_required_cases_present": true,
+    "all_completed_cases_pass": true
+  },
+  "reference_file_count": 13,
+  "proxies": {
+    "chassis_proxy": {
+      "closed": true,
+      "consistent_normals": true,
+      "positive_volume": true,
+      "nondegenerate": true
+    },
+    "rim_proxy": {
+      "closed": true,
+      "consistent_normals": true,
+      "positive_volume": true,
+      "nondegenerate": true
+    },
+    "spindle_proxy": {
+      "closed": true,
+      "consistent_normals": true,
+      "positive_volume": true,
+      "nondegenerate": true
+    },
+    "chassis_chrono_primitive": {
+      "closed": true,
+      "consistent_normals": true,
+      "positive_volume": true,
+      "nondegenerate": true
+    }
+  },
+  "cases": [
+    {
+      "label": "bead",
+      "checks": {
+        "recorded_dynamic_checks": true,
+        "latest_status_is_pass": true,
+        "no_native_errors": true,
+        "no_unreviewed_native_warnings": true,
+        "saved_states_finite": true,
+        "saved_affine_determinants_positive": true
+      },
+      "requested_contact_kappa": 10000000000.0,
+      "effective_initial_contact_kappa": [
+        10000000000.0
+      ],
+      "native_errors": [],
+      "unreviewed_warnings": [],
+      "max_bead_error_um": 0.2778749627369737,
+      "minimum_tire_ground_gap_mm": 280.16287546864385,
+      "minimum_fem_volume_ratio": 0.9998707179091975,
+      "simulated_seconds": 0.2,
+      "loose_rim_translations_m": {},
+      "status": "PASS"
+    },
+    {
+      "label": "suspension_drive",
+      "checks": {
+        "recorded_dynamic_checks": true,
+        "latest_status_is_pass": true,
+        "no_native_errors": true,
+        "no_unreviewed_native_warnings": true,
+        "saved_states_finite": true,
+        "saved_affine_determinants_positive": true,
+        "all_motor_angles_within_0_02rad": true,
+        "spring_weight_balance_within_3_percent": true
+      },
+      "requested_contact_kappa": 10000000000.0,
+      "effective_initial_contact_kappa": [
+        50753110842.14385
+      ],
+      "native_errors": [],
+      "unreviewed_warnings": [],
+      "max_bead_error_um": 1.9689570609810978,
+      "minimum_tire_ground_gap_mm": 255.06420699434022,
+      "minimum_fem_volume_ratio": 0.9993309567673584,
+      "simulated_seconds": 0.6,
+      "all_motor_angle_errors_rad": [
+        3.233312229067309e-09
+      ],
+      "suspension_balance": {
+        "weight_N": 1144.2917727410857,
+        "spring_N": 1130.5227564732738,
+        "relative_error": 0.012032784466175903,
+        "static_extension_m": 0.02521908641568619,
+        "measured_extension_m": 0.02491563070993852
+      },
+      "loose_rim_translations_m": {},
+      "status": "PASS"
+    },
+    {
+      "label": "vehicle_roll",
+      "checks": {
+        "recorded_dynamic_checks": true,
+        "latest_status_is_pass": true,
+        "no_native_errors": true,
+        "no_unreviewed_native_warnings": true,
+        "saved_states_finite": true,
+        "saved_affine_determinants_positive": true,
+        "all_motor_angles_within_0_02rad": true,
+        "positive_vehicle_forward_motion": true
+      },
+      "requested_contact_kappa": 10000000000.0,
+      "effective_initial_contact_kappa": [
+        689053659544.0586
+      ],
+      "native_errors": [],
+      "unreviewed_warnings": [],
+      "max_bead_error_um": 12.774591916163715,
+      "minimum_tire_ground_gap_mm": 0.5587775165308269,
+      "minimum_fem_volume_ratio": 0.9583677771913814,
+      "simulated_seconds": 0.4,
+      "all_motor_angle_errors_rad": [
+        8.796349482143029e-08,
+        4.284524501851905e-08,
+        1.8016298675149756e-08,
+        2.7548678283029204e-08
+      ],
+      "chassis_translation_m": [
+        0.13083626677653015,
+        0.0019840971059179213,
+        -0.017315996490262442
+      ],
+      "loose_rim_translations_m": {},
+      "status": "PASS"
+    },
+    {
+      "label": "obstacle_paper_stiffness",
+      "checks": {
+        "recorded_dynamic_checks": true,
+        "latest_status_is_pass": true,
+        "no_native_errors": true,
+        "no_unreviewed_native_warnings": true,
+        "saved_states_finite": true,
+        "saved_affine_determinants_positive": true,
+        "all_motor_angles_within_0_02rad": true,
+        "positive_vehicle_forward_motion": true,
+        "reported_joint_distance_matches_geometry": true
+      },
+      "requested_contact_kappa": 10000000000.0,
+      "effective_initial_contact_kappa": [
+        557930331074.0874
+      ],
+      "native_errors": [],
+      "unreviewed_warnings": [],
+      "max_bead_error_um": 11.043756218357517,
+      "minimum_tire_ground_gap_mm": 0.48295376493666614,
+      "minimum_fem_volume_ratio": 0.9982418188609637,
+      "simulated_seconds": 0.06,
+      "all_motor_angle_errors_rad": [
+        2.2841237814347215e-07,
+        3.673357249489584e-07,
+        5.5326501251506954e-06,
+        6.533641445781446e-06
+      ],
+      "chassis_translation_m": [
+        0.00875811768166379,
+        -6.780433854300552e-05,
+        -0.002430011834609891
+      ],
+      "max_reported_distance_vs_geometric_travel_error_m": 6.461101986765527e-09,
+      "loose_rim_translations_m": {
+        "loose_0_rim": [
+          1.8579957779279831e-06,
+          -8.495727024104838e-07,
+          -0.003107662821019541
+        ],
+        "loose_1_rim": [
+          -3.2195083189048304e-06,
+          -4.561931535282414e-06,
+          -0.003115646016323248
+        ],
+        "loose_2_rim": [
+          -1.6670829773380907e-06,
+          -2.8666405298416464e-06,
+          -0.0031139321345912407
+        ],
+        "loose_3_rim": [
+          1.0848287473219642e-05,
+          -1.3752792841437156e-05,
+          -0.0031210927929858634
+        ],
+        "loose_4_rim": [
+          9.665888449639226e-07,
+          -2.6353261027809267e-06,
+          -0.0030862953914647384
+        ],
+        "loose_5_rim": [
+          -8.07091137478011e-07,
+          -2.82058195355539e-06,
+          -0.0031051612714822763
+        ],
+        "loose_6_rim": [
+          2.5362638420567407e-06,
+          -1.1910435349093973e-05,
+          -0.00311196293931007
+        ],
+        "loose_7_rim": [
+          2.2094773997061168e-06,
+          -8.073755205957187e-06,
+          -0.0031166246092535765
+        ],
+        "loose_8_rim": [
+          -5.218811154783509e-06,
+          8.199574659251141e-07,
+          -0.0031171902344519498
+        ],
+        "loose_9_rim": [
+          7.19067076548896e-07,
+          -3.855712144895662e-06,
+          -0.00309366757997373
+        ],
+        "loose_10_rim": [
+          3.0802869854795745e-07,
+          -1.9455767944032685e-06,
+          -0.0031040657646342618
+        ],
+        "loose_11_rim": [
+          3.149618319486791e-06,
+          -2.6391595135955015e-06,
+          -0.003114252323922373
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "label": "obstacle_entry",
+      "checks": {
+        "recorded_dynamic_checks": true,
+        "latest_status_is_pass": true,
+        "no_native_errors": true,
+        "no_unreviewed_native_warnings": true,
+        "saved_states_finite": true,
+        "saved_affine_determinants_positive": true,
+        "all_motor_angles_within_0_02rad": true,
+        "positive_vehicle_forward_motion": true,
+        "reported_joint_distance_matches_geometry": true,
+        "independent_saved_frame_tire_overlap_check": true
+      },
+      "requested_contact_kappa": 10000000000.0,
+      "effective_initial_contact_kappa": [
+        467786150514.1542
+      ],
+      "native_errors": [],
+      "unreviewed_warnings": [],
+      "max_bead_error_um": 16.847023655458084,
+      "minimum_tire_ground_gap_mm": 0.47115764305188906,
+      "minimum_fem_volume_ratio": 0.44745868214358964,
+      "simulated_seconds": 0.2,
+      "all_motor_angle_errors_rad": [
+        5.572135041709281e-07,
+        4.0211029750381044e-07,
+        1.0146092013774144e-06,
+        1.0058010479485624e-06
+      ],
+      "chassis_translation_m": [
+        0.10680583474159855,
+        -0.0005364085430413295,
+        -0.007136954589475664
+      ],
+      "max_reported_distance_vs_geometric_travel_error_m": 3.4714217778120116e-08,
+      "loose_rim_translations_m": {
+        "loose_0_rim": [
+          0.005386951032361751,
+          -0.0013275341448062417,
+          -0.005397977827751144
+        ],
+        "loose_1_rim": [
+          0.00010549777021274719,
+          1.7325981550679356e-05,
+          -0.004991392858321009
+        ],
+        "loose_2_rim": [
+          0.005704507909636566,
+          -0.0014836185780300326,
+          -0.005540034087727852
+        ]
+      },
+      "independent_tire_overlap_check": {
+        "status": "PASS",
+        "frames": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ],
+        "tire_pair_checks": 189,
+        "narrow_phase_tet_pairs": 2704,
+        "positive_volume_overlaps": 0,
+        "excluded_scope": [
+          "between saved frames",
+          "self contact",
+          "ABD meshes"
+        ]
+      },
+      "status": "PASS"
+    }
+  ],
+  "scope": "Saved-state/component verification; not a proof of every continuous collision pair or a HSC benchmark."
+}

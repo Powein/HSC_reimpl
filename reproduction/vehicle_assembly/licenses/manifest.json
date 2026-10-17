@@ -1,0 +1,42 @@
+[
+  {
+    "file": "projectchrono-BSD-3-Clause.txt",
+    "copied_from": "reproduction/vehicle_research/upstream/projectchrono__chrono/LICENSE",
+    "sha256": "5f625eb4c9e0ddf86db9d1ed9b6adb5b30296ea81919282b2f38c977136bf079"
+  },
+  {
+    "file": "libuipc-root-Apache-2.0.txt",
+    "copied_from": "reproduction/vehicle_research/upstream/spiriMirror__libuipc/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "libuipc-python-GPL-3.0.txt",
+    "copied_from": "reproduction/vehicle_research/upstream/spiriMirror__libuipc/python/LICENSE",
+    "sha256": "c8e44e7656c4fa9cab6b95a7996a241deeb0bc6d3371aab354007c1fb133782f"
+  },
+  {
+    "file": "libuipc-samples-Apache-2.0.txt",
+    "copied_from": "reproduction/vehicle_research/upstream/spiriMirror__libuipc-samples/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "coacd-MIT.txt",
+    "copied_from": "reproduction/vehicle_research/_geometry/coacd-1.0.14.dist-info/licenses/LICENSE",
+    "sha256": "1feeab1b5af03289da32785a5a205c8d4ed026e9634ec902c4a46a989fd027cd"
+  },
+  {
+    "file": "manifold3d-Apache-2.0.txt",
+    "copied_from": "reproduction/vehicle_research/_geometry/manifold3d-3.5.4.dist-info/licenses/LICENSE",
+    "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+  },
+  {
+    "file": "trimesh-MIT.txt",
+    "copied_from": "reproduction/vehicle_research/_geometry/trimesh-5.1.1.dist-info/licenses/LICENSE.md",
+    "sha256": "fe27b5ef8710676cc85255da28a32f394e2ef3f4ce47075a1c732a9ea1d7bd03"
+  },
+  {
+    "file": "scipy-BSD-and-bundled.txt",
+    "copied_from": "reproduction/vehicle_research/_geometry/scipy-1.18.1.dist-info/LICENSE.txt",
+    "sha256": "f0f5c56b298ec9795df1199edc328a987242716d14a1bde6813112e22dc15f99"
+  }
+]

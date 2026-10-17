@@ -1,0 +1,162 @@
+{
+  "obj": {
+    "hmmwv_chassis_col.obj": {
+      "vertices": 880,
+      "triangles": 1685,
+      "welded_vertices": 880,
+      "bounds_min_m": [
+        -2.458908,
+        -1.280516,
+        -0.081882
+      ],
+      "bounds_max_m": [
+        2.21158,
+        1.281184,
+        1.565385
+      ],
+      "boundary_edges_after_weld": 35,
+      "nonmanifold_edges_after_weld": 39,
+      "zero_area_triangles": 9,
+      "watertight_edge_incidence_only": false,
+      "self_intersections_checked": false
+    },
+    "hmmwv_chassis_simple.obj": {
+      "vertices": 7678,
+      "triangles": 15330,
+      "welded_vertices": 7678,
+      "bounds_min_m": [
+        -2.459094,
+        -1.281543,
+        -0.081883
+      ],
+      "bounds_max_m": [
+        2.21158,
+        1.282212,
+        1.569948
+      ],
+      "boundary_edges_after_weld": 80,
+      "nonmanifold_edges_after_weld": 52,
+      "zero_area_triangles": 4,
+      "watertight_edge_incidence_only": false,
+      "self_intersections_checked": false
+    },
+    "hmmwv_rim.obj": {
+      "vertices": 6424,
+      "triangles": 12381,
+      "welded_vertices": 6424,
+      "bounds_min_m": [
+        -0.242212,
+        -0.143904,
+        -0.242206
+      ],
+      "bounds_max_m": [
+        0.24221,
+        0.140762,
+        0.242205
+      ],
+      "boundary_edges_after_weld": 391,
+      "nonmanifold_edges_after_weld": 0,
+      "zero_area_triangles": 0,
+      "watertight_edge_incidence_only": false,
+      "self_intersections_checked": false
+    },
+    "hmmwv_tire_coarse_closed.obj": {
+      "vertices": 306,
+      "triangles": 612,
+      "welded_vertices": 306,
+      "bounds_min_m": [
+        -0.467104,
+        -0.150031,
+        -0.467832
+      ],
+      "bounds_max_m": [
+        0.467053,
+        0.150038,
+        0.467832
+      ],
+      "boundary_edges_after_weld": 0,
+      "nonmanifold_edges_after_weld": 0,
+      "zero_area_triangles": 0,
+      "watertight_edge_incidence_only": true,
+      "self_intersections_checked": false
+    },
+    "hmmwv_tire_left.obj": {
+      "vertices": 6720,
+      "triangles": 13056,
+      "welded_vertices": 6528,
+      "bounds_min_m": [
+        -0.453353,
+        -0.156425,
+        -0.453352
+      ],
+      "bounds_max_m": [
+        0.453353,
+        0.156425,
+        0.453352
+      ],
+      "boundary_edges_after_weld": 192,
+      "nonmanifold_edges_after_weld": 96,
+      "zero_area_triangles": 192,
+      "watertight_edge_incidence_only": false,
+      "self_intersections_checked": false
+    }
+  },
+  "fea": {
+    "source_node_count": 21359,
+    "source_element_type": "C3D10",
+    "source_elements": 11171,
+    "tet4_corner_vertices": 3548,
+    "tet4_count": 11171,
+    "flipped_tet_orientations": 0,
+    "min_absolute_volume_before_scaling_m3": 2.4573360971929046e-07,
+    "original_total_linearized_volume_m3": 0.22183476668502888,
+    "original_bounds_min_m": [
+      -0.2644684017,
+      -0.7119272947,
+      -0.7117171288
+    ],
+    "original_bounds_max_m": [
+      0.2644684017,
+      0.7119272947,
+      0.7117171288
+    ],
+    "node_sets_original": {
+      "BC_INT": 1130,
+      "BC_CONN": 151
+    },
+    "node_sets_retained_corners": {
+      "BC_INT": 291,
+      "BC_CONN": 39
+    },
+    "conversion": "First four C3D10 nodes -> linear Tet4; quadratic nodes discarded; orientation repaired.",
+    "surface": {
+      "vertices": 3548,
+      "triangles": 6184,
+      "welded_vertices": 3548,
+      "bounds_min_m": [
+        -0.2644684017,
+        -0.7119272947,
+        -0.7117171288
+      ],
+      "bounds_max_m": [
+        0.2644684017,
+        0.7119272947,
+        0.7117171288
+      ],
+      "boundary_edges_after_weld": 0,
+      "nonmanifold_edges_after_weld": 0,
+      "zero_area_triangles": 0,
+      "watertight_edge_incidence_only": true,
+      "self_intersections_checked": false
+    },
+    "prepared_radius_m": 0.47,
+    "uniform_scale": 0.660113327350588
+  },
+  "assembly": {
+    "mounted_tires": 4,
+    "loose_tires": 12,
+    "total_tire_tets": 178736,
+    "state": "STATIC_NOT_SIMULATED",
+    "complete_collision_check": false
+  }
+}

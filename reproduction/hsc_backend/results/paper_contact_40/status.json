@@ -1,0 +1,24 @@
+{
+  "status": "STOPPED_INACCURATE_ABD_INVERSE",
+  "solver": "linear_hsc",
+  "parameters": {
+    "steps": 40,
+    "obstacles": 3,
+    "profile": "paper_stiffness",
+    "motor_speed": 2.0,
+    "start_x": -2.6,
+    "rank": 128,
+    "label": "paper_contact_40"
+  },
+  "runtime": {
+    "root": "E:\\HC-HSC-build-jaq6yw9h",
+    "runtime": "E:\\HC-HSC-build-jaq6yw9h\\build\\python\\src",
+    "python": "E:\\HC-HSC-build-jaq6yw9h\\venv\\Scripts\\python.exe",
+    "source_commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+    "solver": "linear_hsc"
+  },
+  "completed_steps": 12,
+  "backend_sha256": "3ad7f65dde2cbaca927c6e2991542918ba71ab2655678e924900b870ac58c1fc",
+  "elapsed_s": 192.53952800000116,
+  "reason": "Fixed five-term ABD Neumann inverse gave approximately 0.998 full-system relative residual despite a converged Schur solve. Stopped to correct the approximation, not an accepted vehicle trajectory."
+}

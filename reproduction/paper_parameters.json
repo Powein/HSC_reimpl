@@ -1,0 +1,47 @@
+{
+  "paper": "Heterogeneous Subspace Corrections for GPU Deformable Multibody Dynamics",
+  "doi": "10.1145/3811275",
+  "project_url": "https://sites.google.com/view/multibody",
+  "main_pdf": "../HC.pdf",
+  "appendix_pdf": "downloads/HC-technical-document.pdf",
+  "main_pdf_structural_preflight": "../tmp/pdfs/hc.preflight.json",
+  "appendix_structural_preflight": "../tmp/pdfs/hc-supplement.preflight.json",
+  "hardware_section_5": {
+    "os": "Windows 11",
+    "cpu": "16-core Intel Xeon Gold 6226R",
+    "memory_gb": 128,
+    "gpu": "NVIDIA RTX 4090",
+    "vram_gb": 24
+  },
+  "solver": {
+    "neumann_omega_section_3_3": 0.7,
+    "neumann_order_main_experiments": 5,
+    "pcg_tolerance_section_5": "1e-4; squared/unsquared convention not specified there",
+    "figure_2_relative_residual": 0.00001,
+    "figure_2_max_pcg_iterations": 1000,
+    "ACA_appendix_page_2": "Termination solely by a fixed maximum rank k_max",
+    "ACA_scene_rank_values": "Not supplied in downloaded archive or appendix",
+    "ACA_GPU_update_appendix_page_1": "COO concatenate, sort_by_key, reduce_by_key",
+    "affine_blocks": "12x12",
+    "deformable_blocks": "3x3",
+    "coupling_blocks": "12x3"
+  },
+  "affine_rigidity_appendix_section_4": {
+    "metric": "||F F^T - I||_F^2",
+    "trigger": 1e-8,
+    "initial_stiffness": 1e9,
+    "multiplier": 1.2,
+    "upper_limit": 1e17,
+    "IPC_stiffness_discussed": 1e11
+  },
+  "selected_published_targets_NOT_REPRODUCED": [
+    {"scene": "Chessboard", "table_1_time_step": "1/100 s", "bodies": 35, "mean_seconds_per_step": 24.3},
+    {"scene": "Roller", "table_1_time_step": "1/30 s", "bodies": 5, "mean_seconds_per_step": 8.0},
+    {"scene": "Twisting dino (deformable)", "table_1_time_step": "1/30 s", "bodies": 5, "mean_seconds_per_step": 3.7}
+  ],
+  "unresolved_reporting_details": [
+    "Main text Figure 4 caption mentions 1 and 100 GPa; surrounding text/Table 1 use 1 and 10 GPa.",
+    "Appendix mentions a chess example with h=1/10 s; main Table 1 reports 1/100 s. These cannot be equated without scene configuration.",
+    "No scene-specific k_max, solver logs, original Hessians, meshes, or boundary-condition files are included."
+  ]
+}

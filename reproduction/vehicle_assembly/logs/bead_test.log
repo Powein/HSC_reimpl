@@ -1,0 +1,16 @@
+runtime_path_ascii: False
+using_ascii_temp_runtime: C:\Users\Powei\AppData\Local\Temp\hc-uipc-probe-9v7y5bpc\runtime
+CUDA Backend Kernel Console Init Success!
+Traceback (most recent call last):
+  File "C:\Users\Powei\Desktop\复现HC\reproduction\vehicle_assembly\validate_assembly.py", line 93, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\Powei\Desktop\复现HC\reproduction\vehicle_assembly\validate_assembly.py", line 26, in main
+    sim.add_wheel('test_wheel',pose([0.,0.,.75]),True,True)
+  File "C:\Users\Powei\Desktop\复现HC\reproduction\vehicle_assembly\scene.py", line 129, in add_wheel
+    rim=self.add_body(name+'_rim',rv,rf,transform,wheel_mass,anchors=v[beads],fixed=fixed_rim)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Powei\Desktop\复现HC\reproduction\vehicle_assembly\scene.py", line 100, in add_body
+    attr=mesh.vertices().find(builtin.is_surface)
+                              ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'uipc.builtin' has no attribute 'is_surface'. Did you mean: 'is_surf'?

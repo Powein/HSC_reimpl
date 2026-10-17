@@ -1,0 +1,36 @@
+{
+  "status": "FAILED",
+  "case": "ground_1e6",
+  "solver": "linear_hsc",
+  "config_sha256": "e0cf11f11caab65d54e019f3cd2a829a35ad613dda4b60e5371234f7b012dd53",
+  "backend_sha256": "d961bd64135b9273d2104004d3224e1836b14e5ed5143c462609abffb3145317",
+  "native_workspace": "E:\\HC-HSC-build-jaq6yw9h\\runs\\vehicle_full_pass_log_nh\\ground_1e6",
+  "completed_frames": 0,
+  "simulation_time_s": 0.0,
+  "elapsed_s": 0.3266378000007535,
+  "passage": {
+    "vehicle_min_x_m": -5.058908081054687,
+    "obstacle_max_x_m": 0.46995269533611966,
+    "clearance_m": -5.528860776390807,
+    "crossed_wheels": [],
+    "consecutive_clear_frames": 0,
+    "contact_seen": false,
+    "passed": false
+  },
+  "wheel_crossings": {},
+  "hsc": {
+    "linear_solves": 0,
+    "fallbacks": 0,
+    "max_schur_relative_residual": 0.0,
+    "max_full_relative_residual": 0.0,
+    "max_pcg_iterations": 0,
+    "max_mesh_contacts": 0,
+    "max_ground_contacts": 0,
+    "max_aca_error": 0.0,
+    "min_rank": null,
+    "max_rank": 0,
+    "min_neumann_doublings": null,
+    "max_neumann_doublings": 0
+  },
+  "process_returncode": 3221226505
+}

@@ -1,0 +1,431 @@
+{
+  "commit": "9c748a759bb9952a7aeedd59076a70591dc61d6c",
+  "files": [
+    {
+      "path": "include/uipc/backend/buffer_view.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/buffer_view.h",
+      "sha256": "93adedc1a7b66d033e44561837254c1e0584e82b0aab061ec38bc11674bcb1e1"
+    },
+    {
+      "path": ".gitmodules",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/.gitmodules",
+      "sha256": "d7793e1b9893dfad49b9ae319f9e971dcba7a57684cb73e2fe58bfe87f74edb4"
+    },
+    {
+      "path": "include/uipc/backend/buffer.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/buffer.h",
+      "sha256": "ae0fc4d795f3205865a119480b6fb825113fa093c7a1244984ba6f8e4a882509"
+    },
+    {
+      "path": "include/uipc/backend/engine_create_info.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/engine_create_info.h",
+      "sha256": "c205f0c3f5467a5ee50c6cb7e6c69b5c81967cf6bb1158a71d773c0126ff2b6c"
+    },
+    {
+      "path": "include/uipc/backend/module_init_info.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/module_init_info.h",
+      "sha256": "b977acc2b9b5e31cbfb6910112a234e7d7915ebcb8f6148287c14c3721dffe6d"
+    },
+    {
+      "path": "include/uipc/backend/type_define.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/type_define.h",
+      "sha256": "17798f56a23a5497ccae443a0320ea29a8532fc7378b1bfdda056bc47acb9f94"
+    },
+    {
+      "path": "include/uipc/backend/module_info.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/module_info.h",
+      "sha256": "c51e3b214e664f43ba4b225ae89717a81bafc8cc9262256c811bc1e57aedeca3"
+    },
+    {
+      "path": "include/uipc/backend/visitors/animator_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/animator_visitor.h",
+      "sha256": "9ea42b721b78195af35b256ef78e3fcd4a8c422915dfc29616c1f7a970f64424"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/CMakeLists.txt",
+      "sha256": "aa7fb540195545bebfc2e15cdcd04ea809c12d518e33e77de8609a49c1bf7036"
+    },
+    {
+      "path": "include/uipc/backend/visitors/contact_tabular_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/contact_tabular_visitor.h",
+      "sha256": "d69781dc5a8120499d1ae76e41c595e2ec443e59239d428d8f5f7abf9d8fe0e0"
+    },
+    {
+      "path": "include/uipc/backend/visitors/geometry_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/geometry_visitor.h",
+      "sha256": "b1da0cd163b27d36f613e35858bf5e07b3cbbe12c55692d492da766eee758324"
+    },
+    {
+      "path": "include/uipc/backend/visitors/subscene_tabular_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/subscene_tabular_visitor.h",
+      "sha256": "bdd7889748e92c5f3388892c644b9432f5b39067984fb490bbe6a2fefb65867b"
+    },
+    {
+      "path": "include/uipc/backend/visitors/diff_sim_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/diff_sim_visitor.h",
+      "sha256": "f9f7a4e9f5e89bbc52df1b34309deabfbc67d1f0bb673beb88deca6cb731c518"
+    },
+    {
+      "path": "include/uipc/backend/macro.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/macro.h",
+      "sha256": "3c16f34f29623f56735764f8ab27a418eaa9307703868a74b1c2c2a24f4aff04"
+    },
+    {
+      "path": "src/backends/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/CMakeLists.txt",
+      "sha256": "262e514c9eb9069950d0a437c27f27947a40415df800187d67a9cf5c802f83c7"
+    },
+    {
+      "path": "include/uipc/backend/visitors/world_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/world_visitor.h",
+      "sha256": "f96eb68a285bf16f9572a77b179fccf9405d2e71c61419537d22f10f28f74732"
+    },
+    {
+      "path": "include/uipc/backend/visitors/sanity_check_message_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/sanity_check_message_visitor.h",
+      "sha256": "ca15b55b778223fb4fa2a2b179dbddb317ac32d07b2b50a1a9d228da189b5c0f"
+    },
+    {
+      "path": "src/backends/common/backend_path_tool.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/backend_path_tool.cpp",
+      "sha256": "d7f2d930f6ad0492453321628553d246a5812cf2ea751a7ae85f9638108ed785"
+    },
+    {
+      "path": "src/backends/common/details/sim_action.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_action.inl",
+      "sha256": "56b9c454ab5d2a8a6409914f367c7bb3f2dc7b13b53c572831c9a55bc751d939"
+    },
+    {
+      "path": "src/backends/common/details/sim_system.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_system.inl",
+      "sha256": "2fff634823eb77425876f0143c754e7e10816f606f4466c2bf3417d9849fa29f"
+    },
+    {
+      "path": "src/backends/common/details/sim_action_collection.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_action_collection.inl",
+      "sha256": "e84356ea487737756b2b881c07f6ec62fe2b64078b804692a647a67375c35e38"
+    },
+    {
+      "path": "src/backends/common/details/dependency_cycle.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/dependency_cycle.h",
+      "sha256": "31b4bc7e096f82a1ada685665ad0ec6bf505d5dadf4508415bde2685b91257eb"
+    },
+    {
+      "path": "src/backends/common/details/sim_engine.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_engine.inl",
+      "sha256": "0f071d74381f3125dde0bb6ed82dcdd28e3efe0ac4f6e0556eecd6c51b7404b1"
+    },
+    {
+      "path": "src/backends/common/details/sim_system_collection.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_system_collection.inl",
+      "sha256": "820a1726605819802dd7aa56f48abefd1bd04b297ccf0b4ec20f812c195a306d"
+    },
+    {
+      "path": "src/backends/common/i_sim_system.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/i_sim_system.cpp",
+      "sha256": "0d970857fcb76eec7c5cc5668411887a2b21998eb3545a571ecdffb87c66f6f9"
+    },
+    {
+      "path": "src/backends/common/backend_path_tool.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/backend_path_tool.h",
+      "sha256": "147174ebfca9f5c78c81c502d943e13a39f6624b81c8bfcdb9981ee47313cb12"
+    },
+    {
+      "path": "src/backends/common/details/sim_system_slot.inl",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/details/sim_system_slot.inl",
+      "sha256": "88d46321b8062e0c2ffed1b42bd49729b3f7a56ee397b5940d82d53f4321fdb6"
+    },
+    {
+      "path": "src/backends/common/module.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/module.cpp",
+      "sha256": "f08064f2b7ea904d8a540958cf190a663f6e7c6de9a16bd0ca0aab99c0a036b5"
+    },
+    {
+      "path": "src/backends/common/sim_action_collection.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_action_collection.h",
+      "sha256": "8a56afdcd87aba1e3bf56d5322b8ee5ee84984ac0eaaf708aaa630ff568e80e4"
+    },
+    {
+      "path": "src/backends/common/sim_action.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_action.h",
+      "sha256": "28fc3d25bf2d573e05cee4ea653b43106d1fcf6c656c146a908bef40a6b2ae7f"
+    },
+    {
+      "path": "src/backends/common/sanity_checker_auto_register.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sanity_checker_auto_register.h",
+      "sha256": "9356b0a3773d907d579dd6ac18db3518df004d763d37bbd5e1c39fb0fdefcc39"
+    },
+    {
+      "path": "src/backends/common/sanity_checker_auto_register.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sanity_checker_auto_register.cpp",
+      "sha256": "c28d988c7e4ae16dfe0609d970fa1d73cf9e581a7b3b5a35d0b06e16b131df49"
+    },
+    {
+      "path": "src/backends/common/module.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/module.h",
+      "sha256": "b12eceb44377d8751990bfa96cea723c34d7afa9a2eba2e66e4c5f67a2ed4505"
+    },
+    {
+      "path": "include/uipc/backend/visitors/scene_visitor.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/include/uipc/backend/visitors/scene_visitor.h",
+      "sha256": "4799971ae132b5654f4a41a56f055fc5052157d8d287f72e02dae2d10032b1d4"
+    },
+    {
+      "path": "src/backends/common/sim_engine.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_engine.cpp",
+      "sha256": "1df9bcaef7927f3fa0a1145388624a3be619091878e78d16eb3219500281976a"
+    },
+    {
+      "path": "src/backends/common/sim_system.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system.cpp",
+      "sha256": "5745fec3abee72c4f658094e001102594476b02a8179b76c6b6b2068e80b6014"
+    },
+    {
+      "path": "src/backends/common/sim_engine.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_engine.h",
+      "sha256": "a81f31e3f923433c9b886da9d878bd3f5e0ca1fae67b178413a2801e72ca5551"
+    },
+    {
+      "path": "src/backends/common/sim_system.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system.h",
+      "sha256": "7315860e874fc4bd640a01c412f46fe57625358dd8bc39409b529ae95ac6e55d"
+    },
+    {
+      "path": "src/backends/common/sim_system_slot.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system_slot.h",
+      "sha256": "6190e20a83c9ab535c04048ed6894b6fa13f024ee0d75d821a23d4b1124e54b4"
+    },
+    {
+      "path": "src/backends/common/sim_system_collection.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system_collection.cpp",
+      "sha256": "e7a07c5a6641543788c5df9582fa4767b4851c93dedbe87f50fb8b22e00b1300"
+    },
+    {
+      "path": "src/backends/cuda/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/CMakeLists.txt",
+      "sha256": "2c791b071411b8853e6f815c55d8f522775da56b28d27189ccec58f3d0616d28"
+    },
+    {
+      "path": "src/backends/common/sim_system_auto_register.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system_auto_register.h",
+      "sha256": "c74daec24c9d40f3128ec199df885f4ff5846843e8b2e78452f9b0c250d3dc16"
+    },
+    {
+      "path": "src/backends/common/sim_system_auto_register.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system_auto_register.cpp",
+      "sha256": "c4325ddca8753066df59ba0215269ce25ff762aa1c289b2c135a7400adff6eb0"
+    },
+    {
+      "path": "src/backends/common/i_sim_system.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/i_sim_system.h",
+      "sha256": "ccb676a5cbdcb1b0d544d754ce088f0fe38d333274947f4f24d2d837cf590164"
+    },
+    {
+      "path": "src/backends/cuda/coupling_system/abd_fem_dytopo_effect_receiver.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/abd_fem_dytopo_effect_receiver.cu",
+      "sha256": "51fd57bb192608c139ed07400040d31ab1afe4199dafb1d3d4949e72e274ecef"
+    },
+    {
+      "path": "src/backends/common/sim_system_collection.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/common/sim_system_collection.h",
+      "sha256": "83ff87c48f4a24e1344fb2c9d2301e967eda7c7200b75183eeb5301df867686d"
+    },
+    {
+      "path": "src/backends/cuda/coupling_system/fem_abd_dytopo_effect_receiver.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/fem_abd_dytopo_effect_receiver.cu",
+      "sha256": "5e339758d28829d460457d2b3470587452765fcdebfd6cd0b4eba031bd41c26b"
+    },
+    {
+      "path": "src/backends/cuda/coupling_system/abd_fem_dytopo_effect_receiver.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/abd_fem_dytopo_effect_receiver.h",
+      "sha256": "2bfbe6a9e1fc804fa2408b5d28ca1b1fa3b6114ec0ad8d9561f060a6fb00d611"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/diag_linear_subsystem.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/diag_linear_subsystem.h",
+      "sha256": "a3e3f144498c982eeb20c3cbdf32af73f11947abc0829ffd3f0f74d8eb30de2f"
+    },
+    {
+      "path": "src/backends/cuda/coupling_system/abd_fem_linear_subsystem.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/abd_fem_linear_subsystem.cu",
+      "sha256": "c3e40d1fcfd32a40684bad1423d0e15c29ad56ae89b997536cddd25cc67fedbe"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/global_linear_system.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/global_linear_system.h",
+      "sha256": "5a0d6453f916c801676644f9f0ab1f6c9354ef3fc39f19e55e3e1818cfb8b2fb"
+    },
+    {
+      "path": "src/backends/cuda/coupling_system/fem_abd_dytopo_effect_receiver.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/coupling_system/fem_abd_dytopo_effect_receiver.h",
+      "sha256": "70e4462479d58a662eb961f52abde0b0197eb6ff33005f32cd40bd48f2946d4a"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/diag_linear_subsystem.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/diag_linear_subsystem.cu",
+      "sha256": "0c2d043c5560ffdb4512740e0d7b3b25ade9d94cbbf0a218281c0c5e918da4d2"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/global_linear_system.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/global_linear_system.cu",
+      "sha256": "b3b0e5be0db6d3a9edbdc81606dba467462aebe3b45cc8711efbd174021c65e1"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/global_preconditioner.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/global_preconditioner.h",
+      "sha256": "3b2e1fb7fc6c084ff192b986f75c3bf4792c806502a450871a23006378ba49b0"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/current_frame_diff_dof_reporter.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/current_frame_diff_dof_reporter.cu",
+      "sha256": "39c4f2b3cf93a406daf79abbd2a57b923d217feb4a059419a0b82f9280cd2c8f"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/global_preconditioner.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/global_preconditioner.cu",
+      "sha256": "5e1519d29816889651d73d30966265f9c5ca6ae3bb4d4c4c97c6a767e5552fd3"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/iterative_solver.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/iterative_solver.h",
+      "sha256": "0100ec9d026739f5a73b325093d085368beeac1041965ec387bba9276261ede3"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/local_preconditioner.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/local_preconditioner.h",
+      "sha256": "f5b0b6fb046c266382c0d83f5211270e9b97610e03151dc02a9fa52b9858b336"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/linear_fused_pcg.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_fused_pcg.h",
+      "sha256": "7ddc21f1469c3eb965e5a1d8ac67254a0c5f3aab7e4d847890e23cfe99d8b200"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/linear_pcg.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_pcg.h",
+      "sha256": "46573111a1c8c0a39cd45eead7054a73ba33d9f701ac50b016db2459aaa2e3d9"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/local_preconditioner.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/local_preconditioner.cu",
+      "sha256": "45a2df16d34af7dd6ebf1593511e67c3738fe39ce9582ebd631aab7148f232bd"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/iterative_solver.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/iterative_solver.cu",
+      "sha256": "3d3661faf87c96729fb5137a0d6c647a59deb55aa3c531f9d3ae50bf11ed35a4"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/linear_pcg.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_pcg.cu",
+      "sha256": "c15101b97bd7e1c3026c29a11abba4058128da22b5583168563231660a576f72"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/linear_fused_pcg.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/linear_fused_pcg.cu",
+      "sha256": "15ee6a84324b61cac84fb5805a1e2b3b1e2787c60152e573378ec0942c96fcc4"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/off_diag_linear_subsystem.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/off_diag_linear_subsystem.cu",
+      "sha256": "8b2ad728450fce4f7e7365cf89c8bf6e7be28c24ac8b528ae821ae4fc2e81542"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/off_diag_linear_subsystem.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/off_diag_linear_subsystem.h",
+      "sha256": "af3290ce83be9797654be3e9f0793c88c96c529e44caddae2049e5debc2b3404"
+    },
+    {
+      "path": "src/backends/cuda/sim_system.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/sim_system.h",
+      "sha256": "daf4c0ece927393423fb78e15e2e065a02b88ab8ab9caa827aabf8f10dc65a70"
+    },
+    {
+      "path": "src/backends/cuda/xmake.lua",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/xmake.lua",
+      "sha256": "102f530f762d0c44e4e112393a30fa031cfe3d78a796f57f57ddff08d4f54284"
+    },
+    {
+      "path": "src/core/backend/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/CMakeLists.txt",
+      "sha256": "955242a38f01f0096bc31ea9470c5348db58ad0c6b9b944de37ed46b934bc6d0"
+    },
+    {
+      "path": "src/backends/cuda/sim_engine.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/sim_engine.h",
+      "sha256": "773f8dd4418986507dd9e574dfeae8ffafccca83ef68447c8c4875e7f4eaf07d"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/spmv.h",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/spmv.h",
+      "sha256": "4580c7f3a6c3ca74ad0ba1085117d41e044bfae5a6a109a825c2ad26d5d26086"
+    },
+    {
+      "path": "src/core/backend/buffer.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/buffer.cpp",
+      "sha256": "ec5711e0c7284c6c82d0a61994316de3a564c1741e1a5e1cf89690658f9ceb80"
+    },
+    {
+      "path": "src/core/backend/buffer_view.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/buffer_view.cpp",
+      "sha256": "6a7c5c712838a12c3f0e5a06ca409527b998cf2e31224f18b2ecc28a32d7f8dc"
+    },
+    {
+      "path": "src/core/backend/visitors/animator_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/animator_visitor.cpp",
+      "sha256": "1483834180566d2385abfdbd9ae354ad6667d00e9a602b918ecb761e17f410be"
+    },
+    {
+      "path": "src/core/backend/visitors/contact_tabular_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/contact_tabular_visitor.cpp",
+      "sha256": "011da96bb01e1c7e678a73f1cda38c26337b36fa53db07591e8c1cb777ff9a80"
+    },
+    {
+      "path": "src/core/backend/visitors/CMakeLists.txt",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/CMakeLists.txt",
+      "sha256": "868e7ca981d2f10070318f57f23ed74d7dd9087e788171fbe48dbf31e5f80d8f"
+    },
+    {
+      "path": "src/core/backend/visitors/diff_sim_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/diff_sim_visitor.cpp",
+      "sha256": "248808df4c7b77eabb00227b4dca7a1fd360469d59e7e67d6374676aa7fe7688"
+    },
+    {
+      "path": "src/core/backend/visitors/sanity_check_message_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/sanity_check_message_visitor.cpp",
+      "sha256": "f081a56f616a02a1b8ced3ecc538952b22467dc4742816b58ba61f63bf74c568"
+    },
+    {
+      "path": "src/core/backend/visitors/scene_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/scene_visitor.cpp",
+      "sha256": "5d7ec9cf59f4a88b725e0c3c42758e0ed32fb8f9cf77e75d5f37e37447ffe1ed"
+    },
+    {
+      "path": "src/backends/cuda/linear_system/spmv.cu",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/backends/cuda/linear_system/spmv.cu",
+      "sha256": "cf1c5eb42e0d96ed5f0cf7cc9a8c41643fd2790b00fbd944014e5741aed4bc67"
+    },
+    {
+      "path": "src/core/backend/visitors/subscene_tabular_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/subscene_tabular_visitor.cpp",
+      "sha256": "11e2a3761b4bbb17da79a1324121aff3e01931150269f43a465200066f2f4b7b"
+    },
+    {
+      "path": "src/core/backend/visitors/world_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/world_visitor.cpp",
+      "sha256": "c014e80cad2fdbfb51a8ad5d431a4be0181f1a1164856e0844af583fa63694a3"
+    },
+    {
+      "path": "src/core/backend/visitors/geometry_visitor.cpp",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/src/core/backend/visitors/geometry_visitor.cpp",
+      "sha256": "875c1dce0ef1ad9e31a29516a245a2e5a98d652f72f1102a007b08eb1e64cda5"
+    },
+    {
+      "path": "xmake.lua",
+      "url": "https://raw.githubusercontent.com/spiriMirror/libuipc/9c748a759bb9952a7aeedd59076a70591dc61d6c/xmake.lua",
+      "sha256": "62a8f785f0496e5ed8044f482824e9422a84736ad90defd683ad9c358d093373"
+    }
+  ],
+  "errors": []
+}

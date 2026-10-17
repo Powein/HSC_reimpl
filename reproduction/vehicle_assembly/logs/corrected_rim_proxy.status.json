@@ -1,0 +1,11 @@
+{
+  "pid": 30928,
+  "command": [
+    "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\build_proxies.py"
+  ],
+  "timeout_s": 60,
+  "state": "complete",
+  "log": "C:\\Users\\Powei\\Desktop\\\u590d\u73b0HC\\reproduction\\vehicle_assembly\\logs\\corrected_rim_proxy.log",
+  "exit_code": 0,
+  "elapsed_s": 2.0159999999996217
+}

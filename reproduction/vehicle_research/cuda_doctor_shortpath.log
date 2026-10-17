@@ -1,0 +1,55 @@
+runtime_path_ascii: False
+Traceback (most recent call last):
+  File "C:\Users\Powei\Desktop\����HC\reproduction\vehicle_research\probe_cuda.py", line 23, in <module>
+    runpy.run_module('uipc',run_name='__main__')
+  File "<frozen runpy>", line 222, in run_module
+  File "<frozen runpy>", line 148, in _get_module_details
+  File "<frozen runpy>", line 112, in _get_module_details
+  File "C:\Users\Powei\Desktop\����HC\REPROD~1\VEHICL~1\_runtime\uipc\__init__.py", line 21, in <module>
+    init()
+  File "C:\Users\Powei\Desktop\����HC\REPROD~1\VEHICL~1\_runtime\uipc\__init__.py", line 18, in init
+    pyuipc.init(config)
+uipc._native.pyuipc.Exception: module_dir does not exist.:
+Stack trace (most recent call first):
+#0  0x00007fff23e924b8 in uipc::Exception::Exception
+#1  0x00007fff23ea073f in uipc::init
+#2  0x00007fff3b8709aa in PyInit_pyuipc
+#3  0x00007fff3b6ec678 in  ?? 
+#4  0x00007fff430c44d2 in PySet_Add
+#5  0x00007fff430b21ec in PyObject_Vectorcall
+#6  0x00007fff430b2158 in PyObject_Vectorcall
+#7  0x00007fff430b3685 in PyEval_EvalFrameDefault
+#8  0x00007fff4312b8ab in PyEval_EvalCode
+#9  0x00007fff4312b775 in PyEval_EvalCode
+#10 0x00007fff43108cc2 in Py_SourceAsString
+#11 0x00007fff43108b67 in Py_SourceAsString
+#12 0x00007fff430c44d2 in PySet_Add
+#13 0x00007fff4314a728 in PyObject_Call
+#14 0x00007fff4314a672 in PyObject_Call
+#15 0x00007fff430b721e in PyEval_EvalFrameDefault
+#16 0x00007fff430b167b in PyFunction_Vectorcall
+#17 0x00007fff430b21ec in PyObject_Vectorcall
+#18 0x00007fff430ccd7d in PyObject_CallMethodObjArgs
+#19 0x00007fff430ccca2 in PyObject_CallMethodObjArgs
+#20 0x00007fff43112e9d in Py_get_osfhandle_noraise
+#21 0x00007fff430f1a16 in PyImport_ImportModuleLevelObject
+#22 0x00007fff430c3ad7 in PySet_Discard
+#23 0x00007fff430c44d2 in PySet_Add
+#24 0x00007fff430b21ec in PyObject_Vectorcall
+#25 0x00007fff430b2158 in PyObject_Vectorcall
+#26 0x00007fff430b3685 in PyEval_EvalFrameDefault
+#27 0x00007fff4312b8ab in PyEval_EvalCode
+#28 0x00007fff4312b775 in PyEval_EvalCode
+#29 0x00007fff43114247 in Py_read
+#30 0x00007fff43108efb in PyEval_GetBuiltins
+#31 0x00007fff4314263f in PyDict_DelItemString
+#32 0x00007fff43141c79 in PyRun_SimpleFileObject
+#33 0x00007fff43142ca8 in PyRun_AnyFileObject
+#34 0x00007fff4316b541 in Py_Exit
+#35 0x00007fff4316b5e6 in Py_Exit
+#36 0x00007fff4316c4c6 in Py_RunMain
+#37 0x00007fff4316c277 in Py_RunMain
+#38 0x00007fff4316c96a in Py_Main
+#39 0x00007ff6e649122f in  ?? 
+#40 0x00007ff84c327373 in BaseThreadInitThunk
+#41 0x00007ff84cb9cc90 in RtlUserThreadStart

@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "ACA exact rank-4 reconstruction",
+      "error": 1.5221598502886168e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "ACA recovered rank",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "ACA fixed-rank budget respected",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "zero coupling rank",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "Neumann recurrence vs explicit polynomial",
+      "error": 1.0408340855860843e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Neumann I-MA=T^r identity",
+      "error": 4.909267437014364e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Neumann inverse symmetry",
+      "error": 1.3010426069826053e-18,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "exact Schur vs independent dense solve",
+      "error": 6.097017657456105e-13,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "exact Schur full-system residual",
+      "error": 7.235267962133517e-14,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "low-rank vs explicit Schur matvec",
+      "error": 3.8013805372390814e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "PCG RHS scale 1 true relative residual",
+      "error": 3.9059593340463614e-11,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "PCG RHS scale 1e-12 true relative residual",
+      "error": 3.905955089123336e-11,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "PCG zero RHS",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "frame": 0,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 0.0,
+        "min_z_m": 0.28018603797542496,
+        "min_tet_volume_ratio": 1.0,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  },
+  {
+    "frame": 1,
+    "wheels": [
+      {
+        "name": "test_wheel",
+        "max_bead_error_m": 2.442495077204099e-07,
+        "min_z_m": 0.28016576264655624,
+        "min_tet_volume_ratio": 0.9998854187235923,
+        "rim_center": [
+          0.0,
+          0.0,
+          0.75
+        ]
+      }
+    ],
+    "suspensions": []
+  }
+]
