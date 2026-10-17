@@ -1,30 +1,52 @@
-# HC / HSC 论文复现
+# HSC_reimpl
 
-两组汽车完整行程均已完成，全程使用接入 Newton/IPC 循环的原生 HSC。车载胎固定 `E=1e10 Pa`，地面胎 `E=1e8`、`1e6 Pa` 两组分别完成 213、209 帧，模拟时长为 7.100、6.967 秒，结束时整车均已驶过全部障碍。
+基于 HSC 论文方法的刚柔耦合车辆模拟。项目使用 Project Chrono 的 HMMWV 资产构建车辆，将碰撞、摩擦、悬挂、胎圈连接和轮胎弹性接入同一个 Newton/IPC 时间推进流程，由原生 HSC 求解每次线性系统。
 
-本轮数据独立保存在 `result/vehicle_full_pass/`。查看[结果报告](result/vehicle_full_pass/report.md)、[完整行程动画](result/vehicle_full_pass/preview/passage.gif)和[数值对照](result/vehicle_full_pass/comparison.csv)；运行入口和参数说明见[完整行程实验](reproduction/experiments/vehicle_full_pass/README.md)。每组 `status.json` 中的 `COMPLETED_FULL_PASS` 对应四轮越过障碍、整车留出至少 0.15 m 间距并保持五帧的实际判定。
+仓库提供可运行的场景、后端构建脚本，以及两组汽车完整驶过轮胎的结果。两组车载轮胎的杨氏模量均为 `1e10 Pa`，地面轮胎分别为 `1e8 Pa` 和 `1e6 Pa`，用于观察地面胎刚度对变形和车辆行程的影响。
 
-Git 版本包含正式结果和必要资产；本机依赖、编译缓存及原始 PDF 的处理方式，以及克隆后的环境准备，见[仓库说明](REPOSITORY.md)。
+![两组刚度下的完整行程](result/vehicle_full_pass/preview/passage.gif)
+
+## 查看结果
+
+| 指标 | 地面胎 E = 1e8 Pa | 地面胎 E = 1e6 Pa |
+|---|---:|---:|
+| 完成帧数 | 213 | 209 |
+| 模拟时长 | 7.100 s | 6.967 s |
+| 车身前移 | 6.254 m | 6.132 m |
+| 结束时车尾与障碍的间距 | 0.296 m | 0.282 m |
+| 地面胎峰值节点位移（轮辋坐标系） | 13.544 mm | 246.637 mm |
+| HSC 线性求解次数 | 6,161 | 6,402 |
+
+两组均达到 `COMPLETED_FULL_PASS`：四个车轮越过对应障碍，整车越过全部障碍至少 0.15 m，并保持五帧。场景包含 12 个仿射体（ABD）、7 个有限元胎体（FEM），共 78,197 个 Tet4 单元。
+
+[结果报告](result/vehicle_full_pass/report.md)提供变形曲线、求解记录和论文参数对应关系；[CSV 对照表](result/vehicle_full_pass/comparison.csv)可用于后续分析。每组结果还附有逐帧轨迹、网格快照、运行参数和源码哈希。
+
+## 开始使用
 
 ```powershell
-./reproduction/experiments/vehicle_full_pass/run.ps1
+git clone https://github.com/Powein/HSC_reimpl.git
+cd HSC_reimpl
 ```
 
-| 路径 | 内容 |
+报告、图片和动画可直接打开。重新绘图时，使用 Windows PowerShell 和 Python 3.12，在仓库根目录执行：
+
+```powershell
+./reproduction/setup.ps1 -Python python
+python reproduction/experiments/vehicle_full_pass/render.py --animate
+```
+
+运行物理实验需要构建带 HSC 补丁的 libuipc CUDA 后端。按[安装与运行指南](REPOSITORY.md)准备环境、编译后端，再复制实验配置到新的结果目录，即可运行两组刚度实验。默认配置对应仓库中已完成的结果。
+
+## 项目内容
+
+| 模块 | 提供的内容 |
 |---|---|
-| `HC.pdf` / `Guo-2026-HSC.zip` | 用户提供的论文与作者源码包 |
-| `Guo-2026-HSC/` | 原始源码解包，保留原文件 |
-| `reproduction/experiments/vehicle_full_pass/` | 本轮两组完整行程实验的配置、启动、统计和绘图入口 |
-| `result/vehicle_full_pass/` | 本轮实际结果、运行参数副本、求解日志和预览 |
-| `reproduction/vehicle_assembly/` | 可复用车辆场景、碰撞代理、悬挂和胎圈连接 |
-| `reproduction/hsc_backend/` | libuipc 原生 HSC 补丁、构建入口和本机环境记录 |
-| `reproduction/vehicle_research/` | 开源资产、来源与许可证、预处理网格 |
-| `reproduction/results/` | 初期算法和原始 CUDA 函数验证的历史结果 |
-| `reproduction/vehicle_assembly/results/` | 使用库自带求解器的早期装配短测 |
-| `reproduction/hsc_backend/results/` | 本轮之前的 HSC 接触初期结果 |
+| [完整行程实验](reproduction/experiments/vehicle_full_pass/README.md) | 两组刚度配置、运行入口、完成判据、断点恢复、统计与绘图 |
+| [HSC 后端](reproduction/hsc_backend/README.md) | ACA、Schur PCG、Neumann 预条件、原生求解日志和 Windows 构建脚本 |
+| [轮胎材料与体积约束](reproduction/hsc_backend/NONINVERSION.md) | 对数 Neo-Hookean 本构、CUDA 导数和整条线搜索路径的单元体积检查 |
+| [车辆装配](reproduction/vehicle_assembly/README.md) | 闭合碰撞代理、四套悬挂、车轮转动关节和 FEM–ABD 胎圈连接 |
+| [资产目录](reproduction/vehicle_research/README.md) | Chrono 车辆与轮胎资产、Tet4 转换、来源清单和接触实现索引 |
+| [核心算法参考](reproduction/README.md) | NumPy HSC 实现、合成矩阵实验和作者 CUDA 函数检查 |
+| [作者代码](Guo-2026-HSC/README.md) | 作者发布的 CUDA 头文件、说明和许可证，共 34 个文件 |
 
-各阶段结果保留原位置，避免改动历史引用。新增实验按 `reproduction/experiments/<实验名>/` 放代码，按根目录 `result/<实验名>/` 放数据。第三方许可见 [来源与许可说明](reproduction/vehicle_research/THIRD_PARTY_NOTICES.md)。
-
-公开包未包含作者完整车辆场景。当前使用 Chrono 替代资产、显式胎圈连接，以及部分 CPU 准备和 ABD 自适应多项式延长的 HSC 实现；具体差别见 [HSC 接入说明](reproduction/hsc_backend/README.md)。实验完成与论文原资产、固定阶算法及性能复现分别记录。
-
-完整行程统一使用对数 Neo-Hookean 胎体，并在原生线搜索中约束四面体体积；首次软胎翻转的记录与修正方法见[防翻转说明](reproduction/hsc_backend/NONINVERSION.md)。最终报告仅从两组已完成且体积有效的轨迹生成，文档文字按 `humanizer-zh` 技能整理。
+实验代码位于 `reproduction/experiments/<实验名>/`，结果位于 `result/<实验名>/`。组件级实验随各模块保存在 `results/` 中。论文和技术附录见[作者项目页](https://sites.google.com/view/multibody)，开源代码与资产的版本、许可证见[第三方来源说明](reproduction/vehicle_research/THIRD_PARTY_NOTICES.md)。

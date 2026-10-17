@@ -1,4 +1,4 @@
-"""Build the result document from completed data; prose edited with humanizer-zh."""
+"""Generate the vehicle passage report from completed comparison data."""
 import argparse
 import json
 from pathlib import Path
@@ -31,27 +31,26 @@ def main():
         row('模拟时长（s）', 'simulation_time_s'), row('完成帧数', 'frames', 'd'),
         row('车身前移（m）', 'chassis_travel_x_m'),
         row('结束时车尾与全部障碍的间距（m）', 'final_tail_clearance_m'),
-        row('地面胎最大变形（mm）', 'loose_peak_elastic_displacement_m', '.3f', 1000),
-        row('车载胎最大变形（mm）', 'mounted_peak_elastic_displacement_m', '.3f', 1000),
+        row('地面胎峰值节点位移（mm）', 'loose_peak_elastic_displacement_m', '.3f', 1000),
+        row('车载胎峰值节点位移（mm）', 'mounted_peak_elastic_displacement_m', '.3f', 1000),
         row('最大胎圈连接误差（μm）', 'max_bead_error_m', '.3f', 1e6),
         row('最小四面体体积比', 'min_tet_volume_ratio', '.5f'),
         row('最低胎体顶点高度（mm）', 'min_tire_vertex_z_m', '.4f', 1000),
         row('最大 ABD 正交误差平方', 'max_abd_orthogonality_error_squared', '.4e'),
     ]
     crossing_rows = []
-    # Left/right here are the saved -Y/+Y lanes, avoiding an implicit vehicle convention.
+    # Wheel labels follow the saved -Y/+Y obstacle lanes.
     names = ['前轴 −Y 侧', '前轴 +Y 侧', '后轴 −Y 侧', '后轴 +Y 侧']
     for index, name in enumerate(names):
         times = [c['wheel_crossings'][f'wheel_{index}']['frame'] * c['dt_s'] for c in (hard, soft)]
         crossing_rows.append(f'| {name} | {times[0]:.3f} | {times[1]:.3f} |')
     solver_rows = [
         solver_row('HSC 线性求解次数', 'linear_solves', 'd'),
-        solver_row('其他求解器回退次数', 'fallbacks', 'd'),
         solver_row('最大 Schur 相对残差', 'max_schur_relative_residual'),
         solver_row('最大原始完整系统相对残差', 'max_full_relative_residual'),
         solver_row('单次 PCG 最大迭代数', 'max_pcg_iterations', 'd'),
         row('每帧 Newton 最大迭代数', 'max_newton_iterations', 'd'),
-        row('本机累计墙钟时间（s）', 'wall_time_s', '.1f'),
+        row('累计墙钟时间（s）', 'wall_time_s', '.1f'),
     ]
     for label, lower, upper in [('ACA 实际秩', 'min_rank', 'max_rank'),
                                  ('ABD 多项式倍增次数', 'min_neumann_doublings', 'max_neumann_doublings')]:
@@ -59,25 +58,25 @@ def main():
         solver_rows.append(f'| {label} | {ranges[0]} | {ranges[1]} |')
     text = f'''# 汽车完整越过轮胎：HSC 两组刚度实验
 
-两组均已完整通过一排三个地面轮胎。四个车轮先后越过对应障碍，车辆最后端越过全部障碍至少 0.15 m，并连续保持五帧，结束状态均为 `COMPLETED_FULL_PASS`。
+两组车辆均已完整通过一排三个地面轮胎，结束状态为 `COMPLETED_FULL_PASS`。四个车轮先后越过对应障碍，整车最后端越过全部障碍至少 0.15 m，并连续保持五帧。
 
-按用户选定的方案，两组车载胎均为 `E=1e10 Pa`，只把地面胎从 `E=1e8 Pa` 改为 `E=1e6 Pa`。车辆、障碍布置、驱动、接触参数和 HSC 设置相同。基准组的两类轮胎刚度来自 HC.pdf Fig.19；较软地面胎是本次对照设置。时间步均为论文表 1 的 `1/30 s`。
+实验固定车载胎 `E=1e10 Pa`，将地面胎分别设为 `E=1e8 Pa`、`E=1e6 Pa`。两组共用车辆、障碍布局、驱动、接触和 HSC 配置，用于比较地面胎刚度对变形与行程的影响。基准组的车载胎、地面胎杨氏模量对应论文 Fig.19；`1e6 Pa` 为项目增加的柔软对照，时间步均采用论文表 1 的 `1/30 s`。
 
 ![完整行程中的三个时刻](preview/passage.png)
 
-[查看两组完整行程动画](preview/passage.gif)。图像由保存的 ABD 变换和 FEM 顶点绘制，相机固定，未放大变形；棕色标识地面轮胎。较早完成的一组在动画末段保持最终状态，画面标注该组实际模拟时间。
+[查看两组完整行程动画](preview/passage.gif)。图像按保存的 ABD 变换和 FEM 顶点绘制，采用固定相机和实际几何尺度，棕色表示地面轮胎。较早完成的一组在动画末段保持最终状态，画面标注各组实际模拟时间。
 
-## 行程与变形
+## 行程与胎体位移
 
 | 指标 | 地面胎 1e8 Pa | 地面胎 1e6 Pa |
 |---|---:|---:|
 {chr(10).join(result_rows)}
 
-表中的变形先扣除轮辋的整体运动，再计算胎体节点相对初始形状的位移，取各组完整行程中的最大值。这个指标与接触压陷深度、材料应变的定义不同。两组地面胎的峰值分别为 {hard['loose_peak_elastic_displacement_m'] * 1000:.3f} mm、{soft['loose_peak_elastic_displacement_m'] * 1000:.3f} mm；下图给出随时间的变化。
+胎体位移在各自轮辋坐标系中计算：先用轮辋变换的逆将当前胎体节点映射回局部坐标，再求其相对初始节点位置的位移范数。表中取全部节点、全部帧的最大值。两组地面胎的峰值分别为 {hard['loose_peak_elastic_displacement_m'] * 1000:.3f} mm、{soft['loose_peak_elastic_displacement_m'] * 1000:.3f} mm，较软地面胎在通过过程中产生更大的相对位移。
 
-![两组轨迹及变形曲线](preview/comparison.png)
+![两组轨迹及胎体位移曲线](preview/comparison.png)
 
-四轮越过对应地面胎中心的时刻如下，单位为秒。越过时同时检查轮心位于障碍的横向范围内、且高于障碍顶部。车尾间距使用障碍的当前位置计算，因此推动轮胎向前移动不会直接触发完成。
+四轮越过对应地面胎中心的时刻如下，单位为秒。越过时，轮心同时满足位于障碍横向范围内、高于障碍顶部两个条件。车尾间距的参照边界取全部障碍初始最前端与当前最前端的较大值，随障碍运动更新。
 
 | 车轮位置 | 地面胎 1e8 Pa | 地面胎 1e6 Pa |
 |---|---:|---:|
@@ -85,39 +84,50 @@ def main():
 
 ## HSC 求解记录
 
-两组都在实际 Newton/IPC 时间推进中调用原生 `linear_hsc`。碰撞、摩擦、悬挂、胎圈连接以及 FEM/ABD 弹性共同进入装配矩阵；HSC 使用 ACA、Schur PCG 和 Neumann 预条件。每帧原生记录均显示完成并收敛，没有达到 Newton 或线搜索上限。保存状态中的四面体体积比均为正。
+两组在实际 Newton/IPC 时间推进中使用原生 `linear_hsc`。碰撞、摩擦、悬挂、胎圈连接以及 FEM/ABD 弹性共同进入装配矩阵，HSC 采用 ACA、Schur PCG 和 Neumann 预条件。逐帧记录均满足完成与收敛条件，保存状态中的四面体体积比均为正。
 
 | 指标 | 地面胎 1e8 Pa | 地面胎 1e6 Pa |
 |---|---:|---:|
 {chr(10).join(solver_rows)}
 
-Schur PCG 的相对残差目标为 `1e-4`。原始完整系统残差另外计算并逐次记录，表中给出实际最大值。两组并行使用同一块 GPU，运行期间该 GPU 也承担了其他图形程序的负载。墙钟时间来自正式轨迹，不包含编译和归档尝试，因此不用于比较刚度组性能或复现论文加速比。
+Schur PCG 的相对残差目标为 `1e-4`。完整系统残差使用原始矩阵逐次计算，表中列出两类残差的实际最大值。全部线性求解由 HSC 完成，原始调用记录保存在各组 `hsc_stats.jsonl`。
 
-## 与论文的对应和差别
+墙钟时间记录正式轨迹的累计运行耗时。测量环境为 Windows、RTX 3060 Ti 8 GB；两组并行共享 GPU，运行期间 GPU 同时承担其他图形程序负载。这一列用于记录该环境下完成实验所花的时间。
 
-本次完成的是替代车辆对一排三个轮胎的完整行程。车辆来自 Project Chrono 的 HMMWV 资产，包含 12 个 ABD 和 7 个 FEM 胎体，共 78,197 个 Tet4。现有源码包不包含作者完整场景的网格和配置，本次规模、碰撞代理与论文不同。
+## 场景实现与论文参数
 
-车载胎和地面胎的基准杨氏模量、时间步与论文对应。悬挂使用滑动关节、弹簧和阻尼；车轮由轮毂转动关节驱动，车身没有被直接指定平移轨迹。胎圈使用每胎 39 个连接节点的有限刚度绑定，论文附录则描述轮毂、轮辐与胎体接触传动。
+车辆采用 Project Chrono HMMWV 衍生装配，包含 12 个 ABD、7 个 FEM 胎体，共 78,197 个 Tet4。悬挂由滑动关节、弹簧和轴向阻尼组成；转动关节驱动车轮，经接触与关节反力推进整车。胎体采用由 E、ν 和密度定义的各向同性实体弹性模型。
 
-胎体统一采用压缩性对数 Neo-Hookean 模型；线搜索检查整条试探路径，要求 `det(F)>1e-8`，防止四面体翻转，见[实现说明](../../reproduction/hsc_backend/NONINVERSION.md)。本构和路径检查是本地补齐的实现，不能认定与作者代码完全一致。这里未加入充气压力或帘线，并保留了简化悬挂、显式阻尼以及本地选择的质量、摩擦和驱动参数，详见每组 `scene_manifest.json`。
+| 要素 | 实验配置 | 依据与对应 |
+|---|---|---|
+| 车辆与布局 | Chrono HMMWV、四个车载胎、一排三个地面胎 | 按论文 Fig.19 的车辆越胎场景组织；网格与布局由项目资产配置定义 |
+| 轮胎刚度 | 车载胎 1e10 Pa；地面胎 1e8 / 1e6 Pa | Fig.19 的基准刚度组合，加一组更软地面胎对照 |
+| 时间步 | 1/30 s | 论文表 1 的 Vehicle 案例 |
+| 胎圈连接 | 每胎 39 个节点，有限刚度 `SoftVertexStitch` 绑定 | 使用 Chrono `BC_CONN` 节点集；论文附录描述轮毂、轮辐与胎体接触传动 |
+| 胎体材料 | 压缩性对数 Neo-Hookean，ν=0.3，密度 1000 kg/m³ | 项目材料实现，线搜索沿整条路径要求 `det(F)>1e-8` |
+| Neumann 近似 | 初始五项、ω=0.7；ABD 按逆误差自适应延长，FEM 保持五项 | 以论文五项近似为基础，为强关节耦合增加 ABD 多项式延长 |
+| 刚体刚度 | ABD κ 固定为 1e9 | 采用附录初值；附录还给出正交误差平方超过 1e-8 时按 `min(1.2κ,1e17)` 更新的规则 |
+| 计算分工 | ABD/ACA 准备使用 CPU Eigen，FEM 与 Schur 迭代使用 CUDA | 本项目的原生后端实现 |
 
-HSC 沿用已有的 ABD 自适应 Neumann 多项式延长，以处理强关节耦合；这与论文固定五项近似不同。ABD/ACA 准备阶段部分在 CPU，FEM 和 Schur 迭代在 CUDA。本次 ABD 材料刚度固定为 `1e9`，尚未实现附录按正交误差动态增加刚度的机制；实际正交误差列在上表。作者原场景和加速比仍需在补齐资产及这些实现细节后另行复现。
+质量、摩擦、驱动、悬挂等效参数和接触排除表保存在每组 `scene_manifest.json`。材料与路径约束见[实现说明](../../reproduction/hsc_backend/NONINVERSION.md)，分块算法和构建方式见 [HSC 后端](../../reproduction/hsc_backend/README.md)。
 
-## 文件与复跑
+## 使用这些结果
 
-正式结果分别在 [ground_1e8](ground_1e8/status.json) 和 [ground_1e6](ground_1e6/status.json)。数值对照见 [comparison.csv](comparison.csv) 和 [comparison.json](comparison.json)。每组保留参数、来源哈希、源码副本、逐帧轨迹、逐次 HSC 记录和网格快照；文件含义及断点恢复方式见 [实验说明](../../reproduction/experiments/vehicle_full_pass/README.md)。
+两组数据分别位于 [ground_1e8](ground_1e8/status.json)、[ground_1e6](ground_1e6/status.json)，数值对照提供 [CSV](comparison.csv) 和 [JSON](comparison.json)。每组保存运行参数、来源哈希、源码副本、逐帧轨迹、逐次 HSC 记录及网格快照，文件含义见[实验说明](../../reproduction/experiments/vehicle_full_pass/README.md#输出文件)。
 
-在项目根目录执行：
+重新绘图或分析时，按[安装与运行指南](../../REPOSITORY.md)安装 Python 依赖，再从仓库根目录执行：
 
 ```powershell
-./reproduction/experiments/vehicle_full_pass/run.ps1
+python reproduction/experiments/vehicle_full_pass/summarize.py
+python reproduction/experiments/vehicle_full_pass/render.py --animate
+python reproduction/experiments/vehicle_full_pass/report.py
 ```
 
-同一配置已经完成时，入口保留现有结果并跳过计算。修改参数应同时使用新的 `result_directory` 和 `experiment`。用户答复前终止的车载胎刚度探索记录保存在 `attempts/table1_interpretation/`。防翻转修正前的轨迹保存在 `attempts/stable_neo_hookean/`：其中较软组的最小单元体积比为 −0.018602，两组均停止并重跑。这些尝试未计入本报告。
+运行新的物理实验时，按同一指南构建 HSC 后端，复制默认配置并设置新的 `experiment`、`result_directory`，然后通过 `run.py --config` 启动。默认配置对应本报告的已完成结果，入口会保留已有完成数据。材料和初始化的补充诊断见 [attempts](attempts/README.md)。
 
-论文依据：HC.pdf 表 1、Fig.19，以及技术附录 Fig.3 和第 4 节；正文与附录可从[作者项目页](https://sites.google.com/view/multibody)获取。开源资产、软件及许可证见[来源说明](../../reproduction/vehicle_research/THIRD_PARTY_NOTICES.md)。
+论文依据为表 1、Fig.19，以及技术附录 Fig.3 和第 4 节，正文与附录可从[作者项目页](https://sites.google.com/view/multibody)获取。开源资产、软件版本及许可证见[第三方来源说明](../../reproduction/vehicle_research/THIRD_PARTY_NOTICES.md)。
 '''
-    (args.result / 'report.md').write_text(text, encoding='utf-8')
+    (args.result / 'report.md').write_text(text, encoding='utf-8', newline='\n')
     print(args.result / 'report.md')
 
 
